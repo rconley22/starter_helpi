@@ -50,6 +50,7 @@ function App() {
 
       <h1>Stephen Lewis</h1>
       <h1>Rylan Conley</h1>
+      <h1>Tolu Akin</h1>
     </div>
   );
 }
