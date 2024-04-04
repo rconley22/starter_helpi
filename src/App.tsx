@@ -45,8 +45,8 @@ function App() {
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
         <br></br>
         <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
+        <h1>Stephen Lewis</h1>
       </Form>
-      <h1>Stephen Lewis</h1>
     </div>
   );
 }
