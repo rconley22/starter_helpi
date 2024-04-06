@@ -26,6 +26,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <div className="fixed">
+        <Button className='detailedbutton'>Detailed Career Assessment</Button>
+      </div>
       </header>
       <Form>
         <Form.Label>API Key:</Form.Label>
