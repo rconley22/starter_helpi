@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Button, Form } from 'react-bootstrap';
+import { DetailedQuestionPage } from "./detailed-question-page";
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -11,7 +12,17 @@ if (prevKey !== null) {
 }
 
 function App() {
+  type page = 'home' | 'detailed question page' | 'basic question page';
   const [key, setKey] = useState<string>(keyData); //for api key input
+  const [currentPage, setcurrentPage] = useState<page>('home');//which page the website is currently on
+
+  function changetoDetailedPage(): void {//switch to the detailed questions page
+    setcurrentPage('detailed question page');
+  }
+
+  function changetoHomePage(): void {//switch to the home page
+    setcurrentPage('home');
+  }
   
   //sets the local storage item to the api key the user inputed
   function handleSubmit() {
@@ -27,10 +38,15 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div className="fixed">
-        <Button className='detailedbutton'>Detailed Career Assessment</Button>
+        <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
+        <div>  </div>
+        <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
       </div>
       </header>
-      <Form>
+      <p hidden={currentPage !== 'detailed question page'}>
+          <DetailedQuestionPage></DetailedQuestionPage>
+      </p>
+      <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
         <br></br>
