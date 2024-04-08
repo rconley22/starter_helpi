@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
+import { BasicQuestionPage } from './basic-question-page';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -50,6 +51,9 @@ function App() {
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
           <DetailedQuestionPage></DetailedQuestionPage>
+      </p>
+      <p hidden={currentPage !== 'basic question page'}>
+          <BasicQuestionPage></BasicQuestionPage>
       </p>
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>

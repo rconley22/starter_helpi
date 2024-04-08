@@ -23,4 +23,5 @@ export function BasicQuestionPage(): JSX.Element {
             <h4>Question 7</h4>
         </div>
     );
+    
 }
