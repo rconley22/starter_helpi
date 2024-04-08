@@ -19,6 +19,9 @@ function App() {
   function changetoDetailedPage(): void {//switch to the detailed questions page
     setcurrentPage('detailed question page');
   }
+  function changeToBasicPage(): void {
+    setcurrentPage('basic question page');
+  }
 
   function changetoHomePage(): void {//switch to the home page
     setcurrentPage('home');
@@ -41,7 +44,8 @@ function App() {
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <div>  </div>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
-        <Button className='detailedbutton'>Detailed Career Assessment</Button>
+        <div>  </div>
+        <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
       </div>
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
