@@ -6,7 +6,7 @@
     Warning: validateDOMNesting(...): <h2> cannot appear as a descendant of <p>.
         at h2
         at div
-        at DetailedQuestionPage
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
@@ -44,7 +44,7 @@
     Warning: validateDOMNesting(...): <hr> cannot appear as a descendant of <p>.
         at hr
         at div
-        at DetailedQuestionPage
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
@@ -82,7 +82,7 @@
     Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
         at p
         at div
-        at DetailedQuestionPage
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
@@ -120,7 +120,7 @@
     Warning: validateDOMNesting(...): <h4> cannot appear as a descendant of <p>.
         at h4
         at div
-        at DetailedQuestionPage
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
@@ -157,7 +157,10 @@
   console.error
     Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
         at div
-        at DetailedQuestionPage
+        at div
+        at /home/runner/work/starter_helpi/starter_helpi/node_modules/react-bootstrap/cjs/FormGroup.js:13:3
+        at div
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
@@ -192,7 +195,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (109 ms)
+  ✕ renders learn react link (143 ms)
 
   ● renders learn react link
 
@@ -238,40 +241,140 @@ FAIL src/App.test.tsx
           [36m>[39m
             [36m<div>[39m
               [36m<h2>[39m
-                [0mDetailed Questions Page[0m
+                [0mDetailed Career Assessment[0m
               [36m</h2>[39m
               [36m<hr />[39m
               [36m<p>[39m
-                [0mDetailed Questions Page Description[0m
+                [0mThe Career Helpi's Detailed Career Assessment allows users to fill out a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized to who you are. Providing extra detail allows the Career Helpi to better match a potential career.[0m
               [36m</p>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 1[0m
+                [0mWhat are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 2[0m
+                [0mWhat do you want your work environment to look like?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 3[0m
+                [0mHow much collaboration do you want in your job?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 4[0m
+                [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 5[0m
+                [0mWhat type of people do you see yourself working with?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 6[0m
+                [0mDo you enjoy work that is Structured or open-ended and flexible?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
               [36m<hr />[39m
               [36m<h4>[39m
-                [0mQuestion 7[0m
+                [0mWhat are some of your long term career goals?[0m
               [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mWhat are some jobs/careers that you are not interested in?[0m
+              [36m</h4>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                [36m>[39m
+                  [0mAnswer:[0m
+                [36m</label>[39m
+                [36m<div />[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-control"[39m
+                  [33mvalue[39m=[32m""[39m
+                [36m/>[39m
+              [36m</div>[39m
             [36m</div>[39m
           [36m</p>[39m
           [36m<form[39m
@@ -332,17 +435,17 @@ FAIL src/App.test.tsx
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   30.76 |    16.66 |      25 |   30.76 |                   
+All files                   |   38.09 |    16.66 |    12.5 |   38.09 |                   
  App.tsx                    |   53.84 |       50 |      20 |   53.84 | 11,20-35          
  basic-question-page.tsx    |       0 |      100 |     100 |       0 | 1                 
- detailed-question-page.tsx |     100 |      100 |     100 |     100 |                   
+ detailed-question-page.tsx |   52.94 |      100 |   11.11 |   52.94 | 15-29             
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19              
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10              
 ----------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.135 s
+Time:        2.949 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
