@@ -195,7 +195,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (135 ms)
+  ✕ renders learn react link (131 ms)
 
   ● renders learn react link
 
@@ -211,7 +211,7 @@ FAIL src/App.test.tsx
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"fixed"[39m
+              [33mclass[39m=[32m"wrapper"[39m
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"homebutton btn btn-primary"[39m
@@ -219,18 +219,12 @@ FAIL src/App.test.tsx
               [36m>[39m
                 [0mHome[0m
               [36m</button>[39m
-              [36m<div>[39m
-                [0m  [0m
-              [36m</div>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"detailedbutton btn btn-primary"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mDetailed Career Assessment[0m
               [36m</button>[39m
-              [36m<div>[39m
-                [0m  [0m
-              [36m</div>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"basicButton btn btn-primary"[39m
                 [33mtype[39m=[32m"button"[39m
@@ -383,6 +377,68 @@ FAIL src/App.test.tsx
           [36m<p[39m
             [33mhidden[39m=[32m""[39m
           [36m>[39m
+            [36m<div>[39m
+              [36m<h2>[39m
+                [0mBasic Questions Page[0m
+              [36m</h2>[39m
+              [36m<hr />[39m
+              [36m<p>[39m
+                [0mIf you feel unsure about your future career but don't want to think about it too much, look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is answer the questions below![0m
+              [36m</p>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI prefer working in a group rather than alone.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI'd rather create something new than learn what's already out there.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI value enjoyment over a high salary.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI prefer a quiet, distraction-free environment over a busy, noisy one.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI'm crafty and good with my hands.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI like working through decisions instead of going with my gut.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mI enjoy keeping up with current events.[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<button>[39m
+                [0mReset Progress[0m
+              [36m</button>[39m
+            [36m</div>[39m
             [36m<div[39m
               [33mclass[39m=[32m"progress"[39m
             [36m>[39m
@@ -394,68 +450,6 @@ FAIL src/App.test.tsx
                 [33mrole[39m=[32m"progressbar"[39m
                 [33mstyle[39m=[32m"width: 0%;"[39m
               [36m/>[39m
-            [36m</div>[39m
-            [36m<div>[39m
-              [36m<h2>[39m
-                [0mBasic Questions Page[0m
-              [36m</h2>[39m
-              [36m<hr />[39m
-              [36m<p>[39m
-                [0mBasic Questions Page Description[0m
-              [36m</p>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 1[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 2[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 3[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 4[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 5[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 6[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mQuestion 7[0m
-              [36m</h4>[39m
-              [36m<button>[39m
-                [0mAnswer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<button>[39m
-                [0mReset Progress[0m
-              [36m</button>[39m
             [36m</div>[39m
           [36m</p>[39m
           [36m<form[39m
@@ -526,7 +520,7 @@ All files                   |   40.81 |    16.66 |   14.28 |   41.66 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.846 s
+Time:        3.089 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
