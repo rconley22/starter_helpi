@@ -18,7 +18,7 @@ export function BasicQuestionPage(): JSX.Element {
     }
     return (
 
-        <div>
+        <><div>
             <h2>Basic Questions Page</h2>
             <hr></hr>
             <p>If you feel unsure about your future career but don't want to
@@ -27,51 +27,31 @@ export function BasicQuestionPage(): JSX.Element {
                 to do is answer the questions below!</p>
             <hr></hr>
             <h4>I prefer working in a group rather than alone.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I'd rather create something new than learn what's already out there.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I value enjoyment over a high salary.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I prefer a quiet, distraction-free environment over a busy, noisy one.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I'm crafty and good with my hands.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I like working through decisions instead of going with my gut.</h4>
+            <button onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I enjoy keeping up with current events.</h4>
-        </div>
-
-        
-            <><div className="progress">
-            <div className="progress-bar" style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
-        </div><div>
-                <h2>Basic Questions Page</h2>
-                <hr></hr>
-                <p>Basic Questions Page Description</p>
-                <hr></hr>
-                <h4>Question 1</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 2</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 3</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 4</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 5</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 6</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <h4>Question 7</h4>
-                <button onClick={handleAnswerQuestion}>Answer</button>
-                <hr></hr>
-                <button onClick={resetProgress}>Reset Progress</button>
+            <button onClick={handleAnswerQuestion}>Answer</button>
+            <hr></hr>
+            <button onClick={resetProgress}>Reset Progress</button>
+        </div><div className="progress">
+                <div className="progress-bar" style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
             </div></>
+
 
     );
     
