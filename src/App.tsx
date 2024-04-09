@@ -3,6 +3,7 @@ import './App.css';
 import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
+import { HomePage } from './home-page';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -53,17 +54,15 @@ function App() {
       <p hidden={currentPage !== 'basic question page'}>
           <BasicQuestionPage></BasicQuestionPage>
       </p>
+      <p hidden={currentPage !== 'home'}>
+          <HomePage></HomePage>
+      </p>
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
         <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
         <br></br>
         <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
-        <h1>Ryan Vink</h1>
       </Form>
-
-      <h1>Stephen Lewis</h1>
-      <h1>Rylan Conley</h1>
-      <h1>Tolu Akin</h1>
     </div>
   );
 }
