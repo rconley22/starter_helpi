@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
+import { Button, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 //import { Button } from "react-bootstrap";
 
 export function DetailedQuestionPage(): JSX.Element {
@@ -27,6 +27,9 @@ export function DetailedQuestionPage(): JSX.Element {
     function updateAnswer7(event: React.ChangeEvent<HTMLInputElement>) {setAnswer7(event.target.value);}
     
     function updateAnswer8(event: React.ChangeEvent<HTMLInputElement>) {setAnswer8(event.target.value);}
+
+    const allQuestionsAnswered = answer1 && answer2 && answer3 && answer4 && answer5 && answer6 && answer7 && answer8;
+
     
     return (
         <div>
@@ -116,6 +119,12 @@ export function DetailedQuestionPage(): JSX.Element {
                     onChange={updateAnswer8}
                 ></FormControl>
             </FormGroup>
-        </div>
+            
+            {allQuestionsAnswered && 
+                <div>
+                    <p>All questions answered!</p>
+                    <Button>Submit Answers</Button>
+                </div>}
+            </div>
     );
 }
