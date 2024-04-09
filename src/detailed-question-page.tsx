@@ -124,7 +124,7 @@ export function DetailedQuestionPage(): JSX.Element {
             {allQuestionsAnswered && 
                 <div>
                     <p className="questions">All questions answered!</p>
-                    <Button>Submit Answers</Button>
+                    <Button className="submitAns">Submit Answers</Button>
                 </div>}
             </div>
     );
