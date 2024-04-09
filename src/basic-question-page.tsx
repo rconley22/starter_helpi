@@ -13,6 +13,9 @@ export function BasicQuestionPage(): JSX.Element {
         // Increment progress by 1 for each answered question
         setProgress(prevProgress => prevProgress + 1);
     };
+    const resetProgress  = () =>{
+        setProgress(0);
+    }
     return (
         
             <><div className="progress">
@@ -26,16 +29,24 @@ export function BasicQuestionPage(): JSX.Element {
                 <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 2</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 3</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 4</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 5</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 6</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
                 <hr></hr>
                 <h4>Question 7</h4>
+                <button onClick={handleAnswerQuestion}>Answer</button>
+                <hr></hr>
+                <button onClick={resetProgress}>Reset Progress</button>
             </div></>
     );
     
