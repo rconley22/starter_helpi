@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, FormControl, FormGroup, FormLabel } from "react-bootstrap";
+import "./detailed-question-page.css";
 //import { Button } from "react-bootstrap";
 
 export function DetailedQuestionPage(): JSX.Element {
@@ -122,7 +123,7 @@ export function DetailedQuestionPage(): JSX.Element {
             
             {allQuestionsAnswered && 
                 <div>
-                    <p>All questions answered!</p>
+                    <p className="questions">All questions answered!</p>
                     <Button>Submit Answers</Button>
                 </div>}
             </div>
