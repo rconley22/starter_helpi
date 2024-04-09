@@ -9,7 +9,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:17:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -47,7 +47,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:17:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -85,7 +85,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:17:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -123,7 +123,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:17:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -163,7 +163,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:16:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:17:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -195,7 +195,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (148 ms)
+  ✕ renders learn react link (135 ms)
 
   ● renders learn react link
 
@@ -380,6 +380,84 @@ FAIL src/App.test.tsx
               [36m</div>[39m
             [36m</div>[39m
           [36m</p>[39m
+          [36m<p[39m
+            [33mhidden[39m=[32m""[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"progress"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33maria-valuemax[39m=[32m"7"[39m
+                [33maria-valuemin[39m=[32m"0"[39m
+                [33maria-valuenow[39m=[32m"0"[39m
+                [33mclass[39m=[32m"progress-bar"[39m
+                [33mrole[39m=[32m"progressbar"[39m
+                [33mstyle[39m=[32m"width: 0%;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<h2>[39m
+                [0mBasic Questions Page[0m
+              [36m</h2>[39m
+              [36m<hr />[39m
+              [36m<p>[39m
+                [0mBasic Questions Page Description[0m
+              [36m</p>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 1[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 2[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 3[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 4[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 5[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 6[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<h4>[39m
+                [0mQuestion 7[0m
+              [36m</h4>[39m
+              [36m<button>[39m
+                [0mAnswer[0m
+              [36m</button>[39m
+              [36m<hr />[39m
+              [36m<button>[39m
+                [0mReset Progress[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</p>[39m
           [36m<form[39m
             [33mclass[39m=[32m""[39m
           [36m>[39m
@@ -438,9 +516,9 @@ FAIL src/App.test.tsx
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |    37.2 |    16.66 |   11.11 |    37.2 |                   
- App.tsx                    |      50 |       50 |   16.66 |      50 | 11,20-38          
- basic-question-page.tsx    |       0 |      100 |       0 |       0 | 5                 
+All files                   |   40.81 |    16.66 |   14.28 |   41.66 |                   
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 12,21-39          
+ basic-question-page.tsx    |   57.14 |      100 |      25 |   66.66 | 14,17             
  detailed-question-page.tsx |   52.94 |      100 |   11.11 |   52.94 | 15-29             
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19              
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10              
@@ -448,7 +526,7 @@ All files                   |    37.2 |    16.66 |   11.11 |    37.2 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.209 s
+Time:        2.846 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
