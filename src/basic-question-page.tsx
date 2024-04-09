@@ -16,6 +16,8 @@ export function BasicQuestionPage(): JSX.Element {
     const resetProgress  = () =>{
         setProgress(0);
     }
+
+
     return (
 
         <><div>
@@ -27,7 +29,11 @@ export function BasicQuestionPage(): JSX.Element {
                 to do is answer the questions below!</p>
             <hr></hr>
             <h4>I prefer working in a group rather than alone.</h4>
-            <button onClick={handleAnswerQuestion}>Answer</button>
+            <button onClick={handleAnswerQuestion}>Strongly Disagree</button>
+            <button onClick={handleAnswerQuestion}>Disagree</button>
+            <button onClick={handleAnswerQuestion}>Neutral</button>
+            <button onClick={handleAnswerQuestion}>Agree</button>
+            <button onClick={handleAnswerQuestion}>Strongly Agree</button>
             <hr></hr>
             <h4>I'd rather create something new than learn what's already out there.</h4>
             <button onClick={handleAnswerQuestion}>Answer</button>
