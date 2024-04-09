@@ -40,13 +40,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <div className="fixed">
+        <div className="wrapper">
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
-        <div>  </div>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
-        <div>  </div>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
-      </div>
+        </div>
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
           <DetailedQuestionPage></DetailedQuestionPage>
