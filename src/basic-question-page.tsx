@@ -47,9 +47,10 @@ export function BasicQuestionPage(): JSX.Element {
             <hr></hr>
             <h4>I enjoy keeping up with current events.</h4>
             <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button>
-            <hr></hr>
+            
             {progress === 7 && 
                 <div>
+                    <hr></hr>
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns">Submit Answers</Button>
                 </div>}
