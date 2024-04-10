@@ -6,7 +6,7 @@
     Warning: validateDOMNesting(...): <h2> cannot appear as a descendant of <p>.
         at h2
         at div
-        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:43)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:18:33)
@@ -44,7 +44,7 @@
     Warning: validateDOMNesting(...): <hr> cannot appear as a descendant of <p>.
         at hr
         at div
-        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:43)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:18:33)
@@ -82,7 +82,7 @@
     Warning: validateDOMNesting(...): <p> cannot appear as a descendant of <p>.
         at p
         at div
-        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:43)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:18:33)
@@ -120,7 +120,7 @@
     Warning: validateDOMNesting(...): <h4> cannot appear as a descendant of <p>.
         at h4
         at div
-        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:43)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:18:33)
@@ -160,7 +160,7 @@
         at div
         at /home/runner/work/starter_helpi/starter_helpi/node_modules/react-bootstrap/cjs/FormGroup.js:13:3
         at div
-        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:43)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:18:33)
@@ -233,7 +233,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (529 ms)
+  ✕ renders learn react link (151 ms)
 
   ● renders learn react link
 
@@ -293,11 +293,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mWhat do you want your work environment to look like?[0m
@@ -309,11 +319,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mHow much collaboration do you want in your job?[0m
@@ -325,11 +345,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
@@ -341,11 +371,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mWhat type of people do you see yourself working with?[0m
@@ -357,11 +397,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mDo you enjoy work that is Structured or open-ended and flexible?[0m
@@ -373,11 +423,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mWhat are some of your long term career goals?[0m
@@ -389,11 +449,21 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
                 [36m/>[39m
               [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mWhat are some jobs/careers that you are not interested in?[0m
@@ -405,9 +475,31 @@ FAIL src/App.test.tsx
                   [0mAnswer:[0m
                 [36m</label>[39m
                 [36m<div />[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-control"[39m
-                  [33mvalue[39m=[32m""[39m
+                [36m<textarea[39m
+                  [33mclass[39m=[32m"responsebox form-control"[39m
+                  [33mrows[39m=[32m"5"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitbutton"[39m
+              [36m>[39m
+                [0mSubmit[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"resetbutton"[39m
+              [36m>[39m
+                [0mReset Answer[0m
+              [36m</button>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"progress"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33maria-valuemax[39m=[32m"7"[39m
+                  [33maria-valuemin[39m=[32m"0"[39m
+                  [33maria-valuenow[39m=[32m"0"[39m
+                  [33mclass[39m=[32m"progress-bar"[39m
+                  [33mrole[39m=[32m"progressbar"[39m
+                  [33mstyle[39m=[32m"width: 0%;"[39m
                 [36m/>[39m
               [36m</div>[39m
             [36m</div>[39m
@@ -544,6 +636,22 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+----------------------------|---------|----------|---------|---------|-------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------|---------|----------|---------|---------|-------------------
+All files                   |   39.06 |    34.37 |    12.5 |   40.32 |                   
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 13,22-40          
+ basic-question-page.tsx    |   57.14 |      100 |      25 |   66.66 | 14,17             
+ detailed-question-page.tsx |   41.93 |    38.46 |    5.26 |   43.33 | 15-22,31,58-163   
+ home-page.tsx              |     100 |      100 |     100 |     100 |                   
+ index.tsx                  |       0 |      100 |     100 |       0 | 7-19              
+ reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10              
+----------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        2.921 s
+Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
 declaring it in its dependencies. This is currently working because
@@ -556,19 +664,3 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
-----------------------------|---------|----------|---------|---------|-------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   43.13 |    18.75 |   18.18 |      44 |                   
- App.tsx                    |      50 |       50 |   16.66 |      50 | 13,22-40          
- basic-question-page.tsx    |   57.14 |      100 |      25 |   66.66 | 14,17             
- detailed-question-page.tsx |   55.55 |       20 |   11.11 |   55.55 | 16-30             
- home-page.tsx              |     100 |      100 |     100 |     100 |                   
- index.tsx                  |       0 |      100 |     100 |       0 | 7-19              
- reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10              
-----------------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
-Snapshots:   0 total
-Time:        3.36 s
-Ran all test suites.
