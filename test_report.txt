@@ -233,7 +233,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (151 ms)
+  ✕ renders learn react link (167 ms)
 
   ● renders learn react link
 
@@ -519,53 +519,69 @@ FAIL src/App.test.tsx
               [36m<h4>[39m
                 [0mI prefer working in a group rather than alone.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI'd rather create something new than learn what's already out there.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI value enjoyment over a high salary.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI prefer a quiet, distraction-free environment over a busy, noisy one.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI'm crafty and good with my hands.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI like working through decisions instead of going with my gut.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI enjoy keeping up with current events.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mAnswer[0m
               [36m</button>[39m
               [36m<hr />[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"submitAns"[39m
+              [36m>[39m
                 [0mReset Progress[0m
               [36m</button>[39m
             [36m</div>[39m
@@ -639,9 +655,9 @@ FAIL src/App.test.tsx
 ----------------------------|---------|----------|---------|---------|-------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------|---------|----------|---------|---------|-------------------
-All files                   |   39.06 |    34.37 |    12.5 |   40.32 |                   
+All files                   |   39.06 |    35.29 |    12.5 |   40.32 |                   
  App.tsx                    |      50 |       50 |   16.66 |      50 | 13,22-40          
- basic-question-page.tsx    |   57.14 |      100 |      25 |   66.66 | 14,17             
+ basic-question-page.tsx    |   57.14 |       50 |      25 |   66.66 | 15,18             
  detailed-question-page.tsx |   41.93 |    38.46 |    5.26 |   43.33 | 15-22,31,58-163   
  home-page.tsx              |     100 |      100 |     100 |     100 |                   
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19              
@@ -650,7 +666,7 @@ All files                   |   39.06 |    34.37 |    12.5 |   40.32 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.921 s
+Time:        3.012 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
