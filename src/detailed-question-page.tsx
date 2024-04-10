@@ -31,7 +31,7 @@ export function DetailedQuestionPage(): JSX.Element {
 
     const allQuestionsAnswered = answer1 && answer2 && answer3 && answer4 && answer5 && answer6 && answer7 && answer8;
 
-    
+
     return (
         <div>
             <h2>Detailed Career Assessment</h2>
