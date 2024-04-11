@@ -10,6 +10,24 @@ import React from "react";
 
 //import { Button } from "react-bootstrap";
 export function BasicQuestionPage(): JSX.Element {
+    // State variable to track progress
+    const [progress, setProgress] = useState(0);
+    // State to track which questions have been answered
+    //const [questionArray, setQuestionArray] = useState(new Array(7).fill(false));
+
+    // Function to handle user answering a question
+    const handleAnswerQuestion = (questionNum: number) => {
+        // Increment progress by 1 for each answered question
+        //if(questionArray[questionNum]){
+          setProgress(prevProgress => prevProgress + 1);
+          //setQuestionArray([...questionArray]);
+        }
+    };
+    const resetProgress  = () =>{
+        setProgress(0);
+    }
+
+
     type WrapperProps = {
         marks?: boolean;
       };
@@ -202,13 +220,13 @@ export function BasicQuestionPage(): JSX.Element {
                 to do is answer the questions below!</p>
             <hr></hr>
             <h4>I prefer working in a group rather than alone.</h4>
-            <button onClick={handleAnswerQuestion}>Strongly Disagree</button>
-            <button onClick={handleAnswerQuestion}>Disagree</button>
-            <button onClick={handleAnswerQuestion}>Neutral</button>
-            <button onClick={handleAnswerQuestion}>Agree</button>
-            <button onClick={handleAnswerQuestion}>Strongly Agree</button>
+            <button onClick={handleAnswerQuestion(0)}>Strongly Disagree</button>
+            <button onClick={handleAnswerQuestion(0)}>Disagree</button>
+            <button onClick={handleAnswerQuestion(0)}>Neutral</button>
+            <button onClick={handleAnswerQuestion(0)}>Agree</button>
+            <button onClick={handleAnswerQuestion(0)}>Strongly Agree</button>
             <hr></hr>
-            <h4>I'd rather create something new than learn what's already out there.</h4>
+            {/* <h4>I'd rather create something new than learn what's already out there.</h4>
             <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I value enjoyment over a high salary.</h4>
@@ -224,7 +242,7 @@ export function BasicQuestionPage(): JSX.Element {
             <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button>
             <hr></hr>
             <h4>I enjoy keeping up with current events.</h4>
-            <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button>
+            <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button> */}
             
             {progress === 7 && 
                 <div>
