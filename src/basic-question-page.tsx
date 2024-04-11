@@ -13,201 +13,46 @@ export function BasicQuestionPage(): JSX.Element {
     // State variable to track progress
     const [progress, setProgress] = useState(0);
     // State to track which questions have been answered
-    //const [questionArray, setQuestionArray] = useState(new Array(7).fill(false));
+    type multAnswers = 'Strongly Disagree' | 'Disagree' | 'Neutral' | 'Agree' | 'Strongly Agree'|''
+    const [quest1, setQuest1] = useState<multAnswers>('');
+    const [quest2, setQuest2] = useState<multAnswers>('');
+    const [quest3, setQuest3] = useState<multAnswers>('');
+    const [quest4, setQuest4] = useState<multAnswers>('');
+    const [quest5, setQuest5] = useState<multAnswers>('');
+    const [quest6, setQuest6] = useState<multAnswers>('');
+    const [quest7, setQuest7] = useState<multAnswers>('');
+    const [lastPress1, setLastPress1] = useState<multAnswers>('');
+    const [lastPress2, setLastPress2] = useState<multAnswers>('');
+    const [lastPress3, setLastPress3] = useState<multAnswers>('');
+    const [lastPress4, setLastPress4] = useState<multAnswers>('');
+    const [lastPress5, setLastPress5] = useState<multAnswers>('');
+    const [lastPress6, setLastPress6] = useState<multAnswers>('');
+    const [lastPress7, setLastPress7] = useState<multAnswers>('');
 
     // Function to handle user answering a question
-    const handleAnswerQuestion = (questionNum: number) => {
+    const handleAnswerQuestion1 = (response1: multAnswers) => {
         // Increment progress by 1 for each answered question
-        //if(questionArray[questionNum]){
-          setProgress(prevProgress => prevProgress + 1);
-          //setQuestionArray([...questionArray]);
+          if(lastPress1 === '')
+            setProgress(prevProgress => prevProgress + 1);
+          setLastPress1(response1)
         }
-    };
+    
     const resetProgress  = () =>{
         setProgress(0);
+        setLastPress1('');
+        setLastPress2('');
+        setLastPress3('');
+        setLastPress4('');
+        setLastPress5('');
+        setLastPress6('');
+        setLastPress7('');
     }
 
 
-    type WrapperProps = {
-        marks?: boolean;
-      };
-      
-      const Wrapper = styled.div<WrapperProps>`
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 10px;
-        margin-right: 10px;
-      `;
-      
-      
-      interface DotStyledProps {
-        readonly position?: number;
-        readonly backgroundColor?: string;
-      }
-      
-      const DotStyled = styled.button.attrs((props: DotStyledProps) => ({
-        style: {
-          left: `${props.position}%`,
-        },
-      }))<DotStyledProps>`
-        all: unset;
-        z-index: 100;
-        position: absolute;
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        background-color: ${props => props.backgroundColor};
-        top: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-      `;
-      
-      type LineFillProps = {
-        position?: number;
-        backgroundColor?: string;
-      };
-      
-      const LineFill = styled.div.attrs((props: LineFillProps) => ({
-        style: {
-          width: `${props.position}%`,
-        },
-      }))<LineFillProps>`
-        height: 100%;
-        background-color: ${props => props.backgroundColor};
-      `;
-      
-      type LineStyledProps = {
-        backgroundColor?: string;
-      };
-      
-      const LineStyled = styled.div<LineStyledProps>`
-        height: 3px;
-        background-color: ${props => props.backgroundColor};
-      `;
-      
-      type MarksStyledProps = {
-        position?: number;
-        backgroundColor?: string;
-      };
-      
-      const MarksStyled = styled.div<MarksStyledProps>`
-        z-index: 10;
-        position: absolute;
-        height: 8px;
-        width: 2px;
-        background-color: ${props => props.backgroundColor};
-        left: ${props => `${props.position}%`};
-        top: 50%;
-        transform: translate(-50%, -50%);
-      `;
-      
-      const MarksText = styled.div`
-        position: absolute;
-        bottom: 15px;
-        transform: translate(-50%, 0);
-      `;
-      
-      interface Marks {
-        min: number;
-        max: number;
-      }
-      
-      interface SliderProps {
-        unFocusColor?: string;
-        focusColor?: string;
-        children?: React.ReactNode;
-        style?: React.CSSProperties;
-        className?: string;
-        theme?: any;
-        onChange?: (value: number) => void;
-        value?: number;
-        defaultValue?: number;
-        marks?: Marks;
-        tooltipVisible?: boolean;
-        step?: number;
-        vertical?: boolean;
-        min?: number;
-        max?: number;
-        unit?: string;
-      }
-      
-      const Slider = (props: SliderProps) => {
-        const {
-          style,
-          className,
-          theme,
-          onChange,
-          value,
-          marks,
-          tooltipVisible,
-          step,
-          vertical,
-          min,
-          max,
-          unit,
-          unFocusColor,
-          focusColor,
-        } = props;
-        
-          const [enable, setEnable] = React.useState(false);
-        const [positionCursorPercentage, setPositionCursorPercentage] = React.useState(
-          value ? ((value - min) / (max - min)) * 100 : 0
-        );
-        const [positionCursor, setPositionCursor] = React.useState(value ? value : min);
-        const slide = React.useRef(null);
-        
-        React.useEffect(() => {
-          const rect = slide.current.getBoundingClientRect();
-          const minPosition = 0;
-          const maxPosition = rect.width;
-          let positionAbsolute = positionCursorPercentage;
-          window.onmousemove = (ev: MouseEvent): any => {
-            const position = vertical ? rect.y + rect.height - ev.clientY : ev.clientX - rect.x;
-            if (enable) {
-              window.onmouseup = (evMouseUp: MouseEvent): any => {
-                setEnable(false);
-              };
-              if (position < minPosition) {
-                positionAbsolute = min;
-              } else if (position > maxPosition) {
-                positionAbsolute = max;
-              } else {
-                positionAbsolute = (position / maxPosition) * (max - min) + min;
-              }
-      
-              if (
-                positionAbsolute <= positionCursorPercentage + step &&
-                positionAbsolute >= positionCursorPercentage - step
-              ) {
-                positionAbsolute = positionCursorPercentage;
-              }
-              positionAbsolute = Math.round(positionAbsolute * (1 / step)) / (1 / step);
-              if (onChange) {
-                onChange(positionAbsolute);
-              } else {
-                setPositionCursor(positionAbsolute);
-              }
-            }
-          };
-        }, [enable]);
-      
-        React.useEffect(() => {
-          if (value) {
-            onChangePositionOfCursor(value);
-          } else {
-            onChangePositionOfCursor(positionCursor);
-          }
-        }, [value, positionCursor]);
-      
-        const onChangePositionOfCursor = (positionAbsolute: number) => {
-          setPositionCursorPercentage(((positionAbsolute - min) / (max - min)) * 100);
-        };
-      
-        const valueOfCursor =
-          Math.round(((positionCursorPercentage / 100) * (max - min) + min) * step) / step;
-        
+
+
+    
+    
 
     return (
 
@@ -220,11 +65,11 @@ export function BasicQuestionPage(): JSX.Element {
                 to do is answer the questions below!</p>
             <hr></hr>
             <h4>I prefer working in a group rather than alone.</h4>
-            <button onClick={handleAnswerQuestion(0)}>Strongly Disagree</button>
-            <button onClick={handleAnswerQuestion(0)}>Disagree</button>
-            <button onClick={handleAnswerQuestion(0)}>Neutral</button>
-            <button onClick={handleAnswerQuestion(0)}>Agree</button>
-            <button onClick={handleAnswerQuestion(0)}>Strongly Agree</button>
+            <button onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
+            <button onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
+            <button onClick={() => handleAnswerQuestion1('Neutral')} disabled={'Neutral' === lastPress1}>Neutral</button>
+            <button onClick={() => handleAnswerQuestion1('Agree')} disabled={'Agree' === lastPress1}>Agree</button>
+            <button onClick={() => handleAnswerQuestion1('Strongly Agree')} disabled={'Strongly Agree' === lastPress1}>Strongly Agree</button>
             <hr></hr>
             {/* <h4>I'd rather create something new than learn what's already out there.</h4>
             <button className="submitAns" onClick={handleAnswerQuestion}>Answer</button>
