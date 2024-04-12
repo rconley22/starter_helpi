@@ -233,7 +233,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (169 ms)
+  ✕ renders learn react link (177 ms)
 
   ● renders learn react link
 
@@ -519,133 +519,203 @@ FAIL src/App.test.tsx
               [36m<h4>[39m
                 [0mI prefer working in a group rather than alone.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI'd rather create something new than learn what's already out there.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI value enjoyment over a high salary.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI prefer a quiet, distraction-free environment over a busy, noisy one.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI'm crafty and good with my hands.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI like working through decisions instead of going with my gut.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
               [36m<h4>[39m
                 [0mI enjoy keeping up with current events.[0m
               [36m</h4>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Disagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mDisagree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mNeutral[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mAgree[0m
               [36m</button>[39m
-              [36m<button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"b"[39m
+              [36m>[39m
                 [0mStrongly Agree[0m
               [36m</button>[39m
               [36m<hr />[39m
@@ -736,7 +806,7 @@ All files                   |    26.2 |       25 |    5.06 |   27.73 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.139 s
+Time:        3.206 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
