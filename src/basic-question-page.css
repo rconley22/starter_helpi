@@ -11,3 +11,23 @@
     height: 100%;
     border-radius: 5px;
   }
+  .b{
+    background-color: #127a54d4;
+    border: 2px solid rgb(17, 21, 16); 
+    color: white; 
+    text-align: center;
+    font-size: 12px;
+    padding: 5 10px; 
+    margin: 10px; 
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  .b:hover{
+    background-color: grey;
+  }  
+  .b:active{
+    background-color: grey;
+  } 
+ 
+ 
