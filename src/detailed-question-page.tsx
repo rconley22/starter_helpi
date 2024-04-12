@@ -161,9 +161,10 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
-
+            <div className="progress-container">
             <div className="progress">
                 <div className="progress-bar" style={{ width: `${(numberQuestionsAnswered / 8) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
+            </div>
             </div>
             {allQuestionsAnswered && 
                 <div>
