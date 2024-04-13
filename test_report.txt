@@ -233,7 +233,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (177 ms)
+  ✕ renders learn react link (193 ms)
 
   ● renders learn react link
 
@@ -491,16 +491,20 @@ FAIL src/App.test.tsx
                 [0mReset Answer[0m
               [36m</button>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"progress"[39m
+                [33mclass[39m=[32m"progress-container"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33maria-valuemax[39m=[32m"7"[39m
-                  [33maria-valuemin[39m=[32m"0"[39m
-                  [33maria-valuenow[39m=[32m"0"[39m
-                  [33mclass[39m=[32m"progress-bar"[39m
-                  [33mrole[39m=[32m"progressbar"[39m
-                  [33mstyle[39m=[32m"width: 0%;"[39m
-                [36m/>[39m
+                  [33mclass[39m=[32m"progress"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33maria-valuemax[39m=[32m"7"[39m
+                    [33maria-valuemin[39m=[32m"0"[39m
+                    [33maria-valuenow[39m=[32m"0"[39m
+                    [33mclass[39m=[32m"progress-bar"[39m
+                    [33mrole[39m=[32m"progressbar"[39m
+                    [33mstyle[39m=[32m"width: 0%;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
           [36m</p>[39m
@@ -726,16 +730,20 @@ FAIL src/App.test.tsx
               [36m</button>[39m
             [36m</div>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"progress"[39m
+              [33mclass[39m=[32m"progress-container"[39m
             [36m>[39m
               [36m<div[39m
-                [33maria-valuemax[39m=[32m"7"[39m
-                [33maria-valuemin[39m=[32m"0"[39m
-                [33maria-valuenow[39m=[32m"0"[39m
-                [33mclass[39m=[32m"progress-bar"[39m
-                [33mrole[39m=[32m"progressbar"[39m
-                [33mstyle[39m=[32m"width: 0%;"[39m
-              [36m/>[39m
+                [33mclass[39m=[32m"progress"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33maria-valuemax[39m=[32m"7"[39m
+                  [33maria-valuemin[39m=[32m"0"[39m
+                  [33maria-valuenow[39m=[32m"0"[39m
+                  [33mclass[39m=[32m"progress-bar"[39m
+                  [33mrole[39m=[32m"progressbar"[39m
+                  [33mstyle[39m=[32m"width: 0%;"[39m
+                [36m/>[39m
+              [36m</div>[39m
             [36m</div>[39m
           [36m</p>[39m
           [36m<p>[39m
@@ -792,6 +800,18 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
 ----------------------------|---------|----------|---------|---------|--------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                      
 ----------------------------|---------|----------|---------|---------|--------------------------------------------------------
@@ -806,17 +826,5 @@ All files                   |    26.2 |       25 |    5.06 |   27.73 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.206 s
+Time:        3.394 s
 Ran all test suites.
-[0;33mOne of your dependencies, babel-preset-react-app, is importing the
-"@babel/plugin-proposal-private-property-in-object" package without
-declaring it in its dependencies. This is currently working because
-"@babel/plugin-proposal-private-property-in-object" is already in your
-node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
-
-babel-preset-react-app is part of the create-react-app project, [1mwhich
-is not maintianed anymore[0;33m. It is thus unlikely that this bug will
-ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
-your devDependencies to work around this error. This will make this message
-go away.[0m
-  
