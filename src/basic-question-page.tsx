@@ -146,9 +146,12 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
                 </div>}
             <hr></hr>
             <button className="submitAns"onClick={resetProgress}>Reset Progress</button>
-        </div><div className="progress">
+
+        </div>
+        <div className="progress-container">
+        <div className="progress">
                 <div className="progress-bar" style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
-            </div></>
+            </div></div></>
 
 
     );
