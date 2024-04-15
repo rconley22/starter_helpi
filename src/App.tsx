@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
+import img from './person_thinking.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -57,6 +58,9 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
+      <div>
+        <img src={img} alt="Couldn't load"></img>
+      </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
