@@ -43,7 +43,7 @@ export function DetailedQuestionPage(): JSX.Element {
                 extra detail allows the Career Helpi to better match a potential career.</p>
             <hr></hr>
             <h4>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
-                <FormGroup >
+                <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
                     <FormControl

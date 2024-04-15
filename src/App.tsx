@@ -57,6 +57,12 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
+      
+      <div className='homePageButtons'>
+      <Button className='basicButtonhome' onClick={changeToBasicPage} hidden={currentPage !== 'home'}>Basic Career Assessment</Button>
+      <Button className='detailedbuttonhome' onClick={changetoDetailedPage} hidden={currentPage !== 'home'}>Detailed Career Assessment</Button>
+      </div>
+
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
