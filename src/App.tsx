@@ -58,7 +58,7 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      <div>
+      <div hidden={currentPage !== "home"}>
         <img src={img} alt="Couldn't load"></img>
       </div>
       <footer className="App-footer">
