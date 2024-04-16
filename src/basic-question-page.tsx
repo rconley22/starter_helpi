@@ -142,11 +142,11 @@ setCurrentQuestion(newQuest)
             <hr></hr>
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
-            <button className="b"  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion1('Neutral')} disabled={'Neutral' === lastPress1}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion1('Agree')} disabled={'Agree' === lastPress1}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion1('Strongly Agree')} disabled={'Strongly Agree' === lastPress1}>Strongly Agree</button>
+            <button className={lastPress1 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"}  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
+            <button className={lastPress1 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
+            <button className={lastPress1 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion1('Neutral')} disabled={'Neutral' === lastPress1}>Neutral</button>
+            <button className={lastPress1 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion1('Agree')} disabled={'Agree' === lastPress1}>Agree</button>
+            <button className={lastPress1 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion1('Strongly Agree')} disabled={'Strongly Agree' === lastPress1}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
             
@@ -154,11 +154,11 @@ setCurrentQuestion(newQuest)
             </div>
             <div hidden={currentQuestion!=='Q2'}>
             <h4>I'd rather create something new than learn what's already out there.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion2('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress2}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion2('Disagree')} disabled={'Disagree' === lastPress2}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion2('Neutral')} disabled={'Neutral' === lastPress2}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion2('Agree')} disabled={'Agree' === lastPress2}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion2('Strongly Agree')} disabled={'Strongly Agree' === lastPress2}>Strongly Agree</button>
+            <button className={lastPress2 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion2('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress2}>Strongly Disagree</button>
+            <button className={lastPress2 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion2('Disagree')} disabled={'Disagree' === lastPress2}>Disagree</button>
+            <button className={lastPress2 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion2('Neutral')} disabled={'Neutral' === lastPress2}>Neutral</button>
+            <button className={lastPress2 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion2('Agree')} disabled={'Agree' === lastPress2}>Agree</button>
+            <button className={lastPress2 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion2('Strongly Agree')} disabled={'Strongly Agree' === lastPress2}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q2")}>Next</button>
             <hr></hr>
@@ -166,11 +166,11 @@ setCurrentQuestion(newQuest)
             
             <div hidden={currentQuestion!=='Q3'}>
             <h4>I value enjoyment over a high salary.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion3('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress3}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion3('Disagree')} disabled={'Disagree' === lastPress3}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion3('Neutral')} disabled={'Neutral' === lastPress3}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion3('Agree')} disabled={'Agree' === lastPress3}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion3('Strongly Agree')} disabled={'Strongly Agree' === lastPress3}>Strongly Agree</button>
+            <button className={lastPress3 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion3('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress3}>Strongly Disagree</button>
+            <button className={lastPress3 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion3('Disagree')} disabled={'Disagree' === lastPress3}>Disagree</button>
+            <button className={lastPress3 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion3('Neutral')} disabled={'Neutral' === lastPress3}>Neutral</button>
+            <button className={lastPress3 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion3('Agree')} disabled={'Agree' === lastPress3}>Agree</button>
+            <button className={lastPress3 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion3('Strongly Agree')} disabled={'Strongly Agree' === lastPress3}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q3")}>Next</button>
             <hr></hr>
@@ -178,11 +178,11 @@ setCurrentQuestion(newQuest)
 
             <div hidden={currentQuestion!=='Q4'}>
             <h4>I prefer a quiet, distraction-free environment over a busy, noisy one.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion4('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress4}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion4('Disagree')} disabled={'Disagree' === lastPress4}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion4('Neutral')} disabled={'Neutral' === lastPress4}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion4('Agree')} disabled={'Agree' === lastPress4}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion4('Strongly Agree')} disabled={'Strongly Agree' === lastPress4}>Strongly Agree</button>
+            <button className={lastPress4 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion4('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress4}>Strongly Disagree</button>
+            <button className={lastPress4 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion4('Disagree')} disabled={'Disagree' === lastPress4}>Disagree</button>
+            <button className={lastPress4 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion4('Neutral')} disabled={'Neutral' === lastPress4}>Neutral</button>
+            <button className={lastPress4 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion4('Agree')} disabled={'Agree' === lastPress4}>Agree</button>
+            <button className={lastPress4 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion4('Strongly Agree')} disabled={'Strongly Agree' === lastPress4}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q4")}>Next</button>
             <hr></hr>
@@ -190,11 +190,11 @@ setCurrentQuestion(newQuest)
 
             <div hidden={currentQuestion!=='Q5'}>
             <h4>I'm crafty and good with my hands.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion5('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress5}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion5('Disagree')} disabled={'Disagree' === lastPress5}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion5('Neutral')} disabled={'Neutral' === lastPress5}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion5('Agree')} disabled={'Agree' === lastPress5}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion5('Strongly Agree')} disabled={'Strongly Agree' === lastPress5}>Strongly Agree</button>
+            <button className={lastPress5 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion5('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress5}>Strongly Disagree</button>
+            <button className={lastPress5 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion5('Disagree')} disabled={'Disagree' === lastPress5}>Disagree</button>
+            <button className={lastPress5 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion5('Neutral')} disabled={'Neutral' === lastPress5}>Neutral</button>
+            <button className={lastPress5 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion5('Agree')} disabled={'Agree' === lastPress5}>Agree</button>
+            <button className={lastPress5 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion5('Strongly Agree')} disabled={'Strongly Agree' === lastPress5}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q5")}>Next</button>
             <hr></hr>
@@ -202,11 +202,11 @@ setCurrentQuestion(newQuest)
 
             <div hidden={currentQuestion!=='Q6'}>
             <h4>I like working through decisions instead of going with my gut.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion6('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress6}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion6('Disagree')} disabled={'Disagree' === lastPress6}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion6('Neutral')} disabled={'Neutral' === lastPress6}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion6('Agree')} disabled={'Agree' === lastPress6}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion6('Strongly Agree')} disabled={'Strongly Agree' === lastPress6}>Strongly Agree</button>
+            <button className={lastPress6 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion6('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress6}>Strongly Disagree</button>
+            <button className={lastPress6 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion6('Disagree')} disabled={'Disagree' === lastPress6}>Disagree</button>
+            <button className={lastPress6 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion6('Neutral')} disabled={'Neutral' === lastPress6}>Neutral</button>
+            <button className={lastPress6 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion6('Agree')} disabled={'Agree' === lastPress6}>Agree</button>
+            <button className={lastPress6 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion6('Strongly Agree')} disabled={'Strongly Agree' === lastPress6}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q6")}>Next</button>
             <hr></hr>
@@ -214,11 +214,11 @@ setCurrentQuestion(newQuest)
 
             <div hidden={currentQuestion!=='Q7'}>
             <h4>I enjoy keeping up with current events.</h4>
-            <button className="b" onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
-            <button className="b" onClick={() => handleAnswerQuestion7('Neutral')} disabled={'Neutral' === lastPress7}>Neutral</button>
-            <button className="b" onClick={() => handleAnswerQuestion7('Agree')} disabled={'Agree' === lastPress7}>Agree</button>
-            <button className="b" onClick={() => handleAnswerQuestion7('Strongly Agree')} disabled={'Strongly Agree' === lastPress7}>Strongly Agree</button>
+            <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
+            <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
+            <button className={lastPress7 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion7('Neutral')} disabled={'Neutral' === lastPress7}>Neutral</button>
+            <button className={lastPress7 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion7('Agree')} disabled={'Agree' === lastPress7}>Agree</button>
+            <button className={lastPress7 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Agree')} disabled={'Strongly Agree' === lastPress7}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q7")}>Next</button>
             <hr></hr>
