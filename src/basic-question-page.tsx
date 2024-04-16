@@ -128,7 +128,7 @@ setCurrentQuestion(newQuest)
 
         <><div>
             <h2>Basic Questions Page</h2>
-            <hr></hr>
+            <hr className="lines"></hr>
             <p>If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
@@ -139,7 +139,7 @@ setCurrentQuestion(newQuest)
 
                 </div>
 
-            <hr></hr>
+            <hr className="lines"></hr>
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
             <button className={lastPress1 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"}  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
@@ -150,7 +150,7 @@ setCurrentQuestion(newQuest)
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
             
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
             <div hidden={currentQuestion!=='Q2'}>
             <h4>I'd rather create something new than learn what's already out there.</h4>
@@ -161,7 +161,7 @@ setCurrentQuestion(newQuest)
             <button className={lastPress2 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion2('Strongly Agree')} disabled={'Strongly Agree' === lastPress2}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q2")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
             
             <div hidden={currentQuestion!=='Q3'}>
@@ -173,7 +173,7 @@ setCurrentQuestion(newQuest)
             <button className={lastPress3 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion3('Strongly Agree')} disabled={'Strongly Agree' === lastPress3}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q3")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
 
             <div hidden={currentQuestion!=='Q4'}>
@@ -185,7 +185,7 @@ setCurrentQuestion(newQuest)
             <button className={lastPress4 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion4('Strongly Agree')} disabled={'Strongly Agree' === lastPress4}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q4")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
 
             <div hidden={currentQuestion!=='Q5'}>
@@ -197,7 +197,7 @@ setCurrentQuestion(newQuest)
             <button className={lastPress5 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion5('Strongly Agree')} disabled={'Strongly Agree' === lastPress5}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q5")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
 
             <div hidden={currentQuestion!=='Q6'}>
@@ -209,7 +209,7 @@ setCurrentQuestion(newQuest)
             <button className={lastPress6 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion6('Strongly Agree')} disabled={'Strongly Agree' === lastPress6}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q6")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
 
             <div hidden={currentQuestion!=='Q7'}>
@@ -221,15 +221,15 @@ setCurrentQuestion(newQuest)
             <button className={lastPress7 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Agree')} disabled={'Strongly Agree' === lastPress7}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q7")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
             <div hidden={currentQuestion!=='Results'}>
             <button className="submitAns" onClick={()=>lastQuestion("Results")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Results")}>Next</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             </div>
             {progress === 7 && 
                 <div>
-                    <hr></hr>
+                    
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns">Submit Answers</Button>
                 </div>}
