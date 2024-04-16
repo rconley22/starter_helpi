@@ -23,9 +23,9 @@ export function BasicQuestionPage(): JSX.Element {
     const [lastPress7, setLastPress7] = useState<multAnswers>('');
     //State to track current question
 
-    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'Results'
+    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'Results' | 'Q0'
     
-    const [currentQuestion, setCurrentQuestion] = useState<questions>('Q1')
+    const [currentQuestion, setCurrentQuestion] = useState<questions>('Q0')
 
     // Function to handle user answering a question
     const handleAnswerQuestion1 = (response1: multAnswers) => {
@@ -81,6 +81,7 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
         setLastPress5('');
         setLastPress6('');
         setLastPress7('');
+        setCurrentQuestion("Q1")
     }
 const questOrderForward: Record<questions,questions> = {
       Q1: 'Q2',
@@ -90,7 +91,8 @@ const questOrderForward: Record<questions,questions> = {
       Q5: "Q6",
       Q6: "Q7",
       Q7: "Results",
-      Results: "Results"
+      Results: "Results",
+      Q0: "Q1"
     }
 
     const questOrderBackward: Record<questions,questions> = {
@@ -101,7 +103,8 @@ const questOrderForward: Record<questions,questions> = {
       Q5: "Q4",
       Q6: "Q5",
       Q7: "Q6",
-      Results: "Q7"
+      Results: "Q7",
+      Q0: 'Q0'
     }
 
     const nextQuestion = (questNum: questions) =>{
@@ -130,6 +133,12 @@ setCurrentQuestion(newQuest)
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
                 to do is answer the questions below!</p>
+                <div hidden={currentQuestion!=='Q0'}>
+                  <button className="submitAns" onClick={()=>nextQuestion("Q0")}>Start</button>
+
+
+                </div>
+
             <hr></hr>
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
@@ -224,7 +233,7 @@ setCurrentQuestion(newQuest)
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns">Submit Answers</Button>
                 </div>}
-            <hr></hr>
+            
             <button className="submitAns"onClick={resetProgress}>Reset Progress</button>
 
         </div>
