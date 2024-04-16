@@ -142,11 +142,11 @@ setCurrentQuestion(newQuest)
             <hr></hr>
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
-            <button className="strong_disagree"  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
-            <button className="disagree" onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
-            <button className="neutral" onClick={() => handleAnswerQuestion1('Neutral')} disabled={'Neutral' === lastPress1}>Neutral</button>
-            <button className="agree" onClick={() => handleAnswerQuestion1('Agree')} disabled={'Agree' === lastPress1}>Agree</button>
-            <button className="strong_agree" onClick={() => handleAnswerQuestion1('Strongly Agree')} disabled={'Strongly Agree' === lastPress1}>Strongly Agree</button>
+            <button className={lastPress1 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"}  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
+            <button className={lastPress1 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
+            <button className={lastPress1 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion1('Neutral')} disabled={'Neutral' === lastPress1}>Neutral</button>
+            <button className={lastPress1 !== 'Agree' ? "agree" : "current_answer"} onClick={() => handleAnswerQuestion1('Agree')} disabled={'Agree' === lastPress1}>Agree</button>
+            <button className={lastPress1 !== 'Strongly Agree' ? "strong_agree" : "current_answer"} onClick={() => handleAnswerQuestion1('Strongly Agree')} disabled={'Strongly Agree' === lastPress1}>Strongly Agree</button>
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
             
