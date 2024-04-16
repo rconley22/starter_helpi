@@ -277,7 +277,9 @@ FAIL src/App.test.tsx
               [36m<h2>[39m
                 [0mDetailed Career Assessment[0m
               [36m</h2>[39m
-              [36m<hr />[39m
+              [36m<hr[39m
+                [33mclass[39m=[32m"lines"[39m
+              [36m/>[39m
               [36m<p>[39m
                 [0mThe Career Helpi's Detailed Career Assessment allows users to fill out a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized to who you are. Providing extra detail allows the Career Helpi to better match a potential career.[0m
               [36m</p>[39m
@@ -288,7 +290,9 @@ FAIL src/App.test.tsx
                   [0mStart[0m
                 [36m</button>[39m
               [36m</div>[39m
-              [36m<hr />[39m
+              [36m<hr[39m
+                [33mclass[39m=[32m"lines"[39m
+              [36m/>[39m
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
               [36m>[39m
@@ -317,7 +321,9 @@ FAIL src/App.test.tsx
                 [36m>[39m
                   [0mReset Answer[0m
                 [36m</button>[39m
-                [36m<hr />[39m
+                [36m<hr[39m
+                  [33mclass[39m=[32m"lines"[39m
+                [36m/>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
@@ -357,7 +363,9 @@ FAIL src/App.test.tsx
                 [36m>[39m
                   [0mReset Answer[0m
                 [36m</button>[39m
-                [36m<hr />[39m
+                [36m<hr[39m
+                  [33mclass[39m=[32m"lines"[39m
+                [36m/>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
@@ -397,7 +405,9 @@ FAIL src/App.test.tsx
                 [36m>[39m
                   [0mReset Answer[0m
                 [36m</button>[39m
-                [36m<hr />[39m
+                [36m<hr[39m
+                  [33mclass[39m=[32m"lines"[39m
+                [36m/>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
@@ -422,16 +432,7 @@ FAIL src/App.test.tsx
                     [0mAnswer:[0m
                   [36m</label>[39m
                   [36m<div />[39m
-                  [36m<textarea[39m
-                    [33mclass[39m=[32m"responsebox form-control"[39m
-                    [33mrows[39m=[32m"5"[39m
-                  [36m/>[39m
-                [36m</div>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"submitbutton"[39m
-                [36m>[39m
-                  [0mSubmit[0m
-                ...
+                 ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -467,9 +468,9 @@ go away.[0m
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 All files                   |      24 |    39.83 |    3.36 |   27.42 |                                                                         
- App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-41                                                                
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
  basic-question-page.tsx    |   19.13 |    41.86 |    1.42 |      22 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,111-112,117-118,137-227 
- detailed-question-page.tsx |    30.5 |    38.46 |     2.5 |   36.73 | 15-22,37,69-70,75-76,90-259                                             
+ detailed-question-page.tsx |    30.5 |    38.46 |     2.5 |   36.73 | 15-22,37,69-70,75-76,90-260                                             
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -477,5 +478,5 @@ All files                   |      24 |    39.83 |    3.36 |   27.42 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.594 s
+Time:        3.517 s
 Ran all test suites.
