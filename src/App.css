@@ -109,3 +109,23 @@
   background-color: #c1d1c9; /* Darker background color on hover */
   color: black;
 }
+img {
+  width: 45%; /* Adjust the width of the image as needed */
+  float: right; /* Float the image to the right */
+  margin-right: 20px; /* Add margin to the right side to create space */
+  
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 100%; /* Adjust width for smaller screens */
+    float: none; /* Remove float for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+}
+.basic-description{
+  margin-top: 300px;
+}
+.detailed-description{
+  margin-bottom: auto;
+}

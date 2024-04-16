@@ -81,7 +81,7 @@ export function DetailedQuestionPage(): JSX.Element {
     return (
         <div>
             <h2>Detailed Career Assessment</h2>
-            <hr></hr>
+            <hr className="lines"></hr>
             <p>The Career Helpi's Detailed Career Assessment allows users to fill out 
                 a more personal quiz that reflects their specific interest and goals. 
                 Here, users' results will be more personalized to who you are. Providing 
@@ -91,7 +91,7 @@ export function DetailedQuestionPage(): JSX.Element {
 
 
                 </div>
-            <hr></hr>
+            <hr className="lines"></hr>
             <div hidden={currentQuestion!=='Q1'}>
                 
             <h4>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
@@ -108,7 +108,7 @@ export function DetailedQuestionPage(): JSX.Element {
                 </FormGroup>
                 <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
             
             </div>
@@ -128,7 +128,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer2("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q2")}>Next</button>
             
             </div>
@@ -149,7 +149,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer3("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q3")}>Next</button>
             
             </div>
@@ -171,7 +171,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer4("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q4")}>Next</button>
             
             </div>
@@ -190,7 +190,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer5("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q5")}>Next</button>
             
             </div>
@@ -211,7 +211,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer6("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q6")}>Next</button>
             
             </div>
@@ -230,7 +230,7 @@ export function DetailedQuestionPage(): JSX.Element {
             </FormGroup>
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer7("")}>Reset Answer</button>
-            <hr></hr>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q7")}>Next</button>
             
             </div>
@@ -250,6 +250,7 @@ export function DetailedQuestionPage(): JSX.Element {
             <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
             <div></div>
+            <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q8")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q8")}>Next</button>
             
 

@@ -143,5 +143,12 @@
   .b:active{
     background-color: grey;
   } 
+
+.lines{
+  border: none;
+  border-top: 3px dotted #000; /* Change color and style as needed */
+  width: 50%; /* Set the desired width */
+  margin: 0 auto; /* Center the HR element */
+}
  
  
