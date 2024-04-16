@@ -117,8 +117,8 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
   console.error
-    Warning: validateDOMNesting(...): <h4> cannot appear as a descendant of <p>.
-        at h4
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
         at div
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
@@ -155,10 +155,9 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
   console.error
-    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+    Warning: validateDOMNesting(...): <h4> cannot appear as a descendant of <p>.
+        at h4
         at div
-        at div
-        at /home/runner/work/starter_helpi/starter_helpi/node_modules/react-bootstrap/cjs/FormGroup.js:13:3
         at div
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
@@ -233,7 +232,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (193 ms)
+  ✕ renders learn react link (176 ms)
 
   ● renders learn react link
 
@@ -282,505 +281,157 @@ FAIL src/App.test.tsx
               [36m<p>[39m
                 [0mThe Career Helpi's Detailed Career Assessment allows users to fill out a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized to who you are. Providing extra detail allows the Career Helpi to better match a potential career.[0m
               [36m</p>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mWhat are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)[0m
-              [36m</h4>[39m
               [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
+                  [0mStart[0m
+                [36m</button>[39m
               [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
               [36m<hr />[39m
-              [36m<h4>[39m
-                [0mWhat do you want your work environment to look like?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mHow much collaboration do you want in your job?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mWhat type of people do you see yourself working with?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mDo you enjoy work that is Structured or open-ended and flexible?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mWhat are some of your long term career goals?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mWhat are some jobs/careers that you are not interested in?[0m
-              [36m</h4>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                [36m>[39m
-                  [0mAnswer:[0m
-                [36m</label>[39m
-                [36m<div />[39m
-                [36m<textarea[39m
-                  [33mclass[39m=[32m"responsebox form-control"[39m
-                  [33mrows[39m=[32m"5"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitbutton"[39m
-              [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"resetbutton"[39m
-              [36m>[39m
-                [0mReset Answer[0m
-              [36m</button>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"progress-container"[39m
+                [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"progress"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33maria-valuemax[39m=[32m"7"[39m
-                    [33maria-valuemin[39m=[32m"0"[39m
-                    [33maria-valuenow[39m=[32m"0"[39m
-                    [33mclass[39m=[32m"progress-bar"[39m
-                    [33mrole[39m=[32m"progressbar"[39m
-                    [33mstyle[39m=[32m"width: 0%;"[39m
+                [36m<h4>[39m
+                  [0mWhat are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                  [36m>[39m
+                    [0mAnswer:[0m
+                  [36m</label>[39m
+                  [36m<div />[39m
+                  [36m<textarea[39m
+                    [33mclass[39m=[32m"responsebox form-control"[39m
+                    [33mrows[39m=[32m"5"[39m
                   [36m/>[39m
                 [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitbutton"[39m
+                [36m>[39m
+                  [0mSubmit[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"resetbutton"[39m
+                [36m>[39m
+                  [0mReset Answer[0m
+                [36m</button>[39m
+                [36m<hr />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mPrev[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mNext[0m
+                [36m</button>[39m
               [36m</div>[39m
-            [36m</div>[39m
-          [36m</p>[39m
-          [36m<p[39m
-            [33mhidden[39m=[32m""[39m
-          [36m>[39m
-            [36m<div>[39m
-              [36m<h2>[39m
-                [0mBasic Questions Page[0m
-              [36m</h2>[39m
-              [36m<hr />[39m
-              [36m<p>[39m
-                [0mIf you feel unsure about your future career but don't want to think about it too much, look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is answer the questions below![0m
-              [36m</p>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI prefer working in a group rather than alone.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI'd rather create something new than learn what's already out there.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI value enjoyment over a high salary.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI prefer a quiet, distraction-free environment over a busy, noisy one.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI'm crafty and good with my hands.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI like working through decisions instead of going with my gut.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<h4>[39m
-                [0mI enjoy keeping up with current events.[0m
-              [36m</h4>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Disagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mDisagree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mNeutral[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mAgree[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"b"[39m
-              [36m>[39m
-                [0mStrongly Agree[0m
-              [36m</button>[39m
-              [36m<hr />[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"submitAns"[39m
-              [36m>[39m
-                [0mReset Progress[0m
-              [36m</button>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"progress-container"[39m
-            [36m>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"progress"[39m
+                [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<div[39m
-                  [33maria-valuemax[39m=[32m"7"[39m
-                  [33maria-valuemin[39m=[32m"0"[39m
-                  [33maria-valuenow[39m=[32m"0"[39m
-                  [33mclass[39m=[32m"progress-bar"[39m
-                  [33mrole[39m=[32m"progressbar"[39m
-                  [33mstyle[39m=[32m"width: 0%;"[39m
-                [36m/>[39m
+                [36m<h4>[39m
+                  [0mWhat do you want your work environment to look like?[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                  [36m>[39m
+                    [0mAnswer:[0m
+                  [36m</label>[39m
+                  [36m<div />[39m
+                  [36m<textarea[39m
+                    [33mclass[39m=[32m"responsebox form-control"[39m
+                    [33mrows[39m=[32m"5"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitbutton"[39m
+                [36m>[39m
+                  [0mSubmit[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"resetbutton"[39m
+                [36m>[39m
+                  [0mReset Answer[0m
+                [36m</button>[39m
+                [36m<hr />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mPrev[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mNext[0m
+                [36m</button>[39m
               [36m</div>[39m
-            [36m</div>[39m
-          [36m</p>[39m
-          [36m<p>[39m
-            [36m<div>[39m
-              [36m<h1>[39m
-                [0mHome Page Test[0m
-              [36m</h1>[39m
-            [36m</div>[39m
-          [36m</p>[39m
-          [36m<footer[39m
-            [33mclass[39m=[32m"App-footer"[39m
-          [36m>[39m
-            [36m<form[39m
-              [33mclass[39m=[32m""[39m
-            [36m>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
+              [36m<div[39m
+                [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [0mAPI Key:[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mplaceholder[39m=[32m"Insert API Key Here"[39m
-                [33mtype[39m=[32m"password"[39m
-              [36m/>[39m
-              [36m<br />[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"Submit-Button btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
+                [36m<h4>[39m
+                  [0mHow much collaboration do you want in your job?[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                  [36m>[39m
+                    [0mAnswer:[0m
+                  [36m</label>[39m
+                  [36m<div />[39m
+                  [36m<textarea[39m
+                    [33mclass[39m=[32m"responsebox form-control"[39m
+                    [33mrows[39m=[32m"5"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitbutton"[39m
+                [36m>[39m
+                  [0mSubmit[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"resetbutton"[39m
+                [36m>[39m
+                  [0mReset Answer[0m
+                [36m</button>[39m
+                [36m<hr />[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mPrev[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mNext[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [0mSubmit[0m
-              [36m</button>[39m
-            [36m</form>[39m
-          [36m</footer>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+                [36m<h4>[39m
+                  [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                  [36m>[39m
+                    [0mAnswer:[0m
+                  [36m</label>[39m
+                  [36m<div />[39m
+                  [36m<textarea[39m
+                    [33mclass[39m=[32m"responsebox form-control"[39m
+                    [33mrows[39m=[32m"5"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitbutton"[39m
+                [36m>[39m
+                  [0mSubmit[0m
+                ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -800,6 +451,22 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
+----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
+File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
+----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
+All files                   |      24 |       25 |    3.36 |   27.42 |                                                                         
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 13,22-40                                                                
+ basic-question-page.tsx    |   19.13 |     6.25 |    1.42 |      22 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,111-112,117-118,137-227 
+ detailed-question-page.tsx |    30.5 |    38.46 |     2.5 |   36.73 | 15-22,37,69-70,75-76,90-259                                             
+ home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
+ index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
+ reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
+----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        3.404 s
+Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
 declaring it in its dependencies. This is currently working because
@@ -812,19 +479,3 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
-----------------------------|---------|----------|---------|---------|--------------------------------------------------------
-File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                      
-----------------------------|---------|----------|---------|---------|--------------------------------------------------------
-All files                   |    26.2 |       25 |    5.06 |   27.73 |                                                        
- App.tsx                    |      50 |       50 |   16.66 |      50 | 13,22-40                                               
- basic-question-page.tsx    |   19.31 |     6.25 |    1.96 |   20.98 | 28-30,34-36,40-42,46-48,52-54,59-61,66-68,71-78,98-140 
- detailed-question-page.tsx |   41.93 |    38.46 |    5.26 |   43.33 | 15-22,31,58-163                                        
- home-page.tsx              |     100 |      100 |     100 |     100 |                                                        
- index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                   
- reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                   
-----------------------------|---------|----------|---------|---------|--------------------------------------------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
-Snapshots:   0 total
-Time:        3.394 s
-Ran all test suites.
