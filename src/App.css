@@ -109,23 +109,23 @@
   background-color: #c1d1c9; /* Darker background color on hover */
   color: black;
 }
-
-.basicButtonhome,
-.detailedbuttonhome {
-  background-color: #5d6d67;
-  border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
-  color: white; /* Text color */
-  text-align: center;
-  font-size: 16px;
-  padding: 15px 32px; /* Padding around text */
-  margin: 20px; /* Add margin between buttons */
-  border-radius: 8px; /* Rounded corners for buttons */
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */;
+img {
+  width: 45%; /* Adjust the width of the image as needed */
+  float: right; /* Float the image to the right */
+  margin-right: 20px; /* Add margin to the right side to create space */
+  
 }
 
-.homePageButtons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);;
-  gap: 80px;
+@media (max-width: 768px) {
+  img {
+    width: 100%; /* Adjust width for smaller screens */
+    float: none; /* Remove float for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+}
+.basic-description{
+  margin-top: 300px;
+}
+.detailed-description{
+  margin-bottom: auto;
 }

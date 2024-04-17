@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
+import img from './person_thinking.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -34,7 +35,6 @@ function App() {
     localStorage.setItem(saveKeyData, JSON.stringify(key));
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
   }
-
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
     setKey(event.target.value);
@@ -57,12 +57,15 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      
-      <div className='homePageButtons'>
-      <Button className='basicButtonhome' onClick={changeToBasicPage} hidden={currentPage !== 'home'}>Basic Career Assessment</Button>
-      <Button className='detailedbuttonhome' onClick={changetoDetailedPage} hidden={currentPage !== 'home'}>Detailed Career Assessment</Button>
+      <div hidden={currentPage !== "home"}>
+        <img src={img} alt="Couldn't load"></img>
       </div>
-
+      <div>
+        <p className='detailed-description'>This is where the detailed description will go</p>
+      </div>
+      <div>
+      <p className='basic-description'>This is where the basic description will go</p>
+      </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
