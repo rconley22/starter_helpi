@@ -77,7 +77,14 @@ export function DetailedQuestionPage(): JSX.Element {
   
       }
   
-
+      function validateInput(ans: string): Boolean{
+        if (ans.length > 20){
+            return true;
+        }
+        else{
+            return false;
+        }
+      }
     return (
         <div>
             <h2>Detailed Career Assessment</h2>
