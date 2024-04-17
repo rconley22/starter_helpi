@@ -113,6 +113,7 @@ export function DetailedQuestionPage(): JSX.Element {
                         className="responsebox"
                     ></FormControl>
                 </FormGroup>
+                {!validateInput(answer1) && <div className="validation">Please include more than 20 characters</div>}
                 <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
             <hr className="lines"></hr>
