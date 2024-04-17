@@ -57,14 +57,20 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      <div hidden={currentPage !== "home"}>
+      <div hidden={currentPage !== "home"} className='homePageImage'>
         <img src={img} alt="Couldn't load"></img>
       </div>
-      <div>
-        <p className='detailed-description'>This is where the detailed description will go</p>
+      <div hidden={currentPage !== 'home'}>
+        <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
+        a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
+        to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
+        <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
       </div>
-      <div>
-      <p className='basic-description'>This is where the basic description will go</p>
+      <div hidden={currentPage !== 'home'}>
+      <p className='basic-description'>If you feel unsure about your future career but don't want to think about it too much, 
+      look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is 
+      answer the questions below!</p>
+      <Button className='basicButton2' onClick={changeToBasicPage}>Basic Career Assessment</Button>
       </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
