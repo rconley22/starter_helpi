@@ -124,7 +124,7 @@ img {
   }
 }
 .basic-description{
-  margin-top: 120px;
+  margin-top: 60px;
   margin-bottom: 30px;
   margin-inline: 50px;
 }
@@ -134,8 +134,7 @@ img {
   margin-left: 80px;
 }
 
-.detailedbutton2,
-.basicButton2 {
+.detailedbutton2{
   background-color: #127a54d4;
   border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
   color: white; /* Text color */
@@ -156,4 +155,22 @@ img {
   height: 80%;
   width: 80%;
   size: 500px;
+}
+.basicButton2 {
+  background-color: #127a54d4;
+  border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 32px; /* Padding around text */
+  margin: 1px; /* Add margin between buttons */
+  border-radius: 8px; /* Rounded corners for buttons */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+  position: relative; /* Set position to relative */
+ /* Bring the button forward */
+  left: 20px; /* Move the button 20 pixels to the left */
+  margin-right: 680px;
+  margin-bottom: 350px;
 }
