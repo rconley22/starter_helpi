@@ -114,7 +114,7 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer1) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+                <button className='submitbutton' disabled={!validateInput(answer1)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>

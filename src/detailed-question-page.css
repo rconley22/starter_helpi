@@ -32,3 +32,6 @@
   .validation{
     color: red;
   }
+  .submitbutton:disabled{
+    background-color: grey;
+  }
