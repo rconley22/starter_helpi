@@ -141,7 +141,6 @@ setCurrentQuestion(newQuest)
 
                 
 
-            <hr></hr>
             </div>
 
             <hr className="lines"></hr>
