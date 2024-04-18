@@ -4,7 +4,8 @@ import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
-import img from './person_thinking.jpg'
+import img from './person_thinking.jpg';
+import { ChatGPT } from './AI';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -13,7 +14,6 @@ const prevKey = localStorage.getItem(saveKeyData); //so it'll look like: MYKEY: 
 if (prevKey !== null) {
   keyData = JSON.parse(prevKey);
 }
-
 
 function App() {
   type page = 'home' | 'detailed question page' | 'basic question page';
