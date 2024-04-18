@@ -127,19 +127,25 @@ setCurrentQuestion(newQuest)
     return (
 
         <><div>
+          <div hidden={currentQuestion!=='Q0'}>
             <h2>Basic Questions Page</h2>
             <hr className="lines"></hr>
             <p>If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
                 to do is answer the questions below!</p>
+                </div>
                 <div hidden={currentQuestion!=='Q0'}>
                   <button className="submitAns" onClick={()=>nextQuestion("Q0")}>Start</button>
 
 
-                </div>
+                
+
+            <hr></hr>
+            </div>
 
             <hr className="lines"></hr>
+
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
             <button className={lastPress1 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"}  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
