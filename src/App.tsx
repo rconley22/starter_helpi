@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
+import img from './person_thinking.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -34,7 +35,6 @@ function App() {
     localStorage.setItem(saveKeyData, JSON.stringify(key));
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
   }
-
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
     setKey(event.target.value);
@@ -57,6 +57,21 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
+      <div hidden={currentPage !== "home"} className='homePageImage'>
+        <img src={img} alt="Couldn't load"></img>
+      </div>
+      <div hidden={currentPage !== 'home'}>
+        <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
+        a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
+        to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
+        <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
+      </div>
+      <div hidden={currentPage !== 'home'}>
+      <p className='basic-description'>If you feel unsure about your future career but don't want to think about it too much, 
+      look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is 
+      answer the questions below!</p>
+      <Button className='basicButton2' onClick={changeToBasicPage}>Basic Career Assessment</Button>
+      </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
         <Form.Label>API Key:</Form.Label>
