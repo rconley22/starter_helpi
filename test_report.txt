@@ -9,7 +9,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -47,7 +47,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -85,7 +85,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -123,7 +123,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -162,7 +162,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -200,7 +200,7 @@
         at HomePage
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -232,7 +232,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (164 ms)
+  ✕ renders learn react link (163 ms)
 
   ● renders learn react link
 
@@ -465,8 +465,9 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   25.25 |    47.05 |    4.34 |   28.08 |                                                                         
- App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
+All files                   |    24.5 |    47.05 |    4.27 |   27.17 |                                                                         
+ AI.tsx                     |       0 |      100 |       0 |       0 | 8-17                                                                    
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 15,24-41                                                                
  basic-question-page.tsx    |   19.64 |    41.86 |    1.49 |      22 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,111-112,117-118,139-232 
  detailed-question-page.tsx |   33.33 |    61.36 |    5.12 |   38.46 | 15-22,37,69-70,75-76,82,97-275                                          
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
@@ -476,5 +477,5 @@ All files                   |   25.25 |    47.05 |    4.34 |   28.08 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.417 s
+Time:        3.627 s
 Ran all test suites.
