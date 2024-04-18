@@ -232,7 +232,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (162 ms)
+  ✕ renders learn react link (157 ms)
 
   ● renders learn react link
 
@@ -333,11 +333,6 @@ FAIL src/App.test.tsx
                 [36m<button[39m
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
-                  [0mPrev[0m
-                [36m</button>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"submitAns"[39m
-                [36m>[39m
                   [0mNext[0m
                 [36m</button>[39m
               [36m</div>[39m
@@ -430,6 +425,11 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
                   [0mPrev[0m
+                [36m</button>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"submitAns"[39m
+                [36m>[39m
+                  [0mNext[0m
                ...
 
        5 | test('renders learn react link', () => {
@@ -465,10 +465,10 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   24.63 |    47.05 |    4.16 |   28.08 |                                                                         
+All files                   |   25.25 |    47.05 |    4.34 |   28.08 |                                                                         
  App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
- basic-question-page.tsx    |   19.13 |    41.86 |    1.42 |      22 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,111-112,117-118,139-233 
- detailed-question-page.tsx |   32.25 |    61.36 |    4.87 |   38.46 | 15-22,37,69-70,75-76,82,97-275                                          
+ basic-question-page.tsx    |   19.64 |    41.86 |    1.49 |      22 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,111-112,117-118,139-233 
+ detailed-question-page.tsx |   33.33 |    61.36 |    5.12 |   38.46 | 15-22,37,69-70,75-76,82,97-275                                          
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -476,5 +476,5 @@ All files                   |   24.63 |    47.05 |    4.16 |   28.08 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.376 s
+Time:        3.358 s
 Ran all test suites.
