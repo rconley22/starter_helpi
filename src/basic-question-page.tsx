@@ -27,6 +27,8 @@ export function BasicQuestionPage(): JSX.Element {
     
     const [currentQuestion, setCurrentQuestion] = useState<questions>('Q0')
 
+    const [quizState, setQuizState] = useState<boolean>(false)
+
     // Function to handle user answering a question
     const handleAnswerQuestion1 = (response1: multAnswers) => {
         // Increment progress by 1 for each answered question
@@ -217,7 +219,7 @@ setCurrentQuestion(newQuest)
             <hr className="lines"></hr>
             </div>
 
-            <div hidden={currentQuestion!=='Q7'}>
+            <div hidden={currentQuestion!=='Q7' && !quizState}>
             <h4>I enjoy keeping up with current events.</h4>
             <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
             <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
@@ -232,15 +234,18 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Results")}>Prev</button>
             <hr className="lines"></hr>
             </div>
-            {progress === 7 && 
+            {progress === 7 && !quizState &&
                 <div>
                     
                     <p className="questions">All questions answered!</p>
-                    <Button className="submitAns">Submit Answers</Button>
+                    <Button className="submitAns" onClick={() => setQuizState(true)}>Submit Answers</Button>
                 </div>}
             
-            <button className="submitAns"onClick={resetProgress}>Reset Progress</button>
+            <button className="submitAns"onClick={resetProgress} hidden={quizState}>Reset Progress</button>
 
+              <div hidden={!quizState}>
+                <h1>End of Quiz</h1>
+              </div>
         </div>
         <div className="progress-container">
         <div className="progress">
