@@ -117,7 +117,7 @@ export function DetailedQuestionPage(): JSX.Element {
                 <button className='submitbutton' disabled={!validateInput(answer1)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
             <hr className="lines"></hr>
-            <button className="submitAns" onClick={()=>lastQuestion("Q1")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
+            <button className="submitAns" onClick={()=>nextQuestion("Q1")}>Next</button>
             
             </div>
 
@@ -266,7 +266,7 @@ export function DetailedQuestionPage(): JSX.Element {
             <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
             <div></div>
             <hr className="lines"></hr>
-            <button className="submitAns" onClick={()=>lastQuestion("Q8")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q8")}>Next</button>
+            <button className="submitAns" onClick={()=>lastQuestion("Q8")}>Prev</button>
             
 
             </div>
