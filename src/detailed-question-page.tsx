@@ -134,7 +134,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer2) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer2)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer2("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q2")}>Next</button>
@@ -155,7 +156,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer3) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer3)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer3("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q3")}>Next</button>
@@ -177,7 +179,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer4) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer4)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer4("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q4")}>Next</button>
@@ -196,7 +199,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer5) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer5)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer5("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q5")}>Next</button>
@@ -217,7 +221,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer6) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer6)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer6("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q6")}>Next</button>
@@ -236,7 +241,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer7) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer7)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer7("")}>Reset Answer</button>
             <hr className="lines"></hr>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q7")}>Next</button>
@@ -255,7 +261,8 @@ export function DetailedQuestionPage(): JSX.Element {
                     className="responsebox"
                 ></FormControl>
             </FormGroup>
-            <button className='submitbutton' onClick={handleAnswerQuestion}>Submit</button>
+            {!validateInput(answer8) && <div className="validation">Please include more than 20 characters</div>}
+            <button className='submitbutton' disabled={!validateInput(answer8)} onClick={handleAnswerQuestion}>Submit</button>
             <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
             <div></div>
             <hr className="lines"></hr>
