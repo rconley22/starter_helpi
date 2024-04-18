@@ -14,6 +14,7 @@ if (prevKey !== null) {
   keyData = JSON.parse(prevKey);
 }
 
+
 function App() {
   type page = 'home' | 'detailed question page' | 'basic question page';
   const [key, setKey] = useState<string>(keyData); //for api key input
@@ -39,6 +40,7 @@ function App() {
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
     setKey(event.target.value);
   }
+
   return (
     <div className="App">
       <header className="App-header">
