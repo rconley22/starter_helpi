@@ -23,7 +23,7 @@ export function BasicQuestionPage(): JSX.Element {
     const [lastPress7, setLastPress7] = useState<multAnswers>('');
     //State to track current question
 
-    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'Results' | 'Q0'
+    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'End' | 'Results' | 'Q0'
     
     const [currentQuestion, setCurrentQuestion] = useState<questions>('Q0')
 
@@ -92,7 +92,8 @@ const questOrderForward: Record<questions,questions> = {
       Q4: "Q5",
       Q5: "Q6",
       Q6: "Q7",
-      Q7: "Results",
+      Q7: "End",
+      End: "Results",
       Results: "Results",
       Q0: "Q1"
     }
@@ -105,7 +106,8 @@ const questOrderForward: Record<questions,questions> = {
       Q5: "Q4",
       Q6: "Q5",
       Q7: "Q6",
-      Results: "Q7",
+      End: "Q7",
+      Results: "End",
       Q0: 'Q0'
     }
 
@@ -219,7 +221,7 @@ setCurrentQuestion(newQuest)
             <hr className="lines"></hr>
             </div>
 
-            <div hidden={currentQuestion!=='Q7' && !quizState}>
+            <div hidden={currentQuestion!=='Q7'}>
             <h4>I enjoy keeping up with current events.</h4>
             <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
             <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
@@ -230,20 +232,20 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button>
             <hr className="lines"></hr>
             </div>
-            <div hidden={currentQuestion!=='Results'}>
-            <button className="submitAns" onClick={()=>lastQuestion("Results")}>Prev</button>
+            <div hidden={currentQuestion!=='End'}>
+            <button className="submitAns" onClick={()=>lastQuestion("End")}>Prev</button>
             <hr className="lines"></hr>
             </div>
-            {progress === 7 && !quizState &&
+            {progress === 7 && currentQuestion!=='Results' &&
                 <div>
                     
                     <p className="questions">All questions answered!</p>
-                    <Button className="submitAns" onClick={() => setQuizState(true)}>Submit Answers</Button>
+                    <Button className="submitAns" onClick={() => nextQuestion('Results')}>Submit Answers</Button>
                 </div>}
             
-            <button className="submitAns"onClick={resetProgress} hidden={quizState}>Reset Progress</button>
+            <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results"}>Reset Progress</button>
 
-              <div hidden={!quizState}>
+              <div hidden={currentQuestion !== 'Results'}>
                 <h1>End of Quiz</h1>
               </div>
         </div>
