@@ -147,7 +147,7 @@ setCurrentQuestion(newQuest)
 
             </div>
 
-            <hr className="lines"></hr>
+            <hr className="lines" hidden={currentQuestion === 'Results'}></hr>
 
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
@@ -246,7 +246,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results"}>Reset Progress</button>
 
               <div hidden={currentQuestion !== 'Results'}>
-                <h1>End of Quiz</h1>
+                <h1>Results Page</h1>
+                <h3>Your Answers Are:</h3>
+                <p>I prefer working in a group rather than alone: {lastPress1}</p>
+                <p>I'd rather create something new than learn what's already out there: {lastPress2}</p>
+                <p>I value enjoyment over a high salary: {lastPress3}</p>
+                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {lastPress4}</p>
+                <p>I'm crafty and good with my hands: {lastPress5}</p>
+                <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
+                <p>I enjoy keeping up with current events: {lastPress7}</p>
               </div>
         </div>
         <div className="progress-container">
