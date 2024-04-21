@@ -255,6 +255,7 @@ setCurrentQuestion(newQuest)
                 <p>I'm crafty and good with my hands: {lastPress5}</p>
                 <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
                 <p>I enjoy keeping up with current events: {lastPress7}</p>
+                <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
