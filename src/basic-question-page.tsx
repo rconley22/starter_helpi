@@ -90,7 +90,7 @@ const questOrderForward: Record<questions,questions> = {
       Q4: "Q5",
       Q5: "Q6",
       Q6: "Q7",
-      Q7: "End",
+      Q7: "Results",
       End: "Results",
       Results: "CareerMatch",
       CareerMatch: "Q0",
@@ -148,6 +148,7 @@ setCurrentQuestion(newQuest)
             </div>
 
             <hr className="lines" hidden={currentQuestion === 'Results' || currentQuestion === 'CareerMatch'}></hr>
+            <div>{currentQuestion}</div>
 
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
@@ -240,7 +241,7 @@ setCurrentQuestion(newQuest)
                 <div>
                     
                     <p className="questions">All questions answered!</p>
-                    <Button className="submitAns" onClick={() => nextQuestion('Results')}>Submit Answers</Button>
+                    <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
                 </div>}
             
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
@@ -255,7 +256,7 @@ setCurrentQuestion(newQuest)
                 <p>I'm crafty and good with my hands: {lastPress5}</p>
                 <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
                 <p>I enjoy keeping up with current events: {lastPress7}</p>
-                <Button className="submitResults" onClick={() => nextQuestion('CareerMatch')}>Get Your Personalized Career Match</Button>
+                <button className="submitResults" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
               <div hidden={currentQuestion !== 'CareerMatch'}>
