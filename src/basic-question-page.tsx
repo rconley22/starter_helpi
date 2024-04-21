@@ -4,12 +4,12 @@ import { Button } from "react-bootstrap";
 import "./basic-question-page.css";
 import { useState } from "react";
 import React from "react";
-
-
+import { ChatGPT } from "./AI";
+import { setQuery } from "./ai_query";
 
 
 //import { Button } from "react-bootstrap";
-export function BasicQuestionPage(): JSX.Element {
+export function BasicQuestionPage({userKey}: {userKey: string}): JSX.Element {
     // State variable to track progress
     const [progress, setProgress] = useState(0);
     // State to track which questions have been answered
@@ -125,7 +125,7 @@ setCurrentQuestion(newQuest)
 
 
 
-    
+    const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
 
     return (
@@ -260,6 +260,7 @@ setCurrentQuestion(newQuest)
 
               <div hidden={currentQuestion !== 'CareerMatch'}>
                 <h1>Career Suggestions ...</h1>
+                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
               </div>
         </div>
         <div className="progress-container">
