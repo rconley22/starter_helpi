@@ -100,7 +100,7 @@ export function DetailedQuestionPage(): JSX.Element {
 
     return (
     
-        <><div hidden={answersSubmitted}>
+        <><><div hidden={answersSubmitted}>
             <h2>Detailed Career Assessment</h2>
             <hr className="lines"></hr>
             <p>The Career Helpi's Detailed Career Assessment allows users to fill out
@@ -302,7 +302,7 @@ export function DetailedQuestionPage(): JSX.Element {
                     <p className="questions">All questions answered!</p>
                     <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
                 </div>}
-        </div><div hidden={!answersSubmitted}>
+        </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
                 <p>I prefer working in a group rather than alone: {answer1}</p>
@@ -314,7 +314,10 @@ export function DetailedQuestionPage(): JSX.Element {
                 <p>I enjoy keeping up with current events: {answer7}</p>
                 <p>I enjoy keeping up with current events: {answer8}</p>
                 <button className="submitAns" onClick={goBackBtn}>Go Back To Questions</button>
-                <button  className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
+                <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
+
+            </div></><div hidden={currentQuestion !== 'Results'}>
+                <h1>Career Suggestions ...</h1>
             </div></>
     );
 }
