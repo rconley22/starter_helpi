@@ -5,7 +5,6 @@ import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
 import img from './person_thinking.jpg';
-// import { ChatGPT } from './AI';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -54,7 +53,7 @@ function App() {
           <DetailedQuestionPage></DetailedQuestionPage>
       </p>
       <p hidden={currentPage !== 'basic question page'}>
-          <BasicQuestionPage></BasicQuestionPage>
+          <BasicQuestionPage userKey={keyData}></BasicQuestionPage>
       </p>
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
