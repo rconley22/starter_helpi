@@ -197,8 +197,7 @@
     Warning: validateDOMNesting(...): <h1> cannot appear as a descendant of <p>.
         at h1
         at div
-        at div
-        at BasicQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/basic-question-page.tsx:14:45)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
@@ -236,8 +235,7 @@
     Warning: validateDOMNesting(...): <h3> cannot appear as a descendant of <p>.
         at h3
         at div
-        at div
-        at BasicQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/basic-question-page.tsx:14:45)
+        at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:6:43)
         at p
         at div
         at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
@@ -272,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (180 ms)
+  ✕ renders learn react link (174 ms)
 
   ● renders learn react link
 
@@ -505,11 +503,11 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   24.27 |    47.88 |     4.2 |   26.88 |                                                                         
+All files                   |      25 |    47.91 |    4.09 |    27.6 |                                                                         
  AI.tsx                     |       0 |      100 |       0 |       0 | 8-17                                                                    
  App.tsx                    |      50 |       50 |   16.66 |      50 | 15,24-41                                                                
  basic-question-page.tsx    |   19.29 |    43.47 |    1.44 |   21.56 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,115-116,121-122,143-258 
- detailed-question-page.tsx |   33.33 |    61.36 |    5.12 |   38.46 | 15-22,37,69-70,75-76,82,97-275                                          
+ detailed-question-page.tsx |   34.84 |    60.86 |    4.76 |   39.65 | 15-22,37,69-70,75-76,82,95,98,111-317                                   
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -517,5 +515,5 @@ All files                   |   24.27 |    47.88 |     4.2 |   26.88 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.541 s
+Time:        3.666 s
 Ran all test suites.
