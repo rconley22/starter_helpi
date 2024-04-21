@@ -148,7 +148,6 @@ setCurrentQuestion(newQuest)
             </div>
 
             <hr className="lines" hidden={currentQuestion === 'Results' || currentQuestion === 'CareerMatch'}></hr>
-            <div>{currentQuestion}</div>
 
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
