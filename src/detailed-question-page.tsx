@@ -101,9 +101,9 @@ export function DetailedQuestionPage(): JSX.Element {
     return (
     
         <><><div hidden={answersSubmitted}>
-            <h2>Detailed Career Assessment</h2>
+            <h2 hidden={currentQuestion !== "Q0"}>Detailed Career Assessment</h2>
             <hr className="lines"></hr>
-            <p>The Career Helpi's Detailed Career Assessment allows users to fill out
+            <p hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
                 a more personal quiz that reflects their specific interest and goals.
                 Here, users' results will be more personalized to who you are. Providing
                 extra detail allows the Career Helpi to better match a potential career.</p>
@@ -112,7 +112,7 @@ export function DetailedQuestionPage(): JSX.Element {
 
 
             </div>
-            <hr className="lines"></hr>
+            <hr hidden={currentQuestion !== "Q0"} className="lines"></hr>
             <div hidden={currentQuestion !== 'Q1'}>
 
                 <h4>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
