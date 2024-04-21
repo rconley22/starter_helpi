@@ -305,14 +305,14 @@ export function DetailedQuestionPage(): JSX.Element {
         </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
-                <p>I prefer working in a group rather than alone: {answer1}</p>
-                <p>I'd rather create something new than learn what's already out there: {answer2}</p>
-                <p>I value enjoyment over a high salary: {answer3}</p>
-                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {answer4}</p>
-                <p>I'm crafty and good with my hands: {answer5}</p>
-                <p>I like working through decisions instead of going with my gut: {answer6}</p>
-                <p>I enjoy keeping up with current events: {answer7}</p>
-                <p>I enjoy keeping up with current events: {answer8}</p>
+                <p>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc): {answer1}</p>
+                <p>What do you want your work environment to look like?: {answer2}</p>
+                <p>How much collaboration do you want in your job?: {answer3}</p>
+                <p>Do you have any passions or interests that you would like to incorporate into your career?: {answer4}</p>
+                <p>What type of people do you see yourself working with?: {answer5}</p>
+                <p>Do you enjoy work that is Structured or open-ended and flexible?: {answer6}</p>
+                <p>What are some of your long term career goals?: {answer7}</p>
+                <p>What are some jobs/careers that you are not interested in?: {answer8}</p>
                 <button className="submitAns" onClick={goBackBtn}>Go Back To Questions</button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
 
