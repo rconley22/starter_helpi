@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-// import { Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { OpenAI } from 'openai';
 
 
-export function ChatGPT({userKey, content}: {userKey: string; content: string;}): JSX.Element {
+export function ChatGPT({userKey, content}: {userKey: string; content: string}): JSX.Element {
  const [response, setResponse] = useState<string | null>('');
  const myOpenAi = new OpenAI({apiKey: userKey, dangerouslyAllowBrowser: true});
    const getOpenAIResponse = async () => {
@@ -14,9 +14,9 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string;})
     });
     setResponse(res.choices[0]?.message?.content);
 }
-getOpenAIResponse();
  return (
   <div>
+    <Button onClick={getOpenAIResponse}>Click me</Button>
     {response}
   </div>
  );
