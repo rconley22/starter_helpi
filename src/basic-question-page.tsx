@@ -4,12 +4,12 @@ import { Button } from "react-bootstrap";
 import "./basic-question-page.css";
 import { useState } from "react";
 import React from "react";
-
-
+import { ChatGPT } from "./AI";
+import { setQuery } from "./ai_query";
 
 
 //import { Button } from "react-bootstrap";
-export function BasicQuestionPage(): JSX.Element {
+export function BasicQuestionPage({userKey}: {userKey: string}): JSX.Element {
     // State variable to track progress
     const [progress, setProgress] = useState(0);
     // State to track which questions have been answered
@@ -23,7 +23,7 @@ export function BasicQuestionPage(): JSX.Element {
     const [lastPress7, setLastPress7] = useState<multAnswers>('');
     //State to track current question
 
-    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'Results' | 'Q0'
+    type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'End' | 'Results' | 'CareerMatch' | 'Q0'
     
     const [currentQuestion, setCurrentQuestion] = useState<questions>('Q0')
 
@@ -91,7 +91,9 @@ const questOrderForward: Record<questions,questions> = {
       Q5: "Q6",
       Q6: "Q7",
       Q7: "Results",
-      Results: "Results",
+      End: "Results",
+      Results: "CareerMatch",
+      CareerMatch: "Q0",
       Q0: "Q1"
     }
 
@@ -103,7 +105,9 @@ const questOrderForward: Record<questions,questions> = {
       Q5: "Q4",
       Q6: "Q5",
       Q7: "Q6",
-      Results: "Q7",
+      End: "Q7",
+      Results: "End",
+      CareerMatch: "Results",
       Q0: 'Q0'
     }
 
@@ -121,7 +125,7 @@ setCurrentQuestion(newQuest)
 
 
 
-    
+    const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
 
     return (
@@ -143,7 +147,7 @@ setCurrentQuestion(newQuest)
 
             </div>
 
-            <hr className="lines"></hr>
+            <hr className="lines" hidden={currentQuestion === 'Results' || currentQuestion === 'CareerMatch'}></hr>
 
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
@@ -228,19 +232,37 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button>
             <hr className="lines"></hr>
             </div>
-            <div hidden={currentQuestion!=='Results'}>
-            <button className="submitAns" onClick={()=>lastQuestion("Results")}>Prev</button>
+            <div hidden={currentQuestion!=='End'}>
+            <button className="submitAns" onClick={()=>lastQuestion("End")}>Prev</button>
             <hr className="lines"></hr>
             </div>
-            {progress === 7 && 
+            {progress === 7 && currentQuestion!=='Results' && currentQuestion!=='CareerMatch' &&
                 <div>
                     
                     <p className="questions">All questions answered!</p>
-                    <Button className="submitAns">Submit Answers</Button>
+                    <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
                 </div>}
             
-            <button className="submitAns"onClick={resetProgress}>Reset Progress</button>
+            <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
 
+              <div hidden={currentQuestion !== 'Results'}>
+                <h1>Results Page</h1>
+                <h3>Your Answers Are:</h3>
+                <p>I prefer working in a group rather than alone: {lastPress1}</p>
+                <p>I'd rather create something new than learn what's already out there: {lastPress2}</p>
+                <p>I value enjoyment over a high salary: {lastPress3}</p>
+                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {lastPress4}</p>
+                <p>I'm crafty and good with my hands: {lastPress5}</p>
+                <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
+                <p>I enjoy keeping up with current events: {lastPress7}</p>
+                <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
+                <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
+              </div>
+
+              <div hidden={currentQuestion !== 'CareerMatch'}>
+                <h1>Career Suggestions ...</h1>
+                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+              </div>
         </div>
         <div className="progress-container">
         <div className="progress">
