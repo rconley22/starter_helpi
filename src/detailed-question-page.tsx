@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Button, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 import "./detailed-question-page.css";
+import { ChatGPT } from "./AI";
+import { generateDetailedAnswers, setQuery } from "./ai_query";
 
-export function DetailedQuestionPage(): JSX.Element {
+export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element {
     const [answer1, setAnswer1] = useState<string>("");
     const [answer2, setAnswer2] = useState<string>("");
     const [answer3, setAnswer3] = useState<string>("");
@@ -97,6 +99,8 @@ export function DetailedQuestionPage(): JSX.Element {
     const goBackBtn = () => {
         setAnswersSubmitted(false);
     }
+
+    const answers: string[] = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8] 
 
     return (
     
@@ -318,6 +322,8 @@ export function DetailedQuestionPage(): JSX.Element {
 
             </div></><div hidden={currentQuestion !== 'Results'}>
                 <h1>Career Suggestions ...</h1>
+                <div></div>
+                <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
             </div></>
     );
 }

@@ -50,7 +50,7 @@ function App() {
         </div>
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
-          <DetailedQuestionPage></DetailedQuestionPage>
+          <DetailedQuestionPage userKey={keyData}></DetailedQuestionPage>
       </p>
       <p hidden={currentPage !== 'basic question page'}>
           <BasicQuestionPage userKey={keyData}></BasicQuestionPage>
