@@ -16,22 +16,27 @@ if (prevKey !== null) {
 
 function App() {
   type page = 'home' | 'detailed question page' | 'basic question page';
+  type keyState = 'valid' | 'invalid' | 'empty'
   const [key, setKey] = useState<string>(keyData); //for api key input
   const [currentPage, setcurrentPage] = useState<page>('home');//which page the website is currently on
+  const [isKeyValid, setKeyValidity] = useState<keyState>('empty')
 
   function changetoDetailedPage(): void {//switch to the detailed questions page
-    setcurrentPage('detailed question page');
+    if(isKeyValid === 'valid')
+      isKeyValid === 'valid' ? setcurrentPage('detailed question page') : window.location.reload();
   }
   function changeToBasicPage(): void {
-    setcurrentPage('basic question page');
+    isKeyValid === 'valid' ? setcurrentPage('basic question page') : window.location.reload();
   }
 
   function changetoHomePage(): void {//switch to the home page
     setcurrentPage('home');
   }
+
   
   //sets the local storage item to the api key the user inputed
   function handleSubmit() {
+
     localStorage.setItem(saveKeyData, JSON.stringify(key));
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
   }
@@ -42,6 +47,10 @@ function App() {
 
   return (
     <div className="App">
+      <header className='warning-header'>
+        Please enter a valid API key. We won't be able to provide results without it.
+      
+      </header>
       <header className="App-header">
         <div className="wrapper">
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
