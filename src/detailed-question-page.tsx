@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Button, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 import "./detailed-question-page.css";
+import { ChatGPT } from "./AI";
+import { generateDetailedAnswers} from "./ai_query";
 
-export function DetailedQuestionPage(): JSX.Element {
+export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element {
     const [answer1, setAnswer1] = useState<string>("");
     const [answer2, setAnswer2] = useState<string>("");
     const [answer3, setAnswer3] = useState<string>("");
@@ -31,11 +33,11 @@ export function DetailedQuestionPage(): JSX.Element {
     const numberQuestionsAnswered = (answer1 ? 1:0) + (answer2 ? 1:0) + (answer3 ? 1:0) + (answer4 ? 1:0) + (answer5 ? 1:0) + (answer6 ? 1:0) + (answer7 ? 1:0) + (answer8 ? 1:0);
 
     // State variable to track progress
-    const [progress, setProgress] = useState(0);
+    const [progress] = useState(0);
 
-    const handleAnswerQuestion = () => {
-        setProgress(prevProgress => prevProgress + 1);
-    };
+    // const handleAnswerQuestion = () => {
+    //     setProgress(prevProgress => prevProgress + 1);
+    // };
     // const resetProgress  = () =>{
     //     setProgress(0);
     // }
@@ -98,6 +100,8 @@ export function DetailedQuestionPage(): JSX.Element {
         setAnswersSubmitted(false);
     }
 
+    const answers: string[] = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8] 
+
     return (
     
         <><><div hidden={answersSubmitted}>
@@ -128,7 +132,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer1) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer1)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => nextQuestion("Q1")}>Next</button>
@@ -149,7 +152,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer2) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer2)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer2("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q2")}>Next</button>
@@ -171,7 +173,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer3) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer3)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer3("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q3")}>Next</button>
@@ -194,7 +195,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer4) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer4)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer4("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q4")}>Next</button>
@@ -214,7 +214,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer5) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer5)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer5("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q5")}>Next</button>
@@ -236,7 +235,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer6) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer6)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer6("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q6")}>Next</button>
@@ -256,7 +254,6 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer7) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer7)} onClick={handleAnswerQuestion}>Submit</button>
                 <button className='resetbutton' onClick={() => setAnswer7("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q7")}>Next</button>
@@ -276,7 +273,7 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer8) && <div className="validation">Please include more than 20 characters</div>}
-                <button className='submitbutton' disabled={!validateInput(answer8)} onClick={handleAnswerQuestion}>Submit</button>
+                
                 <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
                 <div></div>
                 <hr className="lines"></hr>
@@ -318,6 +315,8 @@ export function DetailedQuestionPage(): JSX.Element {
 
             </div></><div hidden={currentQuestion !== 'Results'}>
                 <h1>Career Suggestions ...</h1>
+                <div></div>
+                <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
             </div></>
     );
 }
