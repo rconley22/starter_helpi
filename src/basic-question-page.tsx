@@ -260,8 +260,26 @@ setCurrentQuestion(newQuest)
               </div>
 
               <div hidden={currentQuestion !== 'CareerMatch'}>
-                <h1>Career Suggestions ...</h1>
+                <h1>Your Personalized Career Suggestions</h1>
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <div>
+                <h2>Thank You For taking the Career Helpi Assessment, here are your results:</h2>
+                <h4>Your Top Career fields:</h4>
+                <p>1. 
+                  2.
+                  3.
+                </p>
+                <h4>Your Top Job Suggestions:</h4>
+                <p>1. 
+                  2.
+                  3.
+                </p>
+                <h4>Your Top Industry Matches:</h4>
+                <p>1. 
+                  2.
+                  3.
+                </p>
+                </div>
               </div>
         </div>
         <div className="progress-container">
