@@ -270,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (170 ms)
+  ✕ renders learn react link (166 ms)
 
   ● renders learn react link
 
@@ -502,11 +502,11 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   28.03 |    47.91 |     6.5 |   30.76 |                                                                         
+All files                   |   28.37 |    47.91 |     6.5 |   31.12 |                                                                         
  AI.tsx                     |   66.66 |      100 |      50 |   66.66 | 11-15                                                                   
  App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
- basic-question-page.tsx    |   19.82 |    43.47 |    1.42 |   22.11 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,115-116,121-122,143-259 
+ basic-question-page.tsx    |   20.51 |    43.47 |    1.42 |   22.85 | 42-44,48-50,54-56,60-62,66-68,73-75,80-82,85-93,124-125,130-131,152-268 
  detailed-question-page.tsx |   35.93 |    60.86 |       5 |   40.35 | 17-24,71-72,77-78,84,97,100,115-314                                     
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
@@ -515,5 +515,5 @@ All files                   |   28.03 |    47.91 |     6.5 |   30.76 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.722 s
+Time:        3.717 s
 Ran all test suites.
