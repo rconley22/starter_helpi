@@ -270,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (184 ms)
+  ✕ renders learn react link (166 ms)
 
   ● renders learn react link
 
@@ -355,12 +355,6 @@ FAIL src/App.test.tsx
                   [0mPlease include more than 20 characters[0m
                 [36m</div>[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"submitbutton"[39m
-                  [33mdisabled[39m=[32m""[39m
-                [36m>[39m
-                  [0mSubmit[0m
-                [36m</button>[39m
-                [36m<button[39m
                   [33mclass[39m=[32m"resetbutton"[39m
                 [36m>[39m
                   [0mReset Answer[0m
@@ -397,12 +391,6 @@ FAIL src/App.test.tsx
                 [36m>[39m
                   [0mPlease include more than 20 characters[0m
                 [36m</div>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"submitbutton"[39m
-                  [33mdisabled[39m=[32m""[39m
-                [36m>[39m
-                  [0mSubmit[0m
-                [36m</button>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"resetbutton"[39m
                 [36m>[39m
@@ -446,12 +434,6 @@ FAIL src/App.test.tsx
                   [0mPlease include more than 20 characters[0m
                 [36m</div>[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"submitbutton"[39m
-                  [33mdisabled[39m=[32m""[39m
-                [36m>[39m
-                  [0mSubmit[0m
-                [36m</button>[39m
-                [36m<button[39m
                   [33mclass[39m=[32m"resetbutton"[39m
                 [36m>[39m
                   [0mReset Answer[0m
@@ -468,7 +450,24 @@ FAIL src/App.test.tsx
                   [33mclass[39m=[32m"submitAns"[39m
                 [36m>[39m
                   [0mNext[0m
-               ...
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mhidden[39m=[32m""[39m
+              [36m>[39m
+                [36m<h4>[39m
+                  [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
+                [36m</h4>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                  [36m>[39m
+                    [0mAnswer:[0m
+                  [36m</label>[39m
+                  [36m<div />[39m
+                  [36m<textarea[39m
+                    [33mclass[39m=[32m"responsebox form-control"[39m
+       ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -503,12 +502,12 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   27.44 |    47.91 |    5.64 |   30.25 |                                                                         
+All files                   |   27.35 |    47.91 |    5.73 |   30.05 |                                                                         
  AI.tsx                     |   66.66 |      100 |      50 |   66.66 | 11-15                                                                   
  App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
  basic-question-page.tsx    |   19.82 |    43.47 |    1.42 |   22.11 | 33-35,39-41,45-47,51-53,57-59,64-66,71-73,76-84,115-116,121-122,143-259 
- detailed-question-page.tsx |   34.84 |    60.86 |    4.76 |   39.65 | 15-22,37,69-70,75-76,82,95,98,111-317                                   
+ detailed-question-page.tsx |   34.92 |    60.86 |       5 |   39.28 | 15-22,69-70,75-76,82,95,98,111-310                                      
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -516,5 +515,5 @@ All files                   |   27.44 |    47.91 |    5.64 |   30.25 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.741 s
+Time:        3.548 s
 Ran all test suites.
