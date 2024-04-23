@@ -24,6 +24,15 @@ export function BasicQuestionPage({userKey}: {userKey: string}): JSX.Element {
     //State to track current question
 
     type questions = 'Q1' | 'Q2' |'Q3' |'Q4' |'Q5' |'Q6' |'Q7' | 'End' | 'Results' | 'CareerMatch' | 'Q0'
+
+    const questionPrompts = ["I prefer working in a group rather than alone.",
+      "I'd rather create something new than learn what's already out there.",
+      "I value enjoyment over a high salary.",
+      "I prefer a quiet, distraction-free environment over a busy, noisy one.",
+      "I'm crafty and good with my hands.",
+      "I like working through decisions instead of going with my gut.",
+      "I enjoy keeping up with current events."
+    ]
     
     const [currentQuestion, setCurrentQuestion] = useState<questions>('Q0')
 
@@ -248,20 +257,31 @@ setCurrentQuestion(newQuest)
               <div hidden={currentQuestion !== 'Results'}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
-                <p>I prefer working in a group rather than alone: {lastPress1}</p>
-                <p>I'd rather create something new than learn what's already out there: {lastPress2}</p>
-                <p>I value enjoyment over a high salary: {lastPress3}</p>
-                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {lastPress4}</p>
-                <p>I'm crafty and good with my hands: {lastPress5}</p>
-                <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
-                <p>I enjoy keeping up with current events: {lastPress7}</p>
+                <p>{questionPrompts[0]} {'->'} {lastPress1}</p>
+                <p>{questionPrompts[1]} {'->'} {lastPress2}</p>
+                <p>{questionPrompts[2]} {'->'} {lastPress3}</p>
+                <p>{questionPrompts[3]} {'->'} {lastPress4}</p>
+                <p>{questionPrompts[4]} {'->'} {lastPress5}</p>
+                <p>{questionPrompts[5]} {'->'} {lastPress6}</p>
+                <p>{questionPrompts[6]} {'->'} {lastPress7}</p>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
               <div hidden={currentQuestion !== 'CareerMatch'}>
-                <h1>Career Suggestions ...</h1>
+                <h1>Your Personalized Career Suggestions</h1>
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <div>
+                <h2>Thank You For taking the Career Helpi Assessment, here are your results:</h2>
+                <h4>Your Top Career fields:</h4>
+                <p>...</p>
+                <h4>Your Top Job Suggestions:</h4>
+                <p>...</p>
+                <h4>Your Top Industry Matches:</h4>
+                <p>...</p>
+                <h4> Results Summary:</h4>
+                <p>...</p>
+                </div>
               </div>
         </div>
         <div className="progress-container">
