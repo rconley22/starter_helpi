@@ -8,6 +8,8 @@ import './AI';
 import img from './person_thinking.jpg';
 import { ChatGPT } from './AI';
 import OpenAI from 'openai';
+import { error } from 'console';
+import { ifError } from 'assert';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -43,24 +45,24 @@ function App() {
       checkKeyValidity()
        }
   }
-  const [testVar, setTestVar] = useState<string | null>('');
+
+
+const [response, setResponse] = useState<string | null>('currently empty!');
   function checkKeyValidity(): void{
     
-    // const testCase = new OpenAI(({apiKey: keyData, dangerouslyAllowBrowser: true}))
-      
-    //   const getOpenAIResponse = async () => {
-    //     const res = await testCase.chat.completions.create({
-    //     model: 'gpt-3.5-turbo',
-    //     messages: [ {role: "user", content: "This is a test." } ]
-    //     })
-    //     setTestVar(res.choices[0]?.message?.content);
-    //     ;
+    
   try{
-    // getOpenAIResponse();
-     setKeyValidity('valid')
+    const myOpenAi = new OpenAI({apiKey: keyData, dangerouslyAllowBrowser: true});
+      const getOpenAIResponse = async () => {
+       const res = await myOpenAi.chat.completions.create({
+       model: 'gpt-3.5-turbo',
+       messages: [ {role: "user", content: "This is a test." } ]
+       });
+       setResponse(res.choices[0]?.message?.content);
+    // setKeyValidity('valid')
      ChatGPT({userKey:keyData,content:"This is a test."})
-     console.log("Success!")
-    }
+     
+    }}
     catch(error){
       setKeyValidity('invalid')
     }
@@ -117,6 +119,7 @@ function App() {
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>
           ${keyData}
+          ${response}
           <ChatGPT userKey={keyData} content={"This is a test."}></ChatGPT>
           The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
