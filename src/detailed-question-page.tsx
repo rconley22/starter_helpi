@@ -31,7 +31,7 @@ export function DetailedQuestionPage(): JSX.Element {
     const numberQuestionsAnswered = (answer1 ? 1:0) + (answer2 ? 1:0) + (answer3 ? 1:0) + (answer4 ? 1:0) + (answer5 ? 1:0) + (answer6 ? 1:0) + (answer7 ? 1:0) + (answer8 ? 1:0);
 
     // State variable to track progress
-    const [progress, setProgress] = useState(0);
+    const [progress] = useState(0);
 
     // const handleAnswerQuestion = () => {
     //     setProgress(prevProgress => prevProgress + 1);
@@ -269,6 +269,7 @@ export function DetailedQuestionPage(): JSX.Element {
                     ></FormControl>
                 </FormGroup>
                 {!validateInput(answer8) && <div className="validation">Please include more than 20 characters</div>}
+                
                 <button className='resetbutton' onClick={() => setAnswer8("")}>Reset Answer</button>
                 <div></div>
                 <hr className="lines"></hr>
