@@ -146,9 +146,9 @@
 
 .lines{
   border: none;
-  border-top: 3px dotted #000; /* Change color and style as needed */
-  width: 50%; /* Set the desired width */
-  margin: 0 auto; /* Center the HR element */
+  border-top: 5px dotted #000000; 
+  width: 50%; 
+  margin: 0 auto; 
 }
  
  
