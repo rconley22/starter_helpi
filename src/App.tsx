@@ -30,6 +30,7 @@ function App() {
     else{ 
       setKeyValidity('invalid');
       window.location.reload()
+      checkKeyValidity()
        }
   }
   function changeToBasicPage(): void {
@@ -39,27 +40,34 @@ function App() {
     else{
       setKeyValidity('invalid');
       window.location.reload()
+      checkKeyValidity()
        }
   }
-
-  function checkKeyValidity(): void {
-    setKeyValidity('valid')
-    const testCase = new OpenAI(({apiKey: keyData, dangerouslyAllowBrowser: true}))
+  const [testVar, setTestVar] = useState<string | null>('');
+  function checkKeyValidity(): void{
     
-      const getOpenAIResponse = async () => {
-        const res = await testCase.chat.completions.create({
-        model: 'gpt-3.5-turbo',
-        messages: [ {role: "user", content: "This is a test." } ]
-        });
+    // const testCase = new OpenAI(({apiKey: keyData, dangerouslyAllowBrowser: true}))
+      
+    //   const getOpenAIResponse = async () => {
+    //     const res = await testCase.chat.completions.create({
+    //     model: 'gpt-3.5-turbo',
+    //     messages: [ {role: "user", content: "This is a test." } ]
+    //     })
+    //     setTestVar(res.choices[0]?.message?.content);
+    //     ;
   try{
-    getOpenAIResponse();
+    // getOpenAIResponse();
+     setKeyValidity('valid')
+     ChatGPT({userKey:keyData,content:"This is a test."})
+     console.log("Success!")
     }
     catch(error){
       setKeyValidity('invalid')
     }
 
   }
-}
+  
+
 
 
   function changetoHomePage(): void {//switch to the home page
@@ -71,8 +79,10 @@ function App() {
   function handleSubmit() {
     
     localStorage.setItem(saveKeyData, JSON.stringify(key));
-    checkKeyValidity()
+    
+
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
+    checkKeyValidity()
   }
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
@@ -107,6 +117,7 @@ function App() {
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>
           ${keyData}
+          <ChatGPT userKey={keyData} content={"This is a test."}></ChatGPT>
           The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
