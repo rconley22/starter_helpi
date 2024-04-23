@@ -4,7 +4,10 @@ import { Button, Form } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
+import './AI';
 import img from './person_thinking.jpg';
+import { ChatGPT } from './AI';
+import OpenAI from 'openai';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -23,11 +26,41 @@ function App() {
 
   function changetoDetailedPage(): void {//switch to the detailed questions page
     if(isKeyValid === 'valid')
-      isKeyValid === 'valid' ? setcurrentPage('detailed question page') : window.location.reload();
+      { setcurrentPage('detailed question page')}
+    else{ 
+      setKeyValidity('invalid');
+      window.location.reload()
+       }
   }
   function changeToBasicPage(): void {
-    isKeyValid === 'valid' ? setcurrentPage('basic question page') : window.location.reload();
+    if(isKeyValid === 'valid'){
+      setcurrentPage('basic question page')
+    }
+    else{
+      setKeyValidity('invalid');
+      window.location.reload()
+       }
   }
+
+  function checkKeyValidity(): void {
+    setKeyValidity('valid')
+    const testCase = new OpenAI(({apiKey: keyData, dangerouslyAllowBrowser: true}))
+    
+      const getOpenAIResponse = async () => {
+        const res = await testCase.chat.completions.create({
+        model: 'gpt-3.5-turbo',
+        messages: [ {role: "user", content: "This is a test." } ]
+        });
+  try{
+    getOpenAIResponse();
+    }
+    catch(error){
+      setKeyValidity('invalid')
+    }
+
+  }
+}
+
 
   function changetoHomePage(): void {//switch to the home page
     setcurrentPage('home');
@@ -36,8 +69,9 @@ function App() {
   
   //sets the local storage item to the api key the user inputed
   function handleSubmit() {
-
+    
     localStorage.setItem(saveKeyData, JSON.stringify(key));
+    checkKeyValidity()
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
   }
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
@@ -46,14 +80,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className='warning-header'>
+    <div onLoad={checkKeyValidity} className="App">
+      <header hidden={isKeyValid === ('empty') || isKeyValid === ('valid')} className='warning-header'>
         Please enter a valid API key. We won't be able to provide results without it.
       
       </header>
       <header className="App-header">
         <div className="wrapper">
-        <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
+        <Button className='homebutton' onClick={changetoHomePage}>Home ${isKeyValid}</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
         </div>
@@ -71,7 +105,9 @@ function App() {
         <img src={img} alt="Couldn't load"></img>
       </div>
       <div hidden={currentPage !== 'home'}>
-        <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
+        <p className='detailed-description'>
+          ${keyData}
+          The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
         <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>

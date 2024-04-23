@@ -13,6 +13,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     messages: [ {role: "user", content: content } ]
     });
     setResponse(res.choices[0]?.message?.content);
+
 }
  return (
   <div>
