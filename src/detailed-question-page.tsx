@@ -33,9 +33,9 @@ export function DetailedQuestionPage(): JSX.Element {
     // State variable to track progress
     const [progress, setProgress] = useState(0);
 
-    const handleAnswerQuestion = () => {
-        setProgress(prevProgress => prevProgress + 1);
-    };
+    // const handleAnswerQuestion = () => {
+    //     setProgress(prevProgress => prevProgress + 1);
+    // };
     // const resetProgress  = () =>{
     //     setProgress(0);
     // }
