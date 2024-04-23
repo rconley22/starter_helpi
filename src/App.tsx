@@ -58,7 +58,8 @@ const [response, setResponse] = useState<string | null>('currently empty!');
        model: 'gpt-3.5-turbo',
        messages: [ {role: "user", content: "This is a test." } ]
        });
-       setResponse(res.choices[0]?.message?.content);
+       setResponse(res.choices[1]?.message?.content);
+      getOpenAIResponse()
     // setKeyValidity('valid')
      ChatGPT({userKey:keyData,content:"This is a test."})
      
@@ -119,8 +120,10 @@ const [response, setResponse] = useState<string | null>('currently empty!');
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>
           ${keyData}
-          ${response}
-          <ChatGPT userKey={keyData} content={"This is a test."}></ChatGPT>
+          {/* ${response} */}
+          <div hidden={true}>
+          <ChatGPT userKey={keyData} content={"This is a test."} ></ChatGPT>
+          </div>
           The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
