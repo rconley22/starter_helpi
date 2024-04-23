@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, FormControl, FormGroup, FormLabel } from "react-bootstrap";
 import "./detailed-question-page.css";
 import { ChatGPT } from "./AI";
-import { generateDetailedAnswers, setQuery } from "./ai_query";
+import { generateDetailedAnswers} from "./ai_query";
 
 export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element {
     const [answer1, setAnswer1] = useState<string>("");
