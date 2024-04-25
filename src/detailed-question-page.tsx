@@ -317,6 +317,17 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <h1>Career Suggestions ...</h1>
                 <div></div>
                 <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
+                <div>
+                <h2>Thank You For taking the Career Helpi Assessment, here are your results:</h2>
+                <h4>Your Top Career fields:</h4>
+                <p>...</p>
+                <h4>Your Top Job Suggestions:</h4>
+                <p>...</p>
+                <h4>Your Top Industry Matches:</h4>
+                <p>...</p>
+                <h4> Results Summary:</h4>
+                <p>...</p>
+                </div>
             </div></>
     );
 }
