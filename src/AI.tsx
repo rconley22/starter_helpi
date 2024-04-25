@@ -18,7 +18,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
 }
  return (
   <div>
-    <Button onClick={getOpenAIResponse}>Click me</Button>
+    <Button className="submitAns" onClick={getOpenAIResponse}>Click for your personalized career!</Button>
     <div className='response-text'>
     {response}
     </div>
