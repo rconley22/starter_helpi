@@ -270,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (177 ms)
+  ✕ renders learn react link (178 ms)
 
   ● renders learn react link
 
@@ -285,6 +285,13 @@ FAIL src/App.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
+            [36m<div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"headerTitle"[39m
+              [36m>[39m
+                [0mThe Career Helpi[0m
+              [36m</h1>[39m
+            [36m</div>[39m
             [36m<div[39m
               [33mclass[39m=[32m"wrapper"[39m
             [36m>[39m
@@ -461,13 +468,7 @@ FAIL src/App.test.tsx
                 [36m<div>[39m
                   [36m<label[39m
                     [33mclass[39m=[32m"form-label"[39m
-                  [36m>[39m
-                    [0mAnswer:[0m
-                  [36m</label>[39m
-                  [36m<div />[39m
-                  [36m<textarea[39m
-                    [33mclass[39m=[32m"responsebox form-control"[39m
-       ...
+                  [36m...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -515,5 +516,5 @@ All files                   |   28.37 |    47.91 |     6.5 |   31.12 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.896 s
+Time:        3.591 s
 Ran all test suites.
