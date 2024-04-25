@@ -43,6 +43,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
