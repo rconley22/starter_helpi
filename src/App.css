@@ -68,6 +68,13 @@
   column-gap: 100px;
 }
 
+.headerTitle {
+  color: whitesmoke;
+  font-size: 5vh;
+  font-stretch:semi-expanded;
+  margin-top: 2vh;
+}
+
 
 /* .basicButton {
   background-color: #04AA6D;
