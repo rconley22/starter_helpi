@@ -20,7 +20,6 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
   }
  return (
   <div>
-    <Button onClick={getOpenAIResponse}>Click me</Button>
     <p>{newText[0]}</p>
     <p>{newText[1]}</p>
     <p>{newText[2]}</p>
@@ -28,6 +27,10 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <p>{newText[4]}</p>
     <p>{newText[5]}</p>
     <p>{newText[6]}</p>
+    <Button className="submitAns" onClick={getOpenAIResponse}>Click for your personalized career!</Button>
+    <div className='response-text'>
+    {response}
+    </div>
   </div>
  );
 }

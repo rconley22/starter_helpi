@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
@@ -43,6 +43,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
@@ -75,10 +76,15 @@ function App() {
       </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
-        <Form.Label>API Key:</Form.Label>
-        <Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey}></Form.Control>
-        <br></br>
-        <Button className="Submit-Button" onClick={handleSubmit}>Submit</Button>
+        
+        <Container>
+          <Row>
+            <Col><Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} className='apiKeyInsert'></Form.Control></Col>
+            <Col><Button className="Submit-Button" onClick={handleSubmit}>Submit</Button></Col>
+          
+          
+          </Row>
+        </Container>
       </Form>
       </footer>
     </div>

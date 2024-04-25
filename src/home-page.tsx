@@ -6,7 +6,7 @@ export function HomePage(): JSX.Element {
 
     return (
         <div>
-            <h1>The Career Helpi</h1>
+            <h1> </h1>
         </div>
     );
 }
