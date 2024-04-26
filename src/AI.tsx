@@ -2,17 +2,23 @@ import React from 'react';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { OpenAI } from 'openai';
+import Loader from './Loader';
+import './Loader.css'
+
 
 
 export function ChatGPT({userKey, content}: {userKey: string; content: string}): JSX.Element {
  const [response, setResponse] = useState<string | null>('');
+ const [loading, setLoading] = useState<boolean>(false);
  const myOpenAi = new OpenAI({apiKey: userKey, dangerouslyAllowBrowser: true});
    const getOpenAIResponse = async () => {
+    setLoading(true);
     const res = await myOpenAi.chat.completions.create({
     model: 'gpt-4',
     messages: [ {role: "assistant", content: content } ]
     });
     setResponse(res.choices[0]?.message?.content);
+    setLoading(false);
 }
   let newText = ["", "", "", "", "", "", "", ""];
   if (response !== null) {
@@ -29,7 +35,8 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <p>{newText[6]}</p>
     <Button className="submitAns" onClick={getOpenAIResponse}>Click for your personalized career!</Button>
     <div className='response-text'>
-    {response}
+    {!loading && response}
+    {loading && <Loader></Loader>}
     </div>
   </div>
  );
