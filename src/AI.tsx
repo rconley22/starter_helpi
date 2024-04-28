@@ -29,26 +29,32 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
   }
  return (
   <div>
+    <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
+    <div hidden={!buttonclicked}>
+    <h2>Top 5 Careers</h2>
     <p>{newText[0]}</p>
     <p>{newText[1]}</p>
     <p>{newText[2]}</p>
     <p>{newText[3]}</p>
     <p>{newText[4]}</p>
+    <h2>Your Top Industry Matches:</h2>
     <p>{newText[5]}</p>
     <p>{newText[6]}</p>
     <p>{newText[7]}</p>
     <p>{newText[8]}</p>
     <p>{newText[9]}</p>
+    <h2>Your Top Job Suggestions:</h2>
     <p>{newText[10]}</p>
     <p>{newText[11]}</p>
     <p>{newText[12]}</p>
     <p>{newText[13]}</p>
     <p>{newText[14]}</p>
+    <h2> Overall Summary:</h2>
     <p>{newText[15]}</p>
-    <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
     <div className='response-text'>
-    {!loading && response}
+    {/* {!loading && response} */}
     {loading && <Loader></Loader>}
+    </div>
     </div>
   </div>
  );

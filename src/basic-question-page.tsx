@@ -275,8 +275,8 @@ setCurrentQuestion(newQuest)
               </div>
 
               <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
-                <h1>Your Career Suggestions ...</h1>
-                <h2>Top 5 Careers</h2>
+                <h1>Your Career Report</h1>
+                {/* <h2>Top 5 Careers</h2>
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
                 <h2>Your Top Industry Matches:</h2>
                 <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
@@ -284,7 +284,7 @@ setCurrentQuestion(newQuest)
                 <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
                 <h2> Overall Summary:</h2>
                 <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
-                <h2> Career Report:</h2>
+                <h2> Career Report:</h2> */}
                 <ChatGPT userKey={userKey} content={setQuery5(presses)}></ChatGPT>
               </div>
         </div>
