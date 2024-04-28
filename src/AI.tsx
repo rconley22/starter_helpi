@@ -22,9 +22,10 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     setResponse(res.choices[0]?.message?.content);
     setLoading(false);
 }
-  let newText = ["", "", "", "", "", "", "", ""];
+  let newText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
   if (response !== null) {
-  newText= response.split(/[0-5]\./);
+  // newText= response.split(/[0-16]\./);
+  newText= response.split(":", 16);
   }
  return (
   <div>
@@ -35,9 +36,18 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <p>{newText[4]}</p>
     <p>{newText[5]}</p>
     <p>{newText[6]}</p>
+    <p>{newText[7]}</p>
+    <p>{newText[8]}</p>
+    <p>{newText[9]}</p>
+    <p>{newText[10]}</p>
+    <p>{newText[11]}</p>
+    <p>{newText[12]}</p>
+    <p>{newText[13]}</p>
+    <p>{newText[14]}</p>
+    <p>{newText[15]}</p>
     <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
     <div className='response-text'>
-    {/* {!loading && response} */}
+    {!loading && response}
     {loading && <Loader></Loader>}
     </div>
   </div>
