@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -83,6 +84,13 @@
   column-gap: 100px;
 }
 
+.headerTitle {
+  color: whitesmoke;
+  font-size: 5vh;
+  font-stretch:semi-expanded;
+  margin-top: 2vh;
+}
+
 
 /* .basicButton {
   background-color: #04AA6D;
@@ -96,11 +104,17 @@
   background-color: gray;
   text-align: center;
   margin-top: auto;
-  padding: 32px;
+  padding: 18px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8vh;
 }
 .detailedbutton,
 .homebutton,
@@ -141,12 +155,16 @@ img {
 .basic-description{
   margin-top: 60px;
   margin-bottom: 30px;
-  margin-inline: 50px;
+  margin-inline: 165px;
+  width: 500px;
+  font-family: monospace;
 }
 .detailed-description{
   margin-top: 100px;
   margin-bottom: 30px;
-  margin-left: 80px;
+  margin-left: 165px;
+  width: 500px;
+  font-family: monospace;
 }
 
 .detailedbutton2{
@@ -177,7 +195,7 @@ img {
   color: white; /* Text color */
   text-align: center;
   font-size: 16px;
-  padding: 15px 32px; /* Padding around text */
+  padding: 15px 45px; /* Padding around text */
   margin: 1px; /* Add margin between buttons */
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
@@ -186,6 +204,10 @@ img {
   position: relative; /* Set position to relative */
  /* Bring the button forward */
   left: 20px; /* Move the button 20 pixels to the left */
-  margin-right: 680px;
+  margin-right: 660px;
   margin-bottom: 350px;
+}
+
+.apiKeyInsert {
+  width: 80vh;
 }

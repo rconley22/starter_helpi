@@ -294,7 +294,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                     <div className="progress-bar" style={{ width: `${(numberQuestionsAnswered / 8) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
                 </div>
             </div>
-            {allQuestionsAnswered &&
+            {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
                 <div>
                     <p className="questions">All questions answered!</p>
                     <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
@@ -314,9 +314,20 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
 
             </div></><div hidden={currentQuestion !== 'Results'}>
-                <h1>Career Suggestions ...</h1>
+                <h1>Your Personalized Career Suggestions</h1>
                 <div></div>
                 <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
+                {/* <div> */}
+                {/* <h2>Thank You For taking the Career Helpi Assessment, here are your results:</h2>
+                <h4>Your Top Career fields:</h4>
+                <p>...</p>
+                <h4>Your Top Job Suggestions:</h4>
+                <p>...</p>
+                <h4>Your Top Industry Matches:</h4>
+                <p>...</p>
+                <h4> Results Summary:</h4>
+                <p>...</p>
+                </div> */}
             </div></>
     );
 }

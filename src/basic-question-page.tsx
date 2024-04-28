@@ -30,47 +30,62 @@ export function BasicQuestionPage({userKey}: {userKey: string}): JSX.Element {
     // Function to handle user answering a question
     const handleAnswerQuestion1 = (response1: multAnswers) => {
         // Increment progress by 1 for each answered question
-          if(lastPress1 === '')
+          if(lastPress1 === ''){
             setProgress(prevProgress => prevProgress + 1);
+            const newQuest = questOrderForward['Q1']
+            setCurrentQuestion(newQuest)
+          }
           setLastPress1(response1)
         }
     const handleAnswerQuestion2 = (response2: multAnswers) => {
           // Increment progress by 1 for each answered question
-            if(lastPress2 === '')
+            if(lastPress2 === ''){
               setProgress(prevProgress => prevProgress + 1);
-            setLastPress2(response2)
+              const newQuest = questOrderForward['Q2']
+              setCurrentQuestion(newQuest)
+            }setLastPress2(response2)
           }
   const handleAnswerQuestion3 = (response3: multAnswers) => {
         // Increment progress by 1 for each answered question
-          if(lastPress3 === '')
+          if(lastPress3 === ''){
             setProgress(prevProgress => prevProgress + 1);
-          setLastPress3(response3)
+            const newQuest = questOrderForward['Q3']
+            setCurrentQuestion(newQuest)
+          }setLastPress3(response3)
         }
   const handleAnswerQuestion4 = (response4: multAnswers) => {
           // Increment progress by 1 for each answered question
-            if(lastPress4 === '')
+            if(lastPress4 === ''){
               setProgress(prevProgress => prevProgress + 1);
-            setLastPress4(response4)
+              const newQuest = questOrderForward['Q4']
+              setCurrentQuestion(newQuest)
+            }setLastPress4(response4)
           }      
   const handleAnswerQuestion5 = (response5: multAnswers) => {
             // Increment progress by 1 for each answered question
-              if(lastPress5 === '')
+              if(lastPress5 === ''){
                 setProgress(prevProgress => prevProgress + 1);
-              setLastPress5(response5)
+                const newQuest = questOrderForward['Q5']
+                setCurrentQuestion(newQuest)
+              }setLastPress5(response5)
             }
 
 const handleAnswerQuestion6 = (response6: multAnswers) => {
               // Increment progress by 1 for each answered question
-                if(lastPress6 === '')
+                if(lastPress6 === ''){
                   setProgress(prevProgress => prevProgress + 1);
-                setLastPress6(response6)
+                  const newQuest = questOrderForward['Q6']
+                  setCurrentQuestion(newQuest)
+                }setLastPress6(response6)
               } 
   
   const handleAnswerQuestion7 = (response7: multAnswers) => {
                 // Increment progress by 1 for each answered question
-                  if(lastPress7 === '')
+                  if(lastPress7 === ''){
                     setProgress(prevProgress => prevProgress + 1);
-                  setLastPress7(response7)
+                    const newQuest = questOrderForward['Q7']
+                    setCurrentQuestion(newQuest)
+                  }setLastPress7(response7)
                 }
     const resetProgress  = () =>{
         setProgress(0);
@@ -132,7 +147,7 @@ setCurrentQuestion(newQuest)
 
         <><div>
           <div hidden={currentQuestion!=='Q0'}>
-            <h2>Basic Questions Page</h2>
+            <h2>Basic Questions Page </h2>
             <hr className="lines"></hr>
             <p>If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
