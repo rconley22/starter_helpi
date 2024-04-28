@@ -10,9 +10,11 @@ import './Loader.css'
 export function ChatGPT({userKey, content}: {userKey: string; content: string}): JSX.Element {
  const [response, setResponse] = useState<string | null>('');
  const [loading, setLoading] = useState<boolean>(false);
+ const [buttonclicked, setButtonclicked] = useState<boolean>(false);
  const myOpenAi = new OpenAI({apiKey: userKey, dangerouslyAllowBrowser: true});
    const getOpenAIResponse = async () => {
     setLoading(true);
+    setButtonclicked(true);
     const res = await myOpenAi.chat.completions.create({
     model: 'gpt-4',
     messages: [ {role: "assistant", content: content } ]
@@ -33,7 +35,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <p>{newText[4]}</p>
     <p>{newText[5]}</p>
     <p>{newText[6]}</p>
-    <Button className="submitAns" onClick={getOpenAIResponse}>Click for your personalized career!</Button>
+    <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click for your personalized career!</Button>
     <div className='response-text'>
     {!loading && response}
     {loading && <Loader></Loader>}
