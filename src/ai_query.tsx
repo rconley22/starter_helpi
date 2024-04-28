@@ -1,90 +1,90 @@
 type multAnswers = 'Strongly Disagree' | 'Disagree' | 'Neutral' | 'Agree' | 'Strongly Agree'|''
 
+// export function setQuery(presses: multAnswers[]): string {
+//     return `
+//     I asked someone a few questions. Please consider their answers and generate a list of 5 distinct careers for them.
+//     These should be specific careers rather than vague.
+    
+//     Question: I prefer working in a group rather than alone.
+//     Answer: ${presses[0]}
+//     Question: I'd rather create something new than learn what's already out there.
+//     Answer: ${presses[1]}
+//     Question: I value enjoyment over a high salary.
+//     Answer: ${presses[2]}
+//     Question: I prefer a quiet, distraction free environment over a busy, noisy one.
+//     Answer: ${presses[3]}
+//     Question: I'm crafty and good with my hands.
+//     Answer: ${presses[4]}
+//     Question: I like working through decisions instead of going with my gut.
+//     Answer: ${presses[5]}
+//     Question: I enjoy keeping up with current events.
+//     Answer: ${presses[6]}`
+// }
+
+// export function setQuery2(presses: multAnswers[]): string {
+//     return `
+//     I asked someone a few questions. Please consider their answers and generate a list of 5 distinct Industry Matches for them.
+    
+    
+//     Question: I prefer working in a group rather than alone.
+//     Answer: ${presses[0]}
+//     Question: I'd rather create something new than learn what's already out there.
+//     Answer: ${presses[1]}
+//     Question: I value enjoyment over a high salary.
+//     Answer: ${presses[2]}
+//     Question: I prefer a quiet, distraction free environment over a busy, noisy one.
+//     Answer: ${presses[3]}
+//     Question: I'm crafty and good with my hands.
+//     Answer: ${presses[4]}
+//     Question: I like working through decisions instead of going with my gut.
+//     Answer: ${presses[5]}
+//     Question: I enjoy keeping up with current events.
+//     Answer: ${presses[6]}`
+// }
+
+// export function setQuery3(presses: multAnswers[]): string {
+//     return `
+//     I asked someone a few questions. Please consider their answers and generate a list of 5 distinct Job Suggestions for them.
+    
+    
+//     Question: I prefer working in a group rather than alone.
+//     Answer: ${presses[0]}
+//     Question: I'd rather create something new than learn what's already out there.
+//     Answer: ${presses[1]}
+//     Question: I value enjoyment over a high salary.
+//     Answer: ${presses[2]}
+//     Question: I prefer a quiet, distraction free environment over a busy, noisy one.
+//     Answer: ${presses[3]}
+//     Question: I'm crafty and good with my hands.
+//     Answer: ${presses[4]}
+//     Question: I like working through decisions instead of going with my gut.
+//     Answer: ${presses[5]}
+//     Question: I enjoy keeping up with current events.
+//     Answer: ${presses[6]}`
+// }
+
+// export function setQuery4(presses: multAnswers[]): string {
+//     return `
+//     I asked someone a few questions. Please consider their answers and generate a one paragraph summary with suggestions for them.
+//     Write the summary as if you were responding to them directly.
+    
+//     Question: I prefer working in a group rather than alone.
+//     Answer: ${presses[0]}
+//     Question: I'd rather create something new than learn what's already out there.
+//     Answer: ${presses[1]}
+//     Question: I value enjoyment over a high salary.
+//     Answer: ${presses[2]}
+//     Question: I prefer a quiet, distraction free environment over a busy, noisy one.
+//     Answer: ${presses[3]}
+//     Question: I'm crafty and good with my hands.
+//     Answer: ${presses[4]}
+//     Question: I like working through decisions instead of going with my gut.
+//     Answer: ${presses[5]}
+//     Question: I enjoy keeping up with current events.
+//     Answer: ${presses[6]}`
+// }
+
 export function setQuery(presses: multAnswers[]): string {
-    return `
-    I asked someone a few questions. Please consider their answers and generate a list of 5 distinct careers for them.
-    These should be specific careers rather than vague.
-    
-    Question: I prefer working in a group rather than alone.
-    Answer: ${presses[0]}
-    Question: I'd rather create something new than learn what's already out there.
-    Answer: ${presses[1]}
-    Question: I value enjoyment over a high salary.
-    Answer: ${presses[2]}
-    Question: I prefer a quiet, distraction free environment over a busy, noisy one.
-    Answer: ${presses[3]}
-    Question: I'm crafty and good with my hands.
-    Answer: ${presses[4]}
-    Question: I like working through decisions instead of going with my gut.
-    Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
-    Answer: ${presses[6]}`
-}
-
-export function setQuery2(presses: multAnswers[]): string {
-    return `
-    I asked someone a few questions. Please consider their answers and generate a list of 5 distinct Industry Matches for them.
-    
-    
-    Question: I prefer working in a group rather than alone.
-    Answer: ${presses[0]}
-    Question: I'd rather create something new than learn what's already out there.
-    Answer: ${presses[1]}
-    Question: I value enjoyment over a high salary.
-    Answer: ${presses[2]}
-    Question: I prefer a quiet, distraction free environment over a busy, noisy one.
-    Answer: ${presses[3]}
-    Question: I'm crafty and good with my hands.
-    Answer: ${presses[4]}
-    Question: I like working through decisions instead of going with my gut.
-    Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
-    Answer: ${presses[6]}`
-}
-
-export function setQuery3(presses: multAnswers[]): string {
-    return `
-    I asked someone a few questions. Please consider their answers and generate a list of 5 distinct Job Suggestions for them.
-    
-    
-    Question: I prefer working in a group rather than alone.
-    Answer: ${presses[0]}
-    Question: I'd rather create something new than learn what's already out there.
-    Answer: ${presses[1]}
-    Question: I value enjoyment over a high salary.
-    Answer: ${presses[2]}
-    Question: I prefer a quiet, distraction free environment over a busy, noisy one.
-    Answer: ${presses[3]}
-    Question: I'm crafty and good with my hands.
-    Answer: ${presses[4]}
-    Question: I like working through decisions instead of going with my gut.
-    Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
-    Answer: ${presses[6]}`
-}
-
-export function setQuery4(presses: multAnswers[]): string {
-    return `
-    I asked someone a few questions. Please consider their answers and generate a one paragraph summary with suggestions for them.
-    Write the summary as if you were responding to them directly.
-    
-    Question: I prefer working in a group rather than alone.
-    Answer: ${presses[0]}
-    Question: I'd rather create something new than learn what's already out there.
-    Answer: ${presses[1]}
-    Question: I value enjoyment over a high salary.
-    Answer: ${presses[2]}
-    Question: I prefer a quiet, distraction free environment over a busy, noisy one.
-    Answer: ${presses[3]}
-    Question: I'm crafty and good with my hands.
-    Answer: ${presses[4]}
-    Question: I like working through decisions instead of going with my gut.
-    Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
-    Answer: ${presses[6]}`
-}
-
-export function setQuery5(presses: multAnswers[]): string {
     return `
     I asked someone a few questions. Please consider their answers and generate a list of 16 items (seperated by a colon":"). Do not number the list.
     1 - 5: A list of 5 distinct careers for them. These should be specific careers rather than vague.
