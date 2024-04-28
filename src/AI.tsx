@@ -35,9 +35,9 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <p>{newText[4]}</p>
     <p>{newText[5]}</p>
     <p>{newText[6]}</p>
-    <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click for your personalized career!</Button>
+    <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
     <div className='response-text'>
-    {!loading && response}
+    {/* {!loading && response} */}
     {loading && <Loader></Loader>}
     </div>
   </div>

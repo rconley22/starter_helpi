@@ -5,7 +5,7 @@ import "./basic-question-page.css";
 import { useState } from "react";
 import React from "react";
 import { ChatGPT } from "./AI";
-import { setQuery, setQuery2 } from "./ai_query";
+import { setQuery, setQuery2, setQuery3, setQuery4 } from "./ai_query";
 
 
 //import { Button } from "react-bootstrap";
@@ -274,12 +274,16 @@ setCurrentQuestion(newQuest)
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
-              <div hidden={currentQuestion !== 'CareerMatch'}>
+              <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
                 <h1>Your Career Suggestions ...</h1>
                 <h2>Top 5 Careers</h2>
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
                 <h2>Your Top Industry Matches:</h2>
                 <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
+                <h2>Your Top Job Suggestions:</h2>
+                <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
+                <h2> Overall Summary:</h2>
+                <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
               </div>
         </div>
         <div className="progress-container">
