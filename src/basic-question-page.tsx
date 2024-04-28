@@ -274,8 +274,17 @@ setCurrentQuestion(newQuest)
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
-              <div hidden={currentQuestion !== 'CareerMatch'}>
-                <h1>Career Suggestions ...</h1>
+              <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
+                <h1>Your Career Report</h1>
+                {/* <h2>Top 5 Careers</h2>
+                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <h2>Your Top Industry Matches:</h2>
+                <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
+                <h2>Your Top Job Suggestions:</h2>
+                <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
+                <h2> Overall Summary:</h2>
+                <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
+                <h2> Career Report:</h2> */}
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
               </div>
         </div>
