@@ -56,6 +56,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     {/* {!loading && response} */}
     </div>
     {loading && <Loader></Loader>}
+    {loading && <p>Thank you, your response has been recorded.</p>}
   </div>
  );
 }
