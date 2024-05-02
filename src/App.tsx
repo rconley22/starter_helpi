@@ -59,9 +59,9 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      <div className="video-container">
+      <div className="video-container" hidden={currentPage !== "home"}>
       <video autoPlay muted loop id="background-video">
-        <source src="src/PersonCoding.mp4" type="video/mp4"/>
+        <source src={"src/PersonCoding.mp4"} />
       </video>
     </div>
       <div hidden={currentPage !== 'home'}>
