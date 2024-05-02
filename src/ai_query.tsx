@@ -104,7 +104,7 @@ export function setQuery(presses: multAnswers[]): string {
     Answer: ${presses[4]}
     Question: I like working through decisions instead of going with my gut.
     Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
+    Question: I get inspired by beauty in art and nature.
     Answer: ${presses[6]}`
 }
 // You will be permitted to break this format and only return a report summary.
