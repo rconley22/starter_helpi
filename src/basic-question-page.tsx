@@ -138,7 +138,12 @@ setCurrentQuestion(newQuest)
 
     }
 
+    const redoQuiz = ()=>{
+        resetProgress()
+        setCurrentQuestion('Q0')
 
+
+    }
 
     const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
@@ -289,9 +294,13 @@ setCurrentQuestion(newQuest)
               </div>
         </div>
         <div className="progress-container">
-        <div className="progress">
-                <div className="progress-bar" style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
-            </div></div></>
+        <div className="progress" hidden={currentQuestion==='CareerMatch'}>
+          
+                <div className="progress-bar"  style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
+                
+            </div>
+            <Button className="retakeQuiz" onClick={() => redoQuiz()} hidden={currentQuestion!=='CareerMatch'} >Retake Quiz</Button>
+            </div></>
 
 
     );
