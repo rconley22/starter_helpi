@@ -163,6 +163,7 @@ img {
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-right: 625px;
 }
 
 .homePageImage {
@@ -195,4 +196,24 @@ img {
 
 .apiKeyInsert {
   width: 80vh;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
 }
