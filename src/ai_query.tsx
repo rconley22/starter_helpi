@@ -107,12 +107,22 @@ export function setQuery(presses: multAnswers[]): string {
     Question: I enjoy keeping up with current events.
     Answer: ${presses[6]}`
 }
-
+// You will be permitted to break this format and only return a report summary.
+//     In this case, do not generate responses for any of the other items and leave out all formatting that would accompany them.
+    
 export function generateDetailedAnswers(answers: string[]): string{
     return `
     I've given a user a set of questions in order to determine what type of career would be best suited for them.
-    Use the answers they've given in order to generate an appropriate career for them.
-    If the responses to the questions do not make sense, make sure to clarify that while still trying to give them an apporpriate career.
+    Use the answers they've given in order to generate a list of 16 items (seperated by a colon":"). Do not number the list.
+    1 - 5: A list of 5 distinct careers for them. These should be specific careers rather than vague.
+    6 - 10: A list of 5 distinct Industry Matches for them.
+    10 - 15: A list of 5 distinct Job Suggestions for them.
+    16: A one paragraph summary with suggestions for them. Write the summary as if you were responding to them directly.
+    
+    If the responses to the questions do not make sense, do the following:
+    Generate a generic field for each of the first fifteen categories.
+    Give as accurate of a summary as possible while explaining to the user that their results aren't legible and encouraging them to take the quiz again.
+    
     Here are the questions and responses:
 
    Question: What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc):

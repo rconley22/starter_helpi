@@ -37,3 +37,13 @@
   .submitbutton:disabled{
     background-color: grey;
   }
+  .CareerMatchText {
+    margin-bottom: 15vh;
+    margin-top: 2vh;
+  }
+.bodyText{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+   
