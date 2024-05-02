@@ -275,14 +275,14 @@ setCurrentQuestion(newQuest)
             <div>
 
 
-            </div><div hidden={currentQuestion==='Q0'}>
-            <Button className="questionSelectLeft" onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
-            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
-            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
-            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
-            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
-            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
-            <Button className="questionSelectRight" onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div><div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
             </div>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
 

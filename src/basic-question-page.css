@@ -176,7 +176,7 @@
 }
 
 .questionSelect{
-  margin-top: 5px;
+  margin-top: 15px;
   background-color: #003e64d4;
   border-left: .5px solid rgb(17, 21, 16);
   border-right: .5px solid rgb(17, 21, 16);
@@ -197,7 +197,7 @@
 }
 
 .questionSelectLeft{
-  margin-top: 5px;
+  margin-top: 15px;
 border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
 border-top-right-radius: 0px;
@@ -221,7 +221,7 @@ transition: background-color 1s ease;
 }
 
 .questionSelectRight{
-  margin-top: 5px;
+  margin-top: 15px;
   border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
 border-top-right-radius: 15px;
@@ -242,8 +242,73 @@ cursor: pointer; /* Change cursor on hover */
 margin-bottom: 12px;
 transition: background-color 1s ease;
 
+}
 
+
+.questionSelectAns{
+  margin-top: 15px;
+  background-color: gray;
+  border-left: .5px solid rgb(17, 21, 16);
+  border-right: .5px solid rgb(17, 21, 16);
+  border-bottom: 2px solid rgb(17, 21, 16);
+  border-top: 2px solid rgb(17, 21, 16);
+  /* Add border to the buttons */ 
+  color: white; /* Text color */
+  text-align: center;
+  font-size: 15px;
+  padding: 8px 17px; /* Padding around text */
+  /* margin: 10px; Add margin between buttons */
+  border-radius: 0px; 
+  /* Rounded corners for buttons */
+  cursor: pointer; /* Change cursor on hover */
+  margin-bottom: 12px;
+  transition: background-color 1s ease;
+  
+}
+.questionSelectLeftAns{
+  margin-top: 15px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+background-color: gray;
+border-left: .5px solid rgb(17, 21, 16);
+border-right: .5px solid rgb(17, 21, 16);
+border-bottom: 2px solid rgb(17, 21, 16);
+border-top: 2px solid rgb(17, 21, 16);
+/* Add border to the buttons */ 
+color: white; /* Text color */
+text-align: center;
+font-size: 15px;
+padding: 8px 17px; /* Padding around text */
+/* margin: 10px; Add margin between buttons */ 
+/* Rounded corners for buttons */
+cursor: pointer; /* Change cursor on hover */
+margin-bottom: 12px;
+transition: background-color 1s ease;
 
 }
 
-/* .questionSelectLeft{} */
+.questionSelectRightAns{
+  margin-top: 15px;
+  border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+background-color: gray;
+border-left: .5px solid rgb(17, 21, 16);
+border-right: .5px solid rgb(17, 21, 16);
+border-bottom: 2px solid rgb(17, 21, 16);
+border-top: 2px solid rgb(17, 21, 16);
+/* Add border to the buttons */ 
+color: white; /* Text color */
+text-align: center;
+font-size: 15px;
+padding: 8px 17px; /* Padding around text */
+/* margin: 10px; Add margin between buttons */ 
+/* Rounded corners for buttons */
+cursor: pointer; /* Change cursor on hover */
+margin-bottom: 12px;
+transition: background-color 1s ease;
+
+}
