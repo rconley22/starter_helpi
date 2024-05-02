@@ -159,6 +159,10 @@
   margin-bottom: 15vh;
   margin-top: 2vh;
 }
+
+.basicPageDescription {
+  margin-inline: 40vh;
+}
  
 .retakeQuiz{
   background-color: #127a54d4;
