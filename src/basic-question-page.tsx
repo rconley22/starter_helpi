@@ -99,9 +99,6 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
         setCurrentQuestion("Q1")
     }
 
-    const resetQuiz = () =>{
-      window.location.reload();
-    }
 const questOrderForward: Record<questions,questions> = {
       Q1: 'Q2',
       Q2: 'Q3',

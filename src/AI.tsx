@@ -33,14 +33,15 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <div hidden={!buttonclicked || loading}>
     <div className='response-text'>
     <Container>
-      <Row className='firstResultsRow'>
+      <Row>
+      <hr className="divider"></hr>
       <Col>
-    <h2>Top 5 Careers</h2>
-    <p>1. {newText[0]}</p>
-    <p>2. {newText[1]}</p>
-    <p>3. {newText[2]}</p>
-    <p>4. {newText[3]}</p>
-    <p>5. {newText[4]}</p>
+        <h2>Top 5 Careers</h2>
+        <p>1. {newText[0]}</p>
+        <p>2. {newText[1]}</p>
+        <p>3. {newText[2]}</p>
+        <p>4. {newText[3]}</p>
+        <p>5. {newText[4]}</p>
 
       </Col>
       <Col>
@@ -61,6 +62,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     </Col>
       </Row>
       <Row>
+      <hr className="divider"></hr>
       <h2>Report Summary:</h2>
       <p>{newText[15]}</p>
       </Row>
