@@ -149,7 +149,7 @@ setCurrentQuestion(newQuest)
           <div hidden={currentQuestion!=='Q0'}>
             <h2>Basic Questions Page </h2>
             <hr className="lines"></hr>
-            <p>If you feel unsure about your future career but don't want to
+            <p className = "basicPageDescription">If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
                 to do is answer the questions below!</p>
