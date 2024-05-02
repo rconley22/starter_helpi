@@ -4,7 +4,8 @@ import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
-
+//import  img from './peopleInMeeting.jpg';
+//import vid from './PersonCoding.mp4';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -59,11 +60,6 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      <div className="video-container" hidden={currentPage !== "home"}>
-      <video autoPlay muted loop id="background-video">
-        <source src={"src/PersonCoding.mp4"} />
-      </video>
-    </div>
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
