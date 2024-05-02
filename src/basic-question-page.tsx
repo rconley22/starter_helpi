@@ -125,6 +125,8 @@ const questOrderForward: Record<questions,questions> = {
       CareerMatch: "Results",
       Q0: 'Q0'
     }
+    
+
 
     const nextQuestion = (questNum: questions) =>{
       const newQuest = questOrderForward[questNum]
@@ -251,6 +253,14 @@ setCurrentQuestion(newQuest)
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button>
             <hr className="lines"></hr>
+            <div>
+
+            
+
+
+
+            </div>
+
             </div>
             <div hidden={currentQuestion!=='End'}>
             <button className="submitAns" onClick={()=>lastQuestion("End")}>Prev</button>
@@ -262,7 +272,18 @@ setCurrentQuestion(newQuest)
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
                 </div>}
-            
+            <div>
+
+
+            </div><div hidden={currentQuestion==='Q0'}>
+            <Button className="questionSelectLeft" onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className="questionSelect" onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className="questionSelectRight" onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
 
               <div hidden={currentQuestion !== 'Results'}>
@@ -276,7 +297,7 @@ setCurrentQuestion(newQuest)
                 <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
                 <p>I enjoy keeping up with current events: {lastPress7}</p>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
-                <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
+                <button className="submitAns" hidden={progress<7} onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
               <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
