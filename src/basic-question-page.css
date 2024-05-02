@@ -165,11 +165,12 @@
   border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
   color: white; /* Text color */
   text-align: center;
-  font-size: 12px;
-  padding: 10px 15px; /* Padding around text */
+  font-size: 15px;
+  padding: 8px 17px; /* Padding around text */
   margin: 10px; /* Add margin between buttons */
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   margin-bottom: 12px;
+  transition: background-color 3s ease;
   z-index: 0;
 }
