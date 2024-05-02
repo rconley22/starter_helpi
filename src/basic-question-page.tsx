@@ -98,6 +98,10 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
         setLastPress7('');
         setCurrentQuestion("Q1")
     }
+
+    const resetQuiz = () =>{
+      window.location.reload();
+    }
 const questOrderForward: Record<questions,questions> = {
       Q1: 'Q2',
       Q2: 'Q3',
@@ -140,8 +144,11 @@ setCurrentQuestion(newQuest)
 
 
 
-    const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
+    //const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
+    function getResponses(): multAnswers[] {
+      return [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
+    }
 
     return (
 
@@ -276,16 +283,8 @@ setCurrentQuestion(newQuest)
 
               <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
                 <h1>Your Career Report</h1>
-                {/* <h2>Top 5 Careers</h2>
-                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
-                <h2>Your Top Industry Matches:</h2>
-                <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
-                <h2>Your Top Job Suggestions:</h2>
-                <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
-                <h2> Overall Summary:</h2>
-                <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
-                <h2> Career Report:</h2> */}
-                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <ChatGPT userKey={userKey} content={setQuery(getResponses())}></ChatGPT>
+                <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
               </div>
         </div>
         <div className="progress-container">
