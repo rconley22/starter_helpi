@@ -270,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (178 ms)
+  ✕ renders learn react link (171 ms)
 
   ● renders learn react link
 
@@ -325,7 +325,9 @@ FAIL src/App.test.tsx
               [36m<hr[39m
                 [33mclass[39m=[32m"lines"[39m
               [36m/>[39m
-              [36m<p>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"bodyText"[39m
+              [36m>[39m
                 [0mThe Career Helpi's Detailed Career Assessment allows users to fill out a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized to who you are. Providing extra detail allows the Career Helpi to better match a potential career.[0m
               [36m</p>[39m
               [36m<div>[39m
@@ -341,7 +343,9 @@ FAIL src/App.test.tsx
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<h4>[39m
+                [36m<h4[39m
+                  [33mclass[39m=[32m"bodyText"[39m
+                [36m>[39m
                   [0mWhat are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)[0m
                 [36m</h4>[39m
                 [36m<div>[39m
@@ -378,7 +382,9 @@ FAIL src/App.test.tsx
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<h4>[39m
+                [36m<h4[39m
+                  [33mclass[39m=[32m"bodyText"[39m
+                [36m>[39m
                   [0mWhat do you want your work environment to look like?[0m
                 [36m</h4>[39m
                 [36m<div>[39m
@@ -420,7 +426,9 @@ FAIL src/App.test.tsx
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<h4>[39m
+                [36m<h4[39m
+                  [33mclass[39m=[32m"bodyText"[39m
+                [36m>[39m
                   [0mHow much collaboration do you want in your job?[0m
                 [36m</h4>[39m
                 [36m<div>[39m
@@ -462,13 +470,7 @@ FAIL src/App.test.tsx
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
               [36m>[39m
-                [36m<h4>[39m
-                  [0mDo you have any passions or interests that you would like to incorporate into your career?[0m
-                [36m</h4>[39m
-                [36m<div>[39m
-                  [36m<label[39m
-                    [33mclass[39m=[32m"form-label"[39m
-                  [36m...
+             ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -517,5 +519,5 @@ All files                   |   27.42 |    45.62 |    6.45 |   29.81 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.617 s
+Time:        3.762 s
 Ran all test suites.
