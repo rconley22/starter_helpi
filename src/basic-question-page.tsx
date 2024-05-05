@@ -148,8 +148,8 @@ setCurrentQuestion(newQuest)
         <><div>
           <div hidden={currentQuestion!=='Q0'}>
             <h2>Basic Questions Page </h2>
-            <hr className="lines"></hr>
-            <p>If you feel unsure about your future career but don't want to
+            
+            <p className="basic-paragraph">If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
                 to do is answer the questions below!</p>
@@ -157,12 +157,9 @@ setCurrentQuestion(newQuest)
                 <div hidden={currentQuestion!=='Q0'}>
                   <button className="submitAns" onClick={()=>nextQuestion("Q0")}>Start</button>
 
-
-                
-
             </div>
 
-            <hr className="lines" hidden={currentQuestion === 'Results' || currentQuestion === 'CareerMatch'}></hr>
+            
 
             <div hidden={currentQuestion!=='Q1'}>
             <h4 hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>

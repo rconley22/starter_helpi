@@ -93,34 +93,40 @@
     transition: background-color 0.3s ease; 
   }
   .strong_agree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .strong_agree:active{
     background-color: grey;
   } 
   .agree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .agree:active{
     background-color: grey;
   } 
   .neutral:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .neutral:active{
     background-color: grey;
   } 
   .disagree:hover{
-    background-color: grey;
+   
+    transform: scale(1.1);
   }  
   .disagree:active{
     background-color: grey;
   } 
   .strong_disagree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .strong_disagree:active{
     background-color: grey;
+    
   } 
 
 
@@ -156,4 +162,11 @@
   margin-top: 2vh;
 }
  
- 
+.basic-paragraph {
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:125%;
+  font-weight: 600;
+}

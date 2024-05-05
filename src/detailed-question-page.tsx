@@ -116,7 +116,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
 
             </div>
-            <hr hidden={currentQuestion !== "Q0"} className="lines"></hr>
+            
             <div hidden={currentQuestion !== 'Q1'}>
 
                 <h4 className="bodyText">What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
