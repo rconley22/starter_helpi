@@ -20,6 +20,12 @@
     transition: background-color 0.3s ease; /* Smooth transition on hover */
     margin-bottom: 80px;
   }
+  .submitAns:hover {
+    transform: scale(1.1);
+  }
+  .resetbutton:hover {
+    transform: scale(1.1);
+  }
 
   .responsebox {
     margin-left: 30%;
@@ -44,6 +50,13 @@
 .bodyText{
   margin-left: 10%;
   margin-right: 10%;
-
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.description{
+  font-size:125%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  margin: 50px;
 }
    

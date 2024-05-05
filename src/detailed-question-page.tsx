@@ -106,8 +106,8 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
     
         <><><div hidden={answersSubmitted}>
             <h2 hidden={currentQuestion !== "Q0"}>Detailed Career Assessment</h2>
-            <hr className="lines"></hr>
-            <p className="bodyText" hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
+            
+            <p className="description" hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
                 a more personal quiz that reflects their specific interest and goals.
                 Here, users' results will be more personalized to who you are. Providing
                 extra detail allows the Career Helpi to better match a potential career.</p>
