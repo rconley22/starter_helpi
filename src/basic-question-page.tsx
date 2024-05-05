@@ -316,7 +316,7 @@ setCurrentQuestion(newQuest)
                 <div className="progress-bar"  style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
                 
             </div>
-            <Button className="retakeQuiz" onClick={() => redoQuiz()} hidden={currentQuestion!=='CareerMatch'} >Retake Quiz</Button>
+            {/* <Button className="retakeQuiz" onClick={() => redoQuiz()} hidden={currentQuestion!=='CareerMatch'} >Retake Quiz</Button> */}
             </div></>
 
 
