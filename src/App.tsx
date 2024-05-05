@@ -42,6 +42,7 @@ function App() {
   }
 
   return (
+    <div className={`App ${currentPage === 'home' ? 'homepage-background' : ''}`}>
     <div className="App">
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
@@ -85,6 +86,7 @@ function App() {
         </Container>
       </Form>
       </footer>
+    </div>
     </div>
   );
 }
