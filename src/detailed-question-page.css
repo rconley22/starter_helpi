@@ -55,9 +55,27 @@
   font-weight: 200;
 }
 .description{
-  font-size:125%;
-  font-family: 'Times New Roman', Times, serif;
+  background-image: url('pexels-padrinan-19670.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 600px;
+  
+  
+}
+.title{
+  margin-top: 1px;
   font-weight: 600;
-  margin: 50px;
+}
+.para{
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-weight: 500;
 }
    
