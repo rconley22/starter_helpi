@@ -107,7 +107,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
         <><><div hidden={answersSubmitted}>
             <h2 hidden={currentQuestion !== "Q0"}>Detailed Career Assessment</h2>
             <hr className="lines"></hr>
-            <p hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
+            <p className="bodyText" hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
                 a more personal quiz that reflects their specific interest and goals.
                 Here, users' results will be more personalized to who you are. Providing
                 extra detail allows the Career Helpi to better match a potential career.</p>
@@ -119,7 +119,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             <hr hidden={currentQuestion !== "Q0"} className="lines"></hr>
             <div hidden={currentQuestion !== 'Q1'}>
 
-                <h4>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
+                <h4 className="bodyText">What do you want to learn more about?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -139,7 +139,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             </div>
 
             <div hidden={currentQuestion !== 'Q2'}>
-                <h4>What do you want your work environment to look like?</h4>
+                <h4 className="bodyText">What do you want your work environment to look like?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -160,7 +160,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             <div hidden={currentQuestion !== 'Q3'}>
 
-                <h4>How much collaboration do you want in your job?</h4>
+                <h4 className="bodyText">What comes naturally to you?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -182,7 +182,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             <div hidden={currentQuestion !== 'Q4'}>
 
 
-                <h4>Do you have any passions or interests that you would like to incorporate into your career?</h4>
+                <h4 className="bodyText">What are your passions or interests?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -201,7 +201,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
             <div hidden={currentQuestion !== 'Q5'}>
-                <h4>What type of people do you see yourself working with?</h4>
+                <h4 className="bodyText">What type of people do you see yourself working with?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -222,7 +222,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             <div hidden={currentQuestion !== 'Q6'}>
 
-                <h4>Do you enjoy work that is Structured or open-ended and flexible?</h4>
+                <h4 className="bodyText">What problem do you most wish you could solve?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -241,7 +241,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
             <div hidden={currentQuestion !== 'Q7'}>
-                <h4>What are some of your long term career goals?</h4>
+                <h4 className="bodyText">What are some of your long term career goals?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -260,7 +260,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
             <div hidden={currentQuestion !== 'Q8'}>
-                <h4>What are some jobs/careers that you are not interested in?</h4>
+                <h4 className="bodyText">What are some of your strengths, skills, and talents?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -302,32 +302,23 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
         </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
-                <p>What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc): {answer1}</p>
-                <p>What do you want your work environment to look like?: {answer2}</p>
-                <p>How much collaboration do you want in your job?: {answer3}</p>
-                <p>Do you have any passions or interests that you would like to incorporate into your career?: {answer4}</p>
-                <p>What type of people do you see yourself working with?: {answer5}</p>
-                <p>Do you enjoy work that is Structured or open-ended and flexible?: {answer6}</p>
-                <p>What are some of your long term career goals?: {answer7}</p>
-                <p>What are some jobs/careers that you are not interested in?: {answer8}</p>
+                <p><b>What do you want to learn more about?:</b> {answer1}</p>
+                <p><b>What do you want your work environment to look like?:</b> {answer2}</p>
+                <p><b>What comes naturally to you?:</b> {answer3}</p>
+                <p><b>What are your passions or interests?:</b> {answer4}</p>
+                <p><b>What type of people do you see yourself working with?:</b> {answer5}</p>
+                <p><b>What problem do you most wish you could solve?:</b> {answer6}</p>
+                <p><b>What are some of your long term career goals?:</b> {answer7}</p>
+                <p><b>What are some of your strengths and skills?:</b> {answer8}</p>
                 <button className="submitAns" onClick={goBackBtn}>Go Back To Questions</button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
 
-            </div></><div hidden={currentQuestion !== 'Results'}>
+            </div></><div className="CareerMatchText" hidden={currentQuestion !== 'Results'}>
                 <h1>Your Personalized Career Suggestions</h1>
                 <div></div>
+                <div className="bodyText">
                 <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
-                {/* <div> */}
-                {/* <h2>Thank You For taking the Career Helpi Assessment, here are your results:</h2>
-                <h4>Your Top Career fields:</h4>
-                <p>...</p>
-                <h4>Your Top Job Suggestions:</h4>
-                <p>...</p>
-                <h4>Your Top Industry Matches:</h4>
-                <p>...</p>
-                <h4> Results Summary:</h4>
-                <p>...</p>
-                </div> */}
+                </div>
             </div></>
     );
 }

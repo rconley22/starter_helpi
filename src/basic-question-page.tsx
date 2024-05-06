@@ -149,7 +149,7 @@ setCurrentQuestion(newQuest)
           <div hidden={currentQuestion!=='Q0'}>
             <h2>Basic Questions Page </h2>
             <hr className="lines"></hr>
-            <p>If you feel unsure about your future career but don't want to
+            <p className = "basicPageDescription">If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
                 to do is answer the questions below!</p>
@@ -237,7 +237,7 @@ setCurrentQuestion(newQuest)
             </div>
 
             <div hidden={currentQuestion!=='Q7'}>
-            <h4>I enjoy keeping up with current events.</h4>
+            <h4>I get inspired by beauty in art and nature.</h4>
             <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
             <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
             <button className={lastPress7 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion7('Neutral')} disabled={'Neutral' === lastPress7}>Neutral</button>
@@ -263,19 +263,28 @@ setCurrentQuestion(newQuest)
               <div hidden={currentQuestion !== 'Results'}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
-                <p>I prefer working in a group rather than alone: {lastPress1}</p>
-                <p>I'd rather create something new than learn what's already out there: {lastPress2}</p>
-                <p>I value enjoyment over a high salary: {lastPress3}</p>
-                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {lastPress4}</p>
-                <p>I'm crafty and good with my hands: {lastPress5}</p>
-                <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
-                <p>I enjoy keeping up with current events: {lastPress7}</p>
+                <p><b>I prefer working in a group rather than alone:</b> {lastPress1}</p>
+                <p><b>I'd rather create something new than learn what's already out there:</b> {lastPress2}</p>
+                <p><b>I value enjoyment over a high salary:</b> {lastPress3}</p>
+                <p><b>I prefer a quiet, distraction-free environment over a busy, noisy one:</b> {lastPress4}</p>
+                <p><b>I'm crafty and good with my hands:</b> {lastPress5}</p>
+                <p><b>I like working through decisions instead of going with my gut:</b> {lastPress6}</p>
+                <p><b>I get inspired by beauty in art and nature:</b> {lastPress7}</p>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
-              <div hidden={currentQuestion !== 'CareerMatch'}>
-                <h1>Career Suggestions ...</h1>
+              <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
+                <h1>Your Career Report</h1>
+                {/* <h2>Top 5 Careers</h2>
+                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <h2>Your Top Industry Matches:</h2>
+                <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
+                <h2>Your Top Job Suggestions:</h2>
+                <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
+                <h2> Overall Summary:</h2>
+                <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
+                <h2> Career Report:</h2> */}
                 <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
               </div>
         </div>
