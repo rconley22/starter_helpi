@@ -146,17 +146,19 @@ setCurrentQuestion(newQuest)
     return (
 
         <><div>
+          <div className="image" hidden={currentQuestion!=='Q0'}>
           <div hidden={currentQuestion!=='Q0'}>
-            <h2>Basic Questions Page </h2>
+            <h2 className="basic-title">Basic Career Assessment </h2>
             
             <p className="basic-paragraph">If you feel unsure about your future career but don't want to
                 think about it too much, look no further. In a few short minutes,
                 you can get a basic idea as to what career suit you. All you have
-                to do is answer the questions below!</p>
+                to do is answer the following questions!</p>
                 </div>
                 <div hidden={currentQuestion!=='Q0'}>
                   <button className="submitAns" onClick={()=>nextQuestion("Q0")}>Start</button>
 
+            </div>
             </div>
 
             
