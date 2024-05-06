@@ -281,7 +281,11 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q8")}>Prev</button>
 
-
+                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
+                <div>
+                    <p className="questions">All questions answered!</p>
+                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
+                </div>}
             </div>
 
             <div hidden={currentQuestion !== "Results"}>
@@ -296,11 +300,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                     <div className="progress-bar" style={{ width: `${(numberQuestionsAnswered / 8) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
                 </div>
             </div>
-            {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
-                <div>
-                    <p className="questions">All questions answered!</p>
-                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
-                </div>}
+            
         </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
