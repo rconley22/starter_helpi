@@ -28,7 +28,7 @@
   }
 
   .responsebox {
-    margin-left: 30%;
+    margin-left: 29%;
     font-size: 14px;
     height: 14vh;
     width: 80vh;
@@ -50,7 +50,7 @@
 .bodyText{
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 20px;
+  margin-top: 0px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
 }
@@ -77,4 +77,11 @@
   margin-right: 300px;
   font-weight: 500;
 }
+.ques1{
+  background-image: url('pexels-enrique-2887497.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
    

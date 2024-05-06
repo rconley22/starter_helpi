@@ -119,7 +119,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             
             </div>
             
-            <div hidden={currentQuestion !== 'Q1'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q1'}>
 
                 <h4 className="bodyText">What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc)</h4>
                 <FormGroup>
@@ -140,7 +140,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q2'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q2'}>
                 <h4 className="bodyText">What do you want your work environment to look like?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -160,7 +160,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q3'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q3'}>
 
                 <h4 className="bodyText">How much collaboration do you want in your job?</h4>
                 <FormGroup>
@@ -181,7 +181,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q4'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q4'}>
 
 
                 <h4 className="bodyText">Do you have any passions or interests that you would like to incorporate into your career?</h4>
@@ -202,7 +202,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q4")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q5'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q5'}>
                 <h4 className="bodyText">What type of people do you see yourself working with?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -222,7 +222,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q6'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q6'}>
 
                 <h4 className="bodyText">Do you enjoy work that is Structured or open-ended and flexible?</h4>
                 <FormGroup>
@@ -242,7 +242,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q6")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q7'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q7'}>
                 <h4 className="bodyText">What are some of your long term career goals?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -261,7 +261,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q7")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q8'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q8'}>
                 <h4 className="bodyText">What are some jobs/careers that you are not interested in?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
