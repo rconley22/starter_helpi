@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/starter_helpi/static/css/main.3843523a.css",
-    "main.js": "/starter_helpi/static/js/main.86062139.js",
+    "main.css": "/starter_helpi/static/css/main.1ac51db0.css",
+    "main.js": "/starter_helpi/static/js/main.8388c150.js",
     "static/js/453.bad6c33a.chunk.js": "/starter_helpi/static/js/453.bad6c33a.chunk.js",
-    "static/media/person_thinking.jpg": "/starter_helpi/static/media/person_thinking.0f18ecd98b9c91ec024f.jpg",
+    "static/media/peopleInMeeting.jpg": "/starter_helpi/static/media/peopleInMeeting.7960568861d3d1da4733.jpg",
+    "static/media/pexels-enrique-2887497.jpg": "/starter_helpi/static/media/pexels-enrique-2887497.f6f00d7b31f8fe5bba36.jpg",
+    "static/media/pexels-eberhardgross-1287145.jpg": "/starter_helpi/static/media/pexels-eberhardgross-1287145.ad86cb1502687db4f139.jpg",
+    "static/media/pexels-padrinan-19670.jpg": "/starter_helpi/static/media/pexels-padrinan-19670.96f3367e3cc1213c1818.jpg",
     "static/media/logo.jpg": "/starter_helpi/static/media/logo.013467aa53286ba005be.jpg",
     "index.html": "/starter_helpi/index.html",
-    "main.3843523a.css.map": "/starter_helpi/static/css/main.3843523a.css.map",
-    "main.86062139.js.map": "/starter_helpi/static/js/main.86062139.js.map",
+    "main.1ac51db0.css.map": "/starter_helpi/static/css/main.1ac51db0.css.map",
+    "main.8388c150.js.map": "/starter_helpi/static/js/main.8388c150.js.map",
     "453.bad6c33a.chunk.js.map": "/starter_helpi/static/js/453.bad6c33a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3843523a.css",
-    "static/js/main.86062139.js"
+    "static/css/main.1ac51db0.css",
+    "static/js/main.8388c150.js"
   ]
 }
