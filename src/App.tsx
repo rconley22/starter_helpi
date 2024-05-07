@@ -92,6 +92,7 @@ function App() {
         
         <Container>
           <Row>
+            <img src={logo} className='mylogo2' alt="Couldn't load"></img>
             <Col><Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} className='apiKeyInsert'></Form.Control></Col>
             <Col><Button className="Submit-Button" onClick={handleSubmit}>Submit</Button></Col>
           

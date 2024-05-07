@@ -31,6 +31,15 @@
   width: 140px;
 }
 
+.mylogo2 {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  
+}
+
 
 .App-link {
   color: #61dafb;
