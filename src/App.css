@@ -31,11 +31,6 @@
   width: 140px;
 }
 
-.mylogo2 {
-  position: absolute;
-  height: 140px;
-  width: 140px;
-}
 
 .App-link {
   color: #61dafb;
@@ -187,11 +182,16 @@ img {
 }
 
 .descriptionSection {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 100px;
   margin-left: 250px;
   margin-right: 250px;
   font-size: 24px;
+  font-family: monospace;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
 }
 .basicButton2 {
   background-color: #127a54;

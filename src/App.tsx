@@ -73,7 +73,7 @@ function App() {
         </p>
       </div>
       <div hidden={currentPage !== "home"} className='homePageImage'>
-        <img src={img} alt="Couldn't load"></img>
+        {/* <img src={img} alt="Couldn't load"></img> */}
       </div>
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
