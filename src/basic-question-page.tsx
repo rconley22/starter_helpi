@@ -186,6 +186,15 @@ setCurrentQuestion(newQuest)
             
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
             <div className="one" hidden={currentQuestion!=='Q2'}>
             <h4 className="questions2">I'd rather create something new than learn what's already out there.</h4>
@@ -198,6 +207,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q2")}>Next</button>
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
             
             <div className="one" hidden={currentQuestion!=='Q3'}>
@@ -211,6 +229,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q3")}>Next</button>
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
 
             <div className="one" hidden={currentQuestion!=='Q4'}>
@@ -224,6 +251,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q4")}>Next</button>
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
 
             <div className="one" hidden={currentQuestion!=='Q5'}>
@@ -237,6 +273,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q5")}>Next</button>
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
 
             <div className="one" hidden={currentQuestion!=='Q6'}>
@@ -250,6 +295,15 @@ setCurrentQuestion(newQuest)
             <button className="submitAns" onClick={()=>lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={()=>nextQuestion("Q6")}>Next</button>
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
 
             <div className="one" hidden={currentQuestion!=='Q7'}>
@@ -271,6 +325,15 @@ setCurrentQuestion(newQuest)
             </div>
 
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
+            <div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             </div>
             <div hidden={currentQuestion!=='End'}>
             <button className="submitAns" onClick={()=>lastQuestion("End")}>Prev</button>
@@ -286,14 +349,6 @@ setCurrentQuestion(newQuest)
             <div>
 
 
-            </div><div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
-            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
-            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
-            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
-            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
-            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
-            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
-            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
             </div>
             
 
