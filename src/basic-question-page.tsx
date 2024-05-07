@@ -98,6 +98,7 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
         setLastPress7('');
         setCurrentQuestion("Q1")
     }
+
 const questOrderForward: Record<questions,questions> = {
       Q1: 'Q2',
       Q2: 'Q3',
@@ -125,6 +126,8 @@ const questOrderForward: Record<questions,questions> = {
       CareerMatch: "Results",
       Q0: 'Q0'
     }
+    
+
 
     const nextQuestion = (questNum: questions) =>{
       const newQuest = questOrderForward[questNum]
@@ -138,10 +141,18 @@ setCurrentQuestion(newQuest)
 
     }
 
+    const redoQuiz = ()=>{
+        resetProgress()
+        setCurrentQuestion('Q0')
 
+
+    }
 
     const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
+    function getResponses(): multAnswers[] {
+      return [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
+    }
 
     return (
 
@@ -251,6 +262,14 @@ setCurrentQuestion(newQuest)
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button>
             <hr className="lines"></hr>
+            <div>
+
+            
+
+
+
+            </div>
+
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
             <div hidden={currentQuestion!=='End'}>
@@ -264,7 +283,18 @@ setCurrentQuestion(newQuest)
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
                 </div>}
-            
+            <div>
+
+
+            </div><div hidden={(currentQuestion==='Q0')||(currentQuestion==='CareerMatch') || currentQuestion === 'End'  || currentQuestion === 'Results'  }>
+            <Button className={lastPress1!=='' ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={lastPress2!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={lastPress3!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={lastPress4!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={lastPress5!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={lastPress6!=='' ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={lastPress7!=='' ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            </div>
             
 
               <div hidden={currentQuestion !== 'Results'}>
@@ -278,27 +308,23 @@ setCurrentQuestion(newQuest)
                 <p><b>I like working through decisions instead of going with my gut:</b> {lastPress6}</p>
                 <p><b>I get inspired by beauty in art and nature:</b> {lastPress7}</p>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
-                <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
+                <button className="submitAns" hidden={progress<7} onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 
               <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
                 <h1>Your Career Report</h1>
-                {/* <h2>Top 5 Careers</h2>
-                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
-                <h2>Your Top Industry Matches:</h2>
-                <ChatGPT userKey={userKey} content={setQuery2(presses)}></ChatGPT>
-                <h2>Your Top Job Suggestions:</h2>
-                <ChatGPT userKey={userKey} content={setQuery3(presses)}></ChatGPT>
-                <h2> Overall Summary:</h2>
-                <ChatGPT userKey={userKey} content={setQuery4(presses)}></ChatGPT>
-                <h2> Career Report:</h2> */}
-                <ChatGPT userKey={userKey} content={setQuery(presses)}></ChatGPT>
+                <ChatGPT userKey={userKey} content={setQuery(getResponses())}></ChatGPT>
+                <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
               </div>
         </div>
         <div className="progress-container">
-        <div className="progress">
-                <div className="progress-bar" style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
-            </div></div></>
+        <div className="progress" hidden={currentQuestion==='CareerMatch'}>
+          
+                <div className="progress-bar"  style={{ width: `${(progress / 7) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
+                
+            </div>
+            {/* <Button className="retakeQuiz" onClick={() => redoQuiz()} hidden={currentQuestion!=='CareerMatch'} >Retake Quiz</Button> */}
+            </div></>
 
 
     );

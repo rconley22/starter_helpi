@@ -6,7 +6,9 @@
 
 }
 
-.firstResultsRow {
-    padding: 20vh;
-    margin-bottom: 50vh;
+.divider {
+    border: none;
+    border-top: 5vh dotted #000000; 
+    width: 80%; 
+    margin: 0 auto;
 }

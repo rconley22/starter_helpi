@@ -6,6 +6,7 @@ import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
 //import  img from './peopleInMeeting.jpg';
 //import vid from './PersonCoding.mp4';
+import logo from './logo.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -51,6 +52,7 @@ function App() {
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
         </div>
+        <img src={logo} className='mylogo' alt="Couldn't load"></img>
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
           <DetailedQuestionPage userKey={keyData}></DetailedQuestionPage>

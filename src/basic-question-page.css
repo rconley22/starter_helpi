@@ -1,3 +1,6 @@
+
+
+
 .progress-container {
     position: fixed;
     bottom: 0;
@@ -16,7 +19,7 @@
   }
   
   .progress-bar {
-    background-color: #007bff;
+    background-color: #127a54d4;
     height: 100%;
     border-radius: 5px;
   }
@@ -132,16 +135,17 @@
 
 
   .b{
-    background-color: #00dd8cd4;
-    border: 2px solid rgb(17, 21, 16); 
-    color: white; 
+    background-color: #127a54d4;
+    border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
+    color: white; /* Text color */
     text-align: center;
     font-size: 12px;
-    padding: 5 10px; 
-    margin: 10px; 
-    border-radius: 8px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    padding: 10px 15px; /* Padding around text */
+    margin: 10px; /* Add margin between buttons */
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-bottom: 80px;
   }
   .b:hover{
     background-color: grey;
