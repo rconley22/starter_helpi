@@ -4,7 +4,8 @@ import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
-import img from './person_thinking.jpg';
+//import  img from './peopleInMeeting.jpg';
+//import vid from './PersonCoding.mp4';
 import logo from './logo.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
@@ -42,6 +43,7 @@ function App() {
   }
 
   return (
+    <div className={`App ${currentPage === 'home' ? 'homepage-background' : ''}`}>
     <div className="App">
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
@@ -98,6 +100,7 @@ function App() {
         </Container>
       </Form>
       </footer>
+    </div>
     </div>
   );
 }

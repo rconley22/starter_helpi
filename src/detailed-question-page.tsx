@@ -105,19 +105,21 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
     return (
     
         <><><div hidden={answersSubmitted}>
-            <h2 hidden={currentQuestion !== "Q0"}>Detailed Career Assessment</h2>
-            <hr className="lines"></hr>
-            <p className="bodyText" hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
+            <div className="image2" hidden={currentQuestion !== "Q0"}>
+            <h2 className="title" hidden={currentQuestion !== "Q0"}>Detailed Career Assessment</h2>
+            
+            <p className="para" hidden={currentQuestion !== "Q0"}>The Career Helpi's Detailed Career Assessment allows users to fill out
                 a more personal quiz that reflects their specific interest and goals.
                 Here, users' results will be more personalized to who you are. Providing
                 extra detail allows the Career Helpi to better match a potential career.</p>
-            <div hidden={currentQuestion !== 'Q0'}>
+            
                 <button className="submitAns" onClick={() => nextQuestion("Q0")}>Start</button>
 
 
+            
             </div>
-            <hr hidden={currentQuestion !== "Q0"} className="lines"></hr>
-            <div hidden={currentQuestion !== 'Q1'}>
+            
+            <div className="ques1" hidden={currentQuestion !== 'Q1'}>
 
                 <h4 className="bodyText">What do you want to learn more about?</h4>
                 <FormGroup>
@@ -138,7 +140,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q2'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q2'}>
                 <h4 className="bodyText">What do you want your work environment to look like?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -158,7 +160,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q3'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q3'}>
 
                 <h4 className="bodyText">What comes naturally to you?</h4>
                 <FormGroup>
@@ -179,7 +181,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q4'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q4'}>
 
 
                 <h4 className="bodyText">What are your passions or interests?</h4>
@@ -200,7 +202,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q4")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q5'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q5'}>
                 <h4 className="bodyText">What type of people do you see yourself working with?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -220,7 +222,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
 
             </div>
 
-            <div hidden={currentQuestion !== 'Q6'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q6'}>
 
                 <h4 className="bodyText">What problem do you most wish you could solve?</h4>
                 <FormGroup>
@@ -240,7 +242,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q6")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q7'}>
+            <div className="ques1" hidden={currentQuestion !== 'Q7'}>
                 <h4 className="bodyText">What are some of your long term career goals?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
@@ -259,8 +261,8 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q7")}>Next</button>
 
             </div>
-            <div hidden={currentQuestion !== 'Q8'}>
-                <h4 className="bodyText">What are some of your strengths, skills, and talents?</h4>
+            <div className="ques1" hidden={currentQuestion !== 'Q8'}>
+                <h4 className="bodyText">What are some jobs/careers that you are not interested in?</h4>
                 <FormGroup>
                     <FormLabel>Answer:</FormLabel>
                     <div></div>
@@ -279,7 +281,11 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q8")}>Prev</button>
 
-                
+                                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
+                <div>
+                    <p className="questions">All questions answered!</p>
+                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
+                </div>}
             </div>
             <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
             <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
@@ -303,11 +309,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                     <div className="progress-bar" style={{ width: `${(numberQuestionsAnswered / 8) * 100}%` }} role="progressbar" aria-valuenow={progress} aria-valuemin={0} aria-valuemax={7}></div>
                 </div>
             </div>
-            {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
-                <div>
-                    <p className="questions">All questions answered!</p>
-                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
-                </div>}
+            
         </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
