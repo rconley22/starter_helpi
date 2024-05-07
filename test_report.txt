@@ -280,7 +280,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (193 ms)
+  ✕ renders learn react link (264 ms)
 
   ● renders learn react link
 
@@ -395,6 +395,58 @@ FAIL src/App.test.tsx
                   [36m>[39m
                     [0mNext[0m
                   [36m</button>[39m
+                  [36m<div[39m
+                    [33mhidden[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelectLeft btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ1[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ2[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ3[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ4[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ5[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ6[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelect btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ7[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"questionSelectRight btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mQ8[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"ques1"[39m
@@ -413,65 +465,7 @@ FAIL src/App.test.tsx
                     [36m</label>[39m
                     [36m<div />[39m
                     [36m<textarea[39m
-                      [33mclass[39m=[32m"responsebox form-control"[39m
-                      [33mrows[39m=[32m"5"[39m
-                    [36m/>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"validation"[39m
-                  [36m>[39m
-                    [0mPlease include more than 20 characters[0m
-                  [36m</div>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"resetbutton"[39m
-                  [36m>[39m
-                    [0mReset Answer[0m
-                  [36m</button>[39m
-                  [36m<hr[39m
-                    [33mclass[39m=[32m"lines"[39m
-                  [36m/>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"submitAns"[39m
-                  [36m>[39m
-                    [0mPrev[0m
-                  [36m</button>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"submitAns"[39m
-                  [36m>[39m
-                    [0mNext[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"ques1"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
-                  [36m<h4[39m
-                    [33mclass[39m=[32m"bodyText"[39m
-                  [36m>[39m
-                    [0mWhat comes naturally to you?[0m
-                  [36m</h4>[39m
-                  [36m<div>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"form-label"[39m
-                    [36m>[39m
-                      [0mAnswer:[0m
-                    [36m</label>[39m
-                    [36m<div />[39m
-                    [36m<textarea[39m
-                      [33mclass[39m=[32m"responsebox form-control"[39m
-                      [33mrows[39m=[32m"5"[39m
-                    [36m/>[39m
-                  [36m</div>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"validation"[39m
-                  [36m>[39m
-                    [0mPlease include more than 20 characters[0m
-                  [36m</div>[39m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"resetbutton"[39m
-                  [36m>[39m
-                    [0mReset Answer[0m
-      ...
+                     ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -506,13 +500,13 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   25.79 |    48.55 |    6.42 |   27.89 |                                                                         
+All files                   |    21.1 |     49.1 |    4.59 |   22.49 |                                                                         
  AI.tsx                     |   64.28 |       50 |      50 |   64.28 | 16-23                                                                   
  App.tsx                    |      50 |       50 |   16.66 |      50 | 16,25-42                                                                
  Loader.tsx                 |       0 |      100 |       0 |       0 | 5                                                                       
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
  basic-question-page.tsx    |   16.78 |    48.33 |    2.56 |    18.4 | 33-38,42-46,50-54,58-62,66-70,75-79,84-88,91-99,133-134,139-140,170-311 
- detailed-question-page.tsx |   31.94 |    51.38 |    4.16 |   35.38 | 17-24,71-72,77-78,84,97,100,116-325                                     
+ detailed-question-page.tsx |   17.96 |     50.5 |    1.92 |      19 | 17-24,71-72,77-78,84,97,100,116-388                                     
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -520,5 +514,5 @@ All files                   |   25.79 |    48.55 |    6.42 |   27.89 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.854 s
+Time:        4.154 s
 Ran all test suites.
