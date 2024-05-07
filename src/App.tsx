@@ -51,6 +51,18 @@ function App() {
 
 const [response, setResponse] = useState<string | null>('currently empty!');
   function checkKeyValidity(): void{
+  
+  
+  // const currentKey;
+    if(keyData === ""){
+    setKeyValidity('empty')
+  }
+  else if(keyData === ""){
+    setKeyValidity('valid')
+  }
+  else{
+    setKeyValidity('invalid')
+  }
     
     
   try{
