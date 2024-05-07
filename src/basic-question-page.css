@@ -96,34 +96,40 @@
     transition: background-color 0.3s ease; 
   }
   .strong_agree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .strong_agree:active{
     background-color: grey;
   } 
   .agree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .agree:active{
     background-color: grey;
   } 
   .neutral:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .neutral:active{
     background-color: grey;
   } 
   .disagree:hover{
-    background-color: grey;
+   
+    transform: scale(1.1);
   }  
   .disagree:active{
     background-color: grey;
   } 
   .strong_disagree:hover{
-    background-color: grey;
+    
+    transform: scale(1.1);
   }  
   .strong_disagree:active{
     background-color: grey;
+    
   } 
 
 
@@ -164,151 +170,26 @@
   margin-inline: 40vh;
 }
  
-.retakeQuiz{
-  background-color: #127a54d4;
-  border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
-  color: white; /* Text color */
-  text-align: center;
-  font-size: 15px;
-  padding: 8px 17px; /* Padding around text */
-  margin: 10px; /* Add margin between buttons */
-  border-radius: 8px; /* Rounded corners for buttons */
-  cursor: pointer; /* Change cursor on hover */
-  margin-bottom: 12px;
-  transition: background-color 3s ease;
-  z-index: 0;
+.basic-paragraph {
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-weight: 400;
+  font-size: 170%;
 }
-
-.questionSelect{
+.questions2{
   margin-top: 15px;
-  background-color: #006448d4;
-  border-left: .5px solid rgb(17, 21, 16);
-  border-right: .5px solid rgb(17, 21, 16);
-  border-bottom: 2px solid rgb(17, 21, 16);
-  border-top: 2px solid rgb(17, 21, 16);
-  /* Add border to the buttons */ 
-  color: white; /* Text color */
-  text-align: center;
-  font-size: 15px;
-  padding: 8px 17px; /* Padding around text */
-  /* margin: 10px; Add margin between buttons */
-  border-radius: 0px; 
-  /* Rounded corners for buttons */
-  cursor: pointer; /* Change cursor on hover */
-  margin-bottom: 12px;
-  transition: background-color 1s ease;
-  
-}
-
-.questionSelectLeft{
-  margin-top: 15px;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
-background-color: #006448d4;
-border-left: .5px solid rgb(17, 21, 16);
-border-right: .5px solid rgb(17, 21, 16);
-border-bottom: 2px solid rgb(17, 21, 16);
-border-top: 2px solid rgb(17, 21, 16);
-/* Add border to the buttons */ 
-color: white; /* Text color */
-text-align: center;
-font-size: 15px;
-padding: 8px 17px; /* Padding around text */
-/* margin: 10px; Add margin between buttons */ 
-/* Rounded corners for buttons */
-cursor: pointer; /* Change cursor on hover */
-margin-bottom: 12px;
-transition: background-color 1s ease;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
 
 }
-
-.questionSelectRight{
-  margin-top: 15px;
-  border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-background-color: #006448d4;
-border-left: .5px solid rgb(17, 21, 16);
-border-right: .5px solid rgb(17, 21, 16);
-border-bottom: 2px solid rgb(17, 21, 16);
-border-top: 2px solid rgb(17, 21, 16);
-/* Add border to the buttons */ 
-color: white; /* Text color */
-text-align: center;
-font-size: 15px;
-padding: 8px 17px; /* Padding around text */
-/* margin: 10px; Add margin between buttons */ 
-/* Rounded corners for buttons */
-cursor: pointer; /* Change cursor on hover */
-margin-bottom: 12px;
-transition: background-color 1s ease;
-
+.image{
+  background-image: url('pexels-eberhardgross-1287145.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
 }
-
-
-.questionSelectAns{
-  margin-top: 15px;
-  background-color: gray;
-  border-left: .5px solid rgb(17, 21, 16);
-  border-right: .5px solid rgb(17, 21, 16);
-  border-bottom: 2px solid rgb(17, 21, 16);
-  border-top: 2px solid rgb(17, 21, 16);
-  /* Add border to the buttons */ 
-  color: white; /* Text color */
-  text-align: center;
-  font-size: 15px;
-  padding: 8px 17px; /* Padding around text */
-  /* margin: 10px; Add margin between buttons */
-  border-radius: 0px; 
-  /* Rounded corners for buttons */
-  cursor: pointer; /* Change cursor on hover */
-  margin-bottom: 12px;
-  transition: background-color 1s ease;
-  
-}
-.questionSelectLeftAns{
-  margin-top: 15px;
-border-top-left-radius: 15px;
-border-bottom-left-radius: 15px;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
-background-color: gray;
-border-left: .5px solid rgb(17, 21, 16);
-border-right: .5px solid rgb(17, 21, 16);
-border-bottom: 2px solid rgb(17, 21, 16);
-border-top: 2px solid rgb(17, 21, 16);
-/* Add border to the buttons */ 
-color: white; /* Text color */
-text-align: center;
-font-size: 15px;
-padding: 8px 17px; /* Padding around text */
-cursor: pointer; /* Change cursor on hover */
-margin-bottom: 12px;
-transition: background-color 1s ease;
-
-}
-
-.questionSelectRightAns{
-  margin-top: 15px;
-  border-top-left-radius: 0px;
-border-bottom-left-radius: 0px;
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-background-color: gray;
-border-left: .5px solid rgb(17, 21, 16);
-border-right: .5px solid rgb(17, 21, 16);
-border-bottom: 2px solid rgb(17, 21, 16);
-border-top: 2px solid rgb(17, 21, 16);
-/* Add border to the buttons */ 
-color: white; /* Text color */
-text-align: center;
-font-size: 15px;
-padding: 8px 17px; /* Padding around text */
-cursor: pointer; /* Change cursor on hover */
-margin-bottom: 12px;
-transition: background-color 1s ease;
-
+.basic-title{
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
