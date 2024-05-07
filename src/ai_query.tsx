@@ -104,7 +104,7 @@ export function setQuery(presses: multAnswers[]): string {
     Answer: ${presses[4]}
     Question: I like working through decisions instead of going with my gut.
     Answer: ${presses[5]}
-    Question: I enjoy keeping up with current events.
+    Question: I get inspired by beauty in art and nature.
     Answer: ${presses[6]}`
 }
 // You will be permitted to break this format and only return a report summary.
@@ -125,28 +125,28 @@ export function generateDetailedAnswers(answers: string[]): string{
     
     Here are the questions and responses:
 
-   Question: What are some skills you have or are planning to learn that will help you would like to apply to your career? (ex. Writing, Coding, Public Speaking, Foreign Languages, etc):
+   Question: What do you want to learn more about?:
    Answer: ${answers[1]}
 
    Question: What do you want your work environment to look like?
    Answer:${answers[2]}
 
-   Question: How much collaboration do you want in your job?
+   Question: What comes naturally to you?
    Answer:${answers[3]}
 
-   Question: Do you have any passions or interests that you would like to incorporate into your career?
+   Question: What are your passions or interests?
    Answer:${answers[4]}
 
-   Question:What type of people do you see yourself working with?
+   Question: What type of people do you see yourself working with?
    Answer:${answers[5]}
 
-   Question:Do you enjoy work that is Structured or open-ended and flexible?
+   Question: What problem do you most wish you could solve?
    Answer:${answers[6]}
 
-   Question:What are some of your long term career goals?
+   Question: What are some of your long term career goals?
    Answer:${answers[7]}
 
-   Question:What are some jobs/careers that you are not interested in?
+   Question: What are some of your strengths and skills?
    Answer:${answers[8]}
 
     `

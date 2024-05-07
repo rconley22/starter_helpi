@@ -270,13 +270,13 @@ setCurrentQuestion(newQuest)
               <div hidden={currentQuestion !== 'Results'}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
-                <p>I prefer working in a group rather than alone: {lastPress1}</p>
-                <p>I'd rather create something new than learn what's already out there: {lastPress2}</p>
-                <p>I value enjoyment over a high salary: {lastPress3}</p>
-                <p>I prefer a quiet, distraction-free environment over a busy, noisy one: {lastPress4}</p>
-                <p>I'm crafty and good with my hands: {lastPress5}</p>
-                <p>I like working through decisions instead of going with my gut: {lastPress6}</p>
-                <p>I enjoy keeping up with current events: {lastPress7}</p>
+                <p><b>I prefer working in a group rather than alone:</b> {lastPress1}</p>
+                <p><b>I'd rather create something new than learn what's already out there:</b> {lastPress2}</p>
+                <p><b>I value enjoyment over a high salary:</b> {lastPress3}</p>
+                <p><b>I prefer a quiet, distraction-free environment over a busy, noisy one:</b> {lastPress4}</p>
+                <p><b>I'm crafty and good with my hands:</b> {lastPress5}</p>
+                <p><b>I like working through decisions instead of going with my gut:</b> {lastPress6}</p>
+                <p><b>I get inspired by beauty in art and nature:</b> {lastPress7}</p>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>

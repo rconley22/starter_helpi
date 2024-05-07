@@ -161,6 +161,10 @@
   margin-bottom: 15vh;
   margin-top: 2vh;
 }
+
+.basicPageDescription {
+  margin-inline: 40vh;
+}
  
 .basic-paragraph {
   margin-top: 60px;
