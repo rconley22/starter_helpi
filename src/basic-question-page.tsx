@@ -174,7 +174,7 @@ setCurrentQuestion(newQuest)
 
             
 
-            <div hidden={currentQuestion!=='Q1'}>
+            <div className="one" hidden={currentQuestion!=='Q1'}>
             <h4 className="questions2" hidden={currentQuestion!=='Q1'}>I prefer working in a group rather than alone.</h4>
             <button className={lastPress1 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"}  onClick={() => handleAnswerQuestion1('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress1}>Strongly Disagree</button>
             <button className={lastPress1 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion1('Disagree')} disabled={'Disagree' === lastPress1}>Disagree</button>
@@ -187,7 +187,7 @@ setCurrentQuestion(newQuest)
             <hr className="lines"></hr>
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
-            <div hidden={currentQuestion!=='Q2'}>
+            <div className="one" hidden={currentQuestion!=='Q2'}>
             <h4 className="questions2">I'd rather create something new than learn what's already out there.</h4>
             <button className={lastPress2 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion2('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress2}>Strongly Disagree</button>
             <button className={lastPress2 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion2('Disagree')} disabled={'Disagree' === lastPress2}>Disagree</button>
@@ -200,7 +200,7 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
             
-            <div hidden={currentQuestion!=='Q3'}>
+            <div className="one" hidden={currentQuestion!=='Q3'}>
             <h4 className="questions2">I value enjoyment over a high salary.</h4>
             <button className={lastPress3 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion3('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress3}>Strongly Disagree</button>
             <button className={lastPress3 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion3('Disagree')} disabled={'Disagree' === lastPress3}>Disagree</button>
@@ -213,7 +213,7 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
 
-            <div hidden={currentQuestion!=='Q4'}>
+            <div className="one" hidden={currentQuestion!=='Q4'}>
             <h4 className="questions2">I prefer a quiet, distraction-free environment over a busy, noisy one.</h4>
             <button className={lastPress4 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion4('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress4}>Strongly Disagree</button>
             <button className={lastPress4 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion4('Disagree')} disabled={'Disagree' === lastPress4}>Disagree</button>
@@ -226,7 +226,7 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
 
-            <div hidden={currentQuestion!=='Q5'}>
+            <div className="one" hidden={currentQuestion!=='Q5'}>
             <h4 className="questions2">I'm crafty and good with my hands.</h4>
             <button className={lastPress5 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion5('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress5}>Strongly Disagree</button>
             <button className={lastPress5 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion5('Disagree')} disabled={'Disagree' === lastPress5}>Disagree</button>
@@ -239,7 +239,7 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
 
-            <div hidden={currentQuestion!=='Q6'}>
+            <div className="one" hidden={currentQuestion!=='Q6'}>
             <h4 className="questions2">I like working through decisions instead of going with my gut.</h4>
             <button className={lastPress6 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion6('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress6}>Strongly Disagree</button>
             <button className={lastPress6 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion6('Disagree')} disabled={'Disagree' === lastPress6}>Disagree</button>
@@ -252,7 +252,7 @@ setCurrentQuestion(newQuest)
             <button className="submitAns"onClick={resetProgress} hidden={currentQuestion === "Results" || currentQuestion === 'CareerMatch'}>Reset Progress</button>
             </div>
 
-            <div hidden={currentQuestion!=='Q7'}>
+            <div className="one" hidden={currentQuestion!=='Q7'}>
             <h4 className="questions2">I enjoy keeping up with current events.</h4>
             <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
             <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
