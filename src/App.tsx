@@ -63,14 +63,28 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
+      <div className='descriptionSection' hidden={currentPage !== "home"}>
+        <p>Welcome to the Career Helpi!</p>
+        <p>Interested in finding which career is best for you? The Career Helpi allows users to find
+          their idead career. Want a career specefic to your interest. Our Detailed Assessment 
+          gives users the most personalized career match. In a Hurry? Take our Basic Assessment to 
+          quickly find a career choice. With the help of CHAT GPT, The Career Helpi allows users the 
+          most complete and personalized results. 
+        </p>
+      </div>
+      <div hidden={currentPage !== "home"} className='homePageImage'>
+        {/* <img src={img} alt="Couldn't load"></img> */}
+      </div>
       <div hidden={currentPage !== 'home'}>
-        <p className='detailed-description'>The Career Helpi's Detailed Career Assessment allows users to fill out 
+        <p className='detailed-description'> <p>Detailed Career Quiz</p>
+        The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
         <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
       </div>
       <div hidden={currentPage !== 'home'}>
-      <p className='basic-description'>If you feel unsure about your future career but don't want to think about it too much, 
+      <p className='basic-description'> <p>Basic Career Quiz</p>
+      If you feel unsure about your future career but don't want to think about it too much, 
       look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is 
       answer the questions below!</p>
       <Button className='basicButton2' onClick={changeToBasicPage}>Basic Career Assessment</Button>
@@ -80,6 +94,7 @@ function App() {
         
         <Container>
           <Row>
+            <img src={logo} className='mylogo2' alt="Couldn't load"></img>
             <Col><Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} className='apiKeyInsert'></Form.Control></Col>
             <Col><Button className="Submit-Button" onClick={handleSubmit}>Submit</Button></Col>
           

@@ -31,6 +31,16 @@
   width: 140px;
 }
 
+.mylogo2 {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -153,6 +163,7 @@ img {
   font-weight: bolder;
   background-color: rgb(255, 255, 255);
   border: 3px solid black;
+  padding: 15px 17px;
 }
 .detailed-description{
   margin-top: 100px;
@@ -164,6 +175,7 @@ img {
   font-weight: bolder;
   background-color: rgb(255, 255, 255);
   border: 3px solid black;
+  padding: 15px 17px;
 }
 
 .detailedbutton2{
@@ -180,6 +192,19 @@ img {
   margin-right: 625px;
 }
 
+.descriptionSection {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 110px;
+  margin-right: 110px;
+  font-size: 24px;
+  font-family: monospace;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  padding: 15px 17px;
+}
 .basicButton2 {
   background-color: #127a54;
   border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
@@ -202,3 +227,4 @@ img {
 .apiKeyInsert {
   width: 80vh;
 }
+
