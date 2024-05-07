@@ -9,7 +9,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -47,7 +47,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -85,7 +85,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -123,7 +123,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -162,7 +162,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -200,7 +200,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -238,7 +238,7 @@
         at DetailedQuestionPage (/home/runner/work/starter_helpi/starter_helpi/src/detailed-question-page.tsx:7:39)
         at p
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:19:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:20:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -270,7 +270,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (177 ms)
+  ✕ renders learn react link (187 ms)
 
   ● renders learn react link
 
@@ -314,6 +314,11 @@ FAIL src/App.test.tsx
                 [0mBasic Career Assessment[0m
               [36m</button>[39m
             [36m</div>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"Couldn't load"[39m
+              [33mclass[39m=[32m"mylogo"[39m
+              [33msrc[39m=[32m"logo.jpg"[39m
+            [36m/>[39m
           [36m</header>[39m
           [36m<p[39m
             [33mhidden[39m=[32m""[39m
@@ -469,12 +474,7 @@ FAIL src/App.test.tsx
               [36m</div>[39m
               [36m<div[39m
                 [33mhidden[39m=[32m""[39m
-              [36m>[39m
-                [36m<h4[39m
-                  [33mclass[39m=[32m"bodyText"[39m
-                [36m>[39m
-                  [0mWhat are your passions or interests?[0m
-       ...
+     ...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -511,7 +511,7 @@ File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 All files                   |   27.42 |    45.62 |    6.45 |   29.81 |                                                                         
  AI.tsx                     |   64.28 |       50 |      50 |   64.28 | 16-23                                                                   
- App.tsx                    |      50 |       50 |   16.66 |      50 | 14,23-40                                                                
+ App.tsx                    |      50 |       50 |   16.66 |      50 | 15,24-41                                                                
  Loader.tsx                 |       0 |      100 |       0 |       0 | 5                                                                       
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
  basic-question-page.tsx    |   17.69 |    43.47 |    1.42 |   19.49 | 33-38,42-46,50-54,58-62,66-70,75-79,84-88,91-99,130-131,136-137,158-274 
@@ -523,5 +523,5 @@ All files                   |   27.42 |    45.62 |    6.45 |   29.81 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.625 s
+Time:        3.804 s
 Ran all test suites.
