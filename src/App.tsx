@@ -46,11 +46,11 @@ function App() {
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
-        <img src={logo} id="obj" alt="Couldn't load"></img>
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
         </div>
+        <img src={logo} className='mylogo' alt="Couldn't load"></img>
       </header>
       <p hidden={currentPage !== 'detailed question page'}>
           <DetailedQuestionPage userKey={keyData}></DetailedQuestionPage>
