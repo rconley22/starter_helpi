@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/starter_helpi/static/css/main.9ebd34fc.css",
-    "main.js": "/starter_helpi/static/js/main.a1eb0d25.js",
+    "main.css": "/starter_helpi/static/css/main.b7f49986.css",
+    "main.js": "/starter_helpi/static/js/main.ac1ea563.js",
     "static/js/453.bad6c33a.chunk.js": "/starter_helpi/static/js/453.bad6c33a.chunk.js",
     "static/media/peopleInMeeting.jpg": "/starter_helpi/static/media/peopleInMeeting.7960568861d3d1da4733.jpg",
     "static/media/pexels-enrique-2887497.jpg": "/starter_helpi/static/media/pexels-enrique-2887497.f6f00d7b31f8fe5bba36.jpg",
+    "static/media/pexels-emrecan-2189696.jpg": "/starter_helpi/static/media/pexels-emrecan-2189696.eb8af39d0ac4be4a0237.jpg",
     "static/media/pexels-eberhardgross-1287145.jpg": "/starter_helpi/static/media/pexels-eberhardgross-1287145.ad86cb1502687db4f139.jpg",
     "static/media/pexels-padrinan-19670.jpg": "/starter_helpi/static/media/pexels-padrinan-19670.96f3367e3cc1213c1818.jpg",
     "static/media/logo.jpg": "/starter_helpi/static/media/logo.013467aa53286ba005be.jpg",
     "index.html": "/starter_helpi/index.html",
-    "main.9ebd34fc.css.map": "/starter_helpi/static/css/main.9ebd34fc.css.map",
-    "main.a1eb0d25.js.map": "/starter_helpi/static/js/main.a1eb0d25.js.map",
+    "main.b7f49986.css.map": "/starter_helpi/static/css/main.b7f49986.css.map",
+    "main.ac1ea563.js.map": "/starter_helpi/static/js/main.ac1ea563.js.map",
     "453.bad6c33a.chunk.js.map": "/starter_helpi/static/js/453.bad6c33a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ebd34fc.css",
-    "static/js/main.a1eb0d25.js"
+    "static/css/main.b7f49986.css",
+    "static/js/main.ac1ea563.js"
   ]
 }
