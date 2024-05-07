@@ -153,22 +153,12 @@ img {
     margin-right: 0; /* Remove margin for smaller screens */
   }
 }
-.basic-description{
-  margin-top: 60px;
-  margin-bottom: 30px;
-  margin-inline: 165px;
-  width: 500px;
-  font-family: monospace;
-  color: rgb(0, 0, 0);
-  font-weight: bolder;
-  background-color: rgb(255, 255, 255);
-  border: 3px solid black;
-  padding: 15px 17px;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
-.detailed-description{
-  margin-top: 100px;
-  margin-bottom: 30px;
-  margin-left: 165px;
+
+.basic-description, .detailed-description {
   width: 500px;
   font-family: monospace;
   color: rgb(0, 0, 0);
@@ -189,7 +179,7 @@ img {
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
-  margin-right: 625px;
+  width: 300px;
 }
 
 .descriptionSection {
@@ -216,11 +206,9 @@ img {
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
-
   position: relative; /* Set position to relative */
  /* Bring the button forward */
-  left: 20px; /* Move the button 20 pixels to the left */
-  margin-right: 660px;
+  left: 2px; /* Move the button 20 pixels to the left */
   margin-bottom: 350px;
 }
 

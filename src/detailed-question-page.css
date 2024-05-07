@@ -64,7 +64,7 @@
   font-weight: 400;
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  height: 600px;
+  height: 900px;
   
 }
 .title{
@@ -81,7 +81,7 @@
   background-image: url('pexels-enrique-2887497.jpg');
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 900px;
 }
 
    

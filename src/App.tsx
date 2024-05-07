@@ -66,7 +66,7 @@ function App() {
       <div className='descriptionSection' hidden={currentPage !== "home"}>
         <p>Welcome to the Career Helpi!</p>
         <p>Interested in finding which career is best for you? The Career Helpi allows users to find
-          their idead career. Want a career specefic to your interest. Our Detailed Assessment 
+          their ideal career. Want a career specefic to your interest. Our Detailed Assessment 
           gives users the most personalized career match. In a Hurry? Take our Basic Assessment to 
           quickly find a career choice. With the help of CHAT GPT, The Career Helpi allows users the 
           most complete and personalized results. 
@@ -75,6 +75,7 @@ function App() {
       <div hidden={currentPage !== "home"} className='homePageImage'>
         {/* <img src={img} alt="Couldn't load"></img> */}
       </div>
+      <div className='container'>
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'> <p>Detailed Career Quiz</p>
         The Career Helpi's Detailed Career Assessment allows users to fill out 
@@ -88,6 +89,7 @@ function App() {
       look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is 
       answer the questions below!</p>
       <Button className='basicButton2' onClick={changeToBasicPage}>Basic Career Assessment</Button>
+      </div>
       </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
