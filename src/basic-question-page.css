@@ -178,7 +178,7 @@
   font-size: 170%;
 }
 .questions2{
-  margin-top: 15px;
+  margin-top: 1px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
 
@@ -193,3 +193,10 @@
   font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.one{
+  background-image: url('pexels-emrecan-2189696.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+

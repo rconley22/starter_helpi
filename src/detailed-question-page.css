@@ -87,7 +87,7 @@
    
 .questionSelect{
   margin-top: 15px;
-  background-color: #006448d4;
+  background-color: #006448;
   border-left: .5px solid rgb(17, 21, 16);
   border-right: .5px solid rgb(17, 21, 16);
   border-bottom: 2px solid rgb(17, 21, 16);
@@ -112,7 +112,7 @@ border-top-left-radius: 15px;
 border-bottom-left-radius: 15px;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 0px;
-background-color: #006448d4;
+background-color: #006448;
 border-left: .5px solid rgb(17, 21, 16);
 border-right: .5px solid rgb(17, 21, 16);
 border-bottom: 2px solid rgb(17, 21, 16);
@@ -136,7 +136,7 @@ transition: background-color 1s ease;
 border-bottom-left-radius: 0px;
 border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
-background-color: #006448d4;
+background-color: #006448;
 border-left: .5px solid rgb(17, 21, 16);
 border-right: .5px solid rgb(17, 21, 16);
 border-bottom: 2px solid rgb(17, 21, 16);
