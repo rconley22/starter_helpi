@@ -59,6 +59,9 @@ function App() {
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
+      <div className='descriptionSection' hidden={currentPage !== "home"}>
+        <p>Welcome to the Career Helpi.</p>
+      </div>
       <div hidden={currentPage !== "home"} className='homePageImage'>
         <img src={img} alt="Couldn't load"></img>
       </div>
