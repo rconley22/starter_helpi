@@ -137,7 +137,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer1("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => nextQuestion("Q1")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
 
             <div className="ques1" hidden={currentQuestion !== 'Q2'}>
@@ -157,7 +166,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer2("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q2")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q2")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
 
             <div className="ques1" hidden={currentQuestion !== 'Q3'}>
@@ -178,7 +196,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer3("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q3")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q3")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
 
             <div className="ques1" hidden={currentQuestion !== 'Q4'}>
@@ -200,7 +227,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer4("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q4")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q4")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
             <div className="ques1" hidden={currentQuestion !== 'Q5'}>
                 <h4 className="bodyText">What type of people do you see yourself working with?</h4>
@@ -219,7 +255,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer5("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q5")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q5")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
 
             <div className="ques1" hidden={currentQuestion !== 'Q6'}>
@@ -240,7 +285,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer6("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q6")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q6")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
             <div className="ques1" hidden={currentQuestion !== 'Q7'}>
                 <h4 className="bodyText">What are some of your long term career goals?</h4>
@@ -259,7 +313,16 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className='resetbutton' onClick={() => setAnswer7("")}>Reset Answer</button>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q7")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Q7")}>Next</button>
-
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+            <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
+            <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
+            <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
+            <Button className={validateInput(answer4) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q4')}>Q4</Button>
+            <Button className={validateInput(answer5) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q5')}>Q5</Button>
+            <Button className={validateInput(answer6) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q6')}>Q6</Button>
+            <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
+            <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
+            </div>
             </div>
             <div className="ques1" hidden={currentQuestion !== 'Q8'}>
                 <h4 className="bodyText">What are some jobs/careers that you are not interested in?</h4>
@@ -280,14 +343,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <div></div>
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q8")}>Prev</button>
-
-                                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
-                <div>
-                    <p className="questions">All questions answered!</p>
-                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
-                </div>}
-            </div>
-            <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+                <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
             <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
             <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
             <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
@@ -297,6 +353,13 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
             <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
             </div>
+                                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
+                <div>
+                    <p className="questions">All questions answered!</p>
+                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
+                </div>}
+            </div>
+            
             <div hidden={currentQuestion !== "Results"}>
                 <button className="submitAns" onClick={() => lastQuestion("Results")}>Prev</button><button className="submitAns" onClick={() => nextQuestion("Results")}>Next</button>
 
