@@ -141,14 +141,14 @@ setCurrentQuestion(newQuest)
 
     }
 
-    const redoQuiz = ()=>{
-        resetProgress()
-        setCurrentQuestion('Q0')
+    // const redoQuiz = ()=>{
+    //     resetProgress()
+    //     setCurrentQuestion('Q0')
 
 
-    }
+    // }
 
-    const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
+    //const presses: multAnswers[] = [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
     
     function getResponses(): multAnswers[] {
       return [lastPress1, lastPress2, lastPress3, lastPress4, lastPress5, lastPress6, lastPress7];
