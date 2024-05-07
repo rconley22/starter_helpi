@@ -8,6 +8,7 @@ import './AI';
 import img from './person_thinking.jpg';
 import { ChatGPT } from './AI';
 import OpenAI from 'openai';
+import { setQuery } from './ai_query';
 import { error } from 'console';
 import { ifError } from 'assert';
 
@@ -122,7 +123,7 @@ const [response, setResponse] = useState<string | null>('currently empty!');
         <p className='detailed-description'>
           ${keyData}
           {/* ${response} */}
-          <div hidden={true}>
+          <div>
           <ChatGPT userKey={keyData} content={"This is a test."} ></ChatGPT>
           </div>
           The Career Helpi's Detailed Career Assessment allows users to fill out 
