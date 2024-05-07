@@ -5,6 +5,7 @@ import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
 import img from './person_thinking.jpg';
+import logo from './logo.jpg'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -45,6 +46,7 @@ function App() {
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
+        <img src={logo} id="obj" alt="Couldn't load"></img>
         <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
