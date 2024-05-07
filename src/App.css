@@ -40,6 +40,14 @@
   color: white;
 }
 
+.mylogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 140px;
+  width: 140px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -101,7 +109,7 @@
 }
 */
 .App-footer {
-  background-color: gray;
+  background-color: #282c34;
   text-align: center;
   margin-top: auto;
   padding: 18px;
