@@ -368,7 +368,9 @@ setCurrentQuestion(newQuest)
 
               <div className="CareerMatchText" hidden={currentQuestion !== 'CareerMatch'}>
                 <h1>Your Career Report</h1>
+                <hr></hr>
                 <ChatGPT userKey={userKey} content={setQuery(getResponses())}></ChatGPT>
+                <hr></hr>
                 <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
               </div>
         </div>
