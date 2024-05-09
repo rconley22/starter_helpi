@@ -76,23 +76,32 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
  );
 }
 
-export function testResponse(userKey:string): boolean{
+export async function testResponse(userKey:string): Promise<boolean>{
   
-  const [validState,changeValidState]
+  const [validState,changeValidState] = useState<boolean>(false);
   const [response, setResponse] = useState<string | null>('');
  const [loading, setLoading] = useState<boolean>(false);
+
  const [buttonclicked, setButtonclicked] = useState<boolean>(false);
+
+
  const myOpenAi = new OpenAI({apiKey: userKey, dangerouslyAllowBrowser: true});
-   const getOpenAIResponse = async () => {
     setLoading(true);
     setButtonclicked(true);
     const res = await myOpenAi.chat.completions.create({
     model: 'gpt-4',
-    messages: [ {role: "assistant", content: content } ]
+    messages: [ {role: "assistant", content:"This is a test."} ]
     });
     setResponse(res.choices[0]?.message?.content);
     setLoading(false);
-}
+
+  if(response === null)
+    {
+      return false
+    }
+  else{
+    return true
+  }
+} 
 
 
-}

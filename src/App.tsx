@@ -12,6 +12,7 @@ import { setQuery } from './ai_query';
 import { error } from 'console';
 import { ifError } from 'assert';
 import logo from './logo.jpg'
+import { testResponse } from './AI';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -53,7 +54,7 @@ const [response, setResponse] = useState<string | null>('currently empty!');
   function checkKeyValidity(): void{
   
   
-  // const currentKey;
+  const currentKey = testResponse(keyData)
     if(keyData === ""){
     setKeyValidity('empty')
   }
