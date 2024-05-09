@@ -7,6 +7,7 @@ import { HomePage } from './home-page';
 //import  img from './peopleInMeeting.jpg';
 //import vid from './PersonCoding.mp4';
 import logo from './logo.jpg'
+import githubLogo from './GithubLogo.png'
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -99,11 +100,17 @@ function App() {
             <img src={logo} className='mylogo2' alt="Couldn't load"></img>
             <Col><Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} className='apiKeyInsert'></Form.Control></Col>
             <Col><Button className="Submit-Button" onClick={handleSubmit}>Submit</Button></Col>
+
           
           
           </Row>
         </Container>
       </Form>
+      <div>
+    <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
+      <img className='gitHub' src={githubLogo} alt="GitHub"></img> 
+    </a>
+  </div>
       </footer>
     </div>
     </div>
