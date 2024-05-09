@@ -34,42 +34,46 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     <div className='response-text'>
     <Container>
       <Row>
-      <hr></hr>
-      <Col>
-        <h2>Your Top 5 Career Choices:</h2>
-        <div className='box'>
-        <p>1. {newText[0]}</p>
-        <p>2. {newText[1]}</p>
-        <p>3. {newText[2]}</p>
-        <p>4. {newText[3]}</p>
-        <p>5. {newText[4]}</p>
-        </div>
+        <Col>
+          <h2>Your Top 5 Career Choices:</h2>
+          <div className='box'>
+          <p>1. {newText[0]}</p>
+          <p>2. {newText[1]}</p>
+          <p>3. {newText[2]}</p>
+          <p>4. {newText[3]}</p>
+          <p>5. {newText[4]}</p>
+          </div>
+        </Col>
+        <Col>
+          <h2>Your Top Industry Matches:</h2>
+          <div className='box'>
+          <p>1. {newText[5]}</p>
+          <p>2. {newText[6]}</p>
+          <p>3. {newText[7]}</p>
+          <p>4. {newText[8]}</p>
+          <p>5. {newText[9]}</p>
+          </div>
       </Col>
-      <Col>
-        <h2>Your Top Industry Matches:</h2>
-        <div className='box'>
-        <p>1. {newText[5]}</p>
-        <p>2. {newText[6]}</p>
-        <p>3. {newText[7]}</p>
-        <p>4. {newText[8]}</p>
-        <p>5. {newText[9]}</p>
-        </div>
-    </Col>
-    <Col>
-      <h2>Your Top Job Suggestions:</h2>
-      <div className='box'>
-      <p>1. {newText[10]}</p>
-      <p>2. {newText[11]}</p>
-      <p>3. {newText[12]}</p>
-      <p>4. {newText[13]}</p>
-      <p>5. {newText[14]}</p>
-      </div>
-    </Col>
+        <Col>
+          <h2>Your Top Job Suggestions:</h2>
+          <div className='box'>
+          <p>1. {newText[10]}</p>
+          <p>2. {newText[11]}</p>
+          <p>3. {newText[12]}</p>
+          <p>4. {newText[13]}</p>
+          <p>5. {newText[14]}</p>
+          </div>
+        </Col>
       </Row>
-      <Row>
-      <hr></hr>
-      <h2>Report Summary:</h2>
-      <p className='box'>{newText[15]}</p>
+      {/* <Row>      
+        <h2>Report Summary:</h2>
+        <p className='box'>{newText[15]}</p>
+      </Row> */}
+    </Container>
+    <Container>
+    <Row>      
+        <h2>Report Summary:</h2>
+        <p className='box2'>{newText[15]}</p>
       </Row>
     </Container>
     </div>

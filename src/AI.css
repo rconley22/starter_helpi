@@ -19,4 +19,14 @@
     background-color: rgb(186, 182, 182);
     padding: 10px;
     margin: 10px;
+    width: 40vh;
+    height: 40vh;
+}
+
+.box2 {
+    border: 2px solid rgb(11, 10, 16);
+    background-color: rgb(186, 182, 182);
+    padding: 10px;
+    margin: 10px;
+    padding: 20px 20px;
 }
