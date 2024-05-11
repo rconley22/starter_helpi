@@ -280,7 +280,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (227 ms)
+  ✕ renders learn react link (229 ms)
 
   ● renders learn react link
 
@@ -500,13 +500,13 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   18.57 |    47.96 |    3.78 |   19.63 |                                                                         
+All files                   |   18.28 |    47.96 |    4.16 |   19.29 |                                                                         
  AI.tsx                     |   64.28 |       50 |      50 |   64.28 | 16-23                                                                   
  App.tsx                    |      50 |       50 |   16.66 |      50 | 17,26-43                                                                
  Loader.tsx                 |       0 |      100 |       0 |       0 | 5                                                                       
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
  basic-question-page.tsx    |   12.84 |    46.49 |    1.66 |   13.77 | 33-38,42-46,50-54,58-62,66-70,75-79,84-88,91-99,133-134,139-140,170-367 
- detailed-question-page.tsx |   17.96 |     50.5 |    1.92 |      19 | 17-24,71-72,77-78,84,97,100,116-388                                     
+ detailed-question-page.tsx |   17.26 |     50.5 |    2.83 |   18.18 | 17-24,71-72,77-78,84,97,100,106-115,133-405                             
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -514,5 +514,5 @@ All files                   |   18.57 |    47.96 |    3.78 |   19.63 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.422 s
+Time:        4.155 s
 Ran all test suites.
