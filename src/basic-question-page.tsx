@@ -96,7 +96,7 @@ const handleAnswerQuestion6 = (response6: multAnswers) => {
         setLastPress5('');
         setLastPress6('');
         setLastPress7('');
-        setCurrentQuestion("Q1")
+        setCurrentQuestion("Q0")
     }
 
 const questOrderForward: Record<questions,questions> = {

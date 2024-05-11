@@ -100,7 +100,24 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
         setAnswersSubmitted(false);
     }
 
-    const answers: string[] = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8] 
+    //const answers: string[] = [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8] 
+
+    const resetProgress  = () =>{
+        setAnswer1("");
+        setAnswer2("");
+        setAnswer3("");
+        setAnswer4("");
+        setAnswer5("");
+        setAnswer6("");
+        setAnswer7("");
+        setAnswer8("");
+        setCurrentQuestion('Q0');
+        setAnswersSubmitted(false);
+    }
+
+    function getResponses(): string[] {
+        return [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8];
+      }
 
     return (
     
@@ -391,8 +408,10 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <h1>Your Personalized Career Suggestions</h1>
                 <div></div>
                 <div className="bodyText">
-                <ChatGPT userKey={userKey} content={generateDetailedAnswers(answers)}></ChatGPT>
+                <ChatGPT userKey={userKey} content={generateDetailedAnswers(getResponses())}></ChatGPT>
                 </div>
+                <hr></hr>
+                <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
             </div></>
     );
 }
