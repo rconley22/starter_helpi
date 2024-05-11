@@ -316,6 +316,12 @@ setCurrentQuestion(newQuest)
             <div></div>
             <button className="submitAns" onClick={()=>lastQuestion("Q7")}>Prev</button>
             <hr className="lines"></hr>
+            {progress === 7 && currentQuestion!=='Results' && currentQuestion!=='CareerMatch' &&
+                <div>
+                    
+                    <p className="questions">All questions answered!</p>
+                    <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
+                </div>}
             <div>
 
             
@@ -340,12 +346,7 @@ setCurrentQuestion(newQuest)
             <hr className="lines"></hr>
             
             </div>
-            {progress === 7 && currentQuestion!=='Results' && currentQuestion!=='CareerMatch' &&
-                <div>
-                    
-                    <p className="questions">All questions answered!</p>
-                    <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
-                </div>}
+            
             <div>
 
 
