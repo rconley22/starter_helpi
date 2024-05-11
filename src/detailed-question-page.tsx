@@ -361,6 +361,11 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <hr className="lines"></hr>
                 <button className="submitAns" onClick={() => lastQuestion("Q8")}>Prev</button>
                 <div hidden={(currentQuestion==='Q0')|| currentQuestion === 'Results'  }>
+                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
+                <div>
+                    <p className="questions">All questions answered!</p>
+                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
+                </div>}
             <Button className={validateInput(answer1) ? "questionSelectLeftAns" : "questionSelectLeft"} onClick={()=>setCurrentQuestion('Q1')}>Q1</Button>
             <Button className={validateInput(answer2) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q2')}>Q2</Button>
             <Button className={validateInput(answer3) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q3')}>Q3</Button>
@@ -370,11 +375,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
             <Button className={validateInput(answer7) ? "questionSelectAns" : "questionSelect"} onClick={()=>setCurrentQuestion('Q7')}>Q7</Button>
             <Button className={validateInput(answer8) ? "questionSelectRightAns" : "questionSelectRight"} onClick={()=>setCurrentQuestion('Q8')}>Q8</Button>
             </div>
-                                {allQuestionsAnswered && validateInput(answer8) && validateInput(answer7) && validateInput(answer6) && validateInput(answer5) && validateInput(answer4) && validateInput(answer3) && validateInput(answer2) && validateInput(answer1) &&
-                <div>
-                    <p className="questions">All questions answered!</p>
-                    <Button onClick={handleSubmit} className="submitAns">Submit Answers</Button>
-                </div>}
+                          
             </div>
             
             <div hidden={currentQuestion !== "Results"}>
@@ -390,7 +391,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 </div>
             </div>
             
-        </div><div hidden={!answersSubmitted || currentQuestion === "Results"}>
+        </div><div className="results-page" hidden={!answersSubmitted || currentQuestion === "Results"}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
                 <p><b>What do you want to learn more about?:</b> {answer1}</p>
