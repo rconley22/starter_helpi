@@ -1,6 +1,15 @@
 .App {
   text-align: center;
-  
+}
+
+.homepage-background {
+  text-align: center;
+  background-image: url('peopleInMeeting.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  width: 100%;
 }
 
 .App-logo {
@@ -47,6 +56,16 @@
   height: 140px;
   width: 140px;
 }
+
+.mylogo2 {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+
+}
+
 
 .App-link {
   color: #61dafb;
@@ -160,23 +179,23 @@ img {
     margin-right: 0; /* Remove margin for smaller screens */
   }
 }
-.basic-description{
-  margin-top: 60px;
-  margin-bottom: 30px;
-  margin-inline: 165px;
-  width: 500px;
-  font-family: monospace;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
-.detailed-description{
-  margin-top: 100px;
-  margin-bottom: 30px;
-  margin-left: 165px;
+
+.basic-description, .detailed-description {
   width: 500px;
   font-family: monospace;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255,0.6);
+  border: 3px solid black;
+  padding: 15px 17px;
 }
 
 .detailedbutton2{
-  background-color: #127a54d4;
+  background-color: #127a54;
   border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
   color: white; /* Text color */
   text-align: center;
@@ -186,19 +205,24 @@ img {
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
+  width: 300px;
 }
 
-.homePageImage {
-  margin-top: 100px;
+.descriptionSection {
+  margin-top: 30px;
   margin-bottom: 100px;
-  margin-left: 200px;
-  margin-right: 300px;
-  height: 80%;
-  width: 80%;
-  size: 500px;
+  margin-left: 110px;
+  margin-right: 110px;
+  font-size: 24px;
+  font-family: monospace;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid black;
+  padding: 15px 17px;
 }
 .basicButton2 {
-  background-color: #127a54d4;
+  background-color: #127a54;
   border: 2px solid rgb(17, 21, 16); /* Add border to the buttons */
   color: white; /* Text color */
   text-align: center;
@@ -208,14 +232,24 @@ img {
   border-radius: 8px; /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
-
   position: relative; /* Set position to relative */
  /* Bring the button forward */
-  left: 20px; /* Move the button 20 pixels to the left */
-  margin-right: 660px;
+  left: 2px; /* Move the button 20 pixels to the left */
   margin-bottom: 350px;
 }
 
 .apiKeyInsert {
   width: 80vh;
+}
+
+.gitHub {
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  width: 40px;
+  margin-bottom: 5px;
+  margin-right: 40px;
+  border-radius: 50%;
+
 }

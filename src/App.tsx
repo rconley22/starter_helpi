@@ -131,9 +131,19 @@ const [response, setResponse] = useState<string | null>('currently empty!');
       <p hidden={currentPage !== 'home'}>
           <HomePage></HomePage>
       </p>
-      <div hidden={currentPage !== "home"} className='homePageImage'>
-        <img src={img} alt="Couldn't load"></img>
+      <div className='descriptionSection' hidden={currentPage !== "home"}>
+        <p>Welcome to the Career Helpi!</p>
+        <p>Interested in finding which career is best for you? The Career Helpi allows users to find
+          their ideal career. Want a career specefic to your interest. Our Detailed Assessment 
+          gives users the most personalized career match. In a Hurry? Take our Basic Assessment to 
+          quickly find a career choice. With the help of CHAT GPT, The Career Helpi allows users the 
+          most complete and personalized results. 
+        </p>
       </div>
+      <div hidden={currentPage !== "home"} className='homePageImage'>
+        {/* <img src={img} alt="Couldn't load"></img> */}
+      </div>
+      <div className='container'>
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>
           ${keyData}
@@ -147,24 +157,34 @@ const [response, setResponse] = useState<string | null>('currently empty!');
         <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
       </div>
       <div hidden={currentPage !== 'home'}>
-      <p className='basic-description'>If you feel unsure about your future career but don't want to think about it too much, 
+      <p className='basic-description'> <p>Basic Career Quiz</p>
+      If you feel unsure about your future career but don't want to think about it too much, 
       look no further. In a few short minutes, you can get a basic idea as to what career suit you. All you have to do is 
       answer the questions below!</p>
       <Button className='basicButton2' onClick={changeToBasicPage}>Basic Career Assessment</Button>
+      </div>
       </div>
       <footer className="App-footer">
       <Form hidden={currentPage !== 'home'}>
         
         <Container>
           <Row>
+            <img src={logo} className='mylogo2' alt="Couldn't load"></img>
             <Col><Form.Control type="password" placeholder="Insert API Key Here" onChange={changeKey} className='apiKeyInsert'></Form.Control></Col>
             <Col><Button className="Submit-Button" onClick={handleSubmit}>Submit</Button></Col>
+
           
           
           </Row>
         </Container>
       </Form>
+      <div>
+    <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
+      <img className='gitHub' src={githubLogo} alt="GitHub"></img> 
+    </a>
+  </div>
       </footer>
+    </div>
     </div>
   );
 }
