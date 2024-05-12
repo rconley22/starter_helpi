@@ -12,7 +12,7 @@ import { setQuery } from './ai_query';
 import { error } from 'console';
 import { ifError } from 'assert';
 import logo from './logo.jpg'
-import { testResponse } from './AI';
+import { TestResponse } from './AI';
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -54,7 +54,7 @@ const [response, setResponse] = useState<string | null>('currently empty!');
   function checkKeyValidity(): void{
   
   
-  const currentKey = testResponse(keyData)
+  const currentKey = TestResponse(keyData)
     if(keyData === ""){
     setKeyValidity('empty')
   }
@@ -179,13 +179,13 @@ const [response, setResponse] = useState<string | null>('currently empty!');
         </Container>
       </Form>
       <div>
-    <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
+    {/* <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
       <img className='gitHub' src={githubLogo} alt="GitHub"></img> 
-    </a>
+    </a> */}
   </div>
       </footer>
     </div>
-    </div>
+    //  </div>
   );
 }
 
