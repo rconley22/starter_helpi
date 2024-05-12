@@ -102,7 +102,7 @@
   /* Rounded corners for buttons */
   cursor: pointer; /* Change cursor on hover */
   margin-bottom: 12px;
-  transition: background-color 1s ease;
+  transition: background-color 2s ease;
   
 }
 
@@ -126,7 +126,7 @@ padding: 8px 17px; /* Padding around text */
 /* Rounded corners for buttons */
 cursor: pointer; /* Change cursor on hover */
 margin-bottom: 12px;
-transition: background-color 1s ease;
+transition: background-color 2s ease;
 
 }
 
@@ -150,7 +150,7 @@ padding: 8px 17px; /* Padding around text */
 /* Rounded corners for buttons */
 cursor: pointer; /* Change cursor on hover */
 margin-bottom: 12px;
-transition: background-color 1s ease;
+transition: background-color 2s ease;
 
 }
 

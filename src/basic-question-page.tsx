@@ -346,6 +346,7 @@ setCurrentQuestion(newQuest)
                     <p className="questions">All questions answered!</p>
                     <Button className="submitAns" onClick={() => nextQuestion('End')}>Submit Answers</Button>
                 </div>}
+                
             <div>
 
 
