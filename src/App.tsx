@@ -49,39 +49,14 @@ function App() {
        }
   }
 
-
-const [response, setResponse] = useState<string | null>('currently empty!');
-  function checkKeyValidity(): void{
-  
-  
-  const currentKey = TestResponse(keyData)
-    if(keyData === ""){
-    setKeyValidity('empty')
-  }
-  else if(keyData === ""){
+ async function checkKeyValidity(): Promise<void>{
+  const currentTest = await TestResponse(keyData)
+    if(currentTest){
     setKeyValidity('valid')
   }
   else{
     setKeyValidity('invalid')
   }
-    
-    
-  try{
-    const myOpenAi = new OpenAI({apiKey: keyData, dangerouslyAllowBrowser: true});
-      const getOpenAIResponse = async () => {
-       const res = await myOpenAi.chat.completions.create({
-       model: 'gpt-3.5-turbo',
-       messages: [ {role: "user", content: "This is a test." } ]
-       });
-       setResponse(res.choices[1]?.message?.content);
-      getOpenAIResponse()
-    // setKeyValidity('valid')
-     ChatGPT({userKey:keyData,content:"This is a test."})
-     
-    }}
-    catch(error){
-      setKeyValidity('invalid')
-    }
 
   }
   
