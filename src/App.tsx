@@ -91,7 +91,7 @@ function App() {
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
-        <Button className='homebutton' onClick={changetoHomePage}>Home ${isKeyValid}</Button>
+        <Button className='homebutton' onClick={changetoHomePage}>Home</Button>
         <Button className='detailedbutton' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
         <Button className='basicButton' onClick={changeToBasicPage}>Basic Career Assessment</Button>
         </div>
@@ -121,11 +121,7 @@ function App() {
       <div className='container'>
       <div hidden={currentPage !== 'home'}>
         <p className='detailed-description'>
-          ${keyData}
-          {/* ${response} */}
-          <div>
-          <ChatGPT userKey={keyData} content={"This is a test."} ></ChatGPT>
-          </div>
+         
           The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
