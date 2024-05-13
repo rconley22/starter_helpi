@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/starter_helpi/static/css/main.35658c1f.css",
-    "main.js": "/starter_helpi/static/js/main.73adc4d9.js",
+    "main.css": "/starter_helpi/static/css/main.a33a4f75.css",
+    "main.js": "/starter_helpi/static/js/main.0ab33dfa.js",
     "static/js/453.bad6c33a.chunk.js": "/starter_helpi/static/js/453.bad6c33a.chunk.js",
     "static/media/peopleInMeeting.jpg": "/starter_helpi/static/media/peopleInMeeting.7960568861d3d1da4733.jpg",
     "static/media/pexels-enrique-2887497.jpg": "/starter_helpi/static/media/pexels-enrique-2887497.f6f00d7b31f8fe5bba36.jpg",
@@ -10,14 +10,14 @@
     "static/media/pexels-lastly-772803.jpg": "/starter_helpi/static/media/pexels-lastly-772803.7da1e58294e6084bae8a.jpg",
     "static/media/pexels-tiana-18128-234272.jpg": "/starter_helpi/static/media/pexels-tiana-18128-234272.58d893567e8866a725f2.jpg",
     "static/media/pexels-padrinan-19670.jpg": "/starter_helpi/static/media/pexels-padrinan-19670.96f3367e3cc1213c1818.jpg",
-    "static/media/logo.jpg": "/starter_helpi/static/media/logo.013467aa53286ba005be.jpg",
+    "static/media/logo-removebg-preview.png": "/starter_helpi/static/media/logo-removebg-preview.66195f6b39e666f78dba.png",
     "index.html": "/starter_helpi/index.html",
-    "main.35658c1f.css.map": "/starter_helpi/static/css/main.35658c1f.css.map",
-    "main.73adc4d9.js.map": "/starter_helpi/static/js/main.73adc4d9.js.map",
+    "main.a33a4f75.css.map": "/starter_helpi/static/css/main.a33a4f75.css.map",
+    "main.0ab33dfa.js.map": "/starter_helpi/static/js/main.0ab33dfa.js.map",
     "453.bad6c33a.chunk.js.map": "/starter_helpi/static/js/453.bad6c33a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35658c1f.css",
-    "static/js/main.73adc4d9.js"
+    "static/css/main.a33a4f75.css",
+    "static/js/main.0ab33dfa.js"
   ]
 }
