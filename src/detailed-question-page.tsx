@@ -404,14 +404,14 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <button className="submitAns" onClick={goBackBtn}>Go Back To Questions</button>
                 <button className="submitAns" onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
 
-            </div></><div className="CareerMatchText" hidden={currentQuestion !== 'Results'}>
+            </div></>
+            <div className="CareerMatchText" hidden={currentQuestion !== 'Results'}>
                 <h1>Your Personalized Career Suggestions</h1>
-                <div></div>
-                <div className="bodyText">
+                <hr></hr>
                 <ChatGPT userKey={userKey} content={generateDetailedAnswers(getResponses())}></ChatGPT>
-                </div>
                 <hr></hr>
                 <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
-            </div></>
+            </div>
+            </>
     );
 }
