@@ -90,7 +90,6 @@ function App() {
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
     setKey(event.target.value);
   }
-
   return (
     <div onLoad={checkKeyValidity} className="App">
       <header hidden={isKeyValid === ('empty') || isKeyValid === ('valid')} className='warning-header'>
