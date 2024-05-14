@@ -84,3 +84,26 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
   </div>
  );
 }
+
+export async function TestResponse(userKey:string): Promise<boolean>{
+
+ const myOpenAi = new OpenAI({apiKey: userKey, dangerouslyAllowBrowser: true});
+
+    try {
+        const res = await myOpenAi.chat.completions.create({
+            model: 'gpt-4',
+            messages: [{ role: "assistant", content: "This is a test." }]
+        });
+
+        const response = res.choices[0]?.message?.content;
+
+        return response !== null && response !== undefined;
+    } catch (error) {
+        console.error("Error while testing response:", error);
+        return false; // Return false if there's an error
+    }  
+ 
+ 
+} 
+
+

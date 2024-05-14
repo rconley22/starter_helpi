@@ -4,10 +4,20 @@ import { Button, Container, Form, Row, Col } from 'react-bootstrap';
 import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
+import './AI';
+import img from './person_thinking.jpg';
+import { ChatGPT } from './AI';
+import OpenAI from 'openai';
+import { setQuery } from './ai_query';
+import { error } from 'console';
+import { ifError } from 'assert';
+import logo from './logo.jpg'
+import { TestResponse } from './AI';
 //import  img from './peopleInMeeting.jpg';
 //import vid from './PersonCoding.mp4';
 import logo from './logo-removebg-preview.png'
 import githubLogo from './GithubLogo.png'
+
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";
@@ -19,24 +29,63 @@ if (prevKey !== null) {
 
 function App() {
   type page = 'home' | 'detailed question page' | 'basic question page';
+  type keyState = 'valid' | 'invalid' | 'empty'
   const [key, setKey] = useState<string>(keyData); //for api key input
   const [currentPage, setcurrentPage] = useState<page>('home');//which page the website is currently on
+  const [isKeyValid, setKeyValidity] = useState<keyState>('empty')
 
   function changetoDetailedPage(): void {//switch to the detailed questions page
-    setcurrentPage('detailed question page');
+    if(isKeyValid === 'valid')
+      { setcurrentPage('detailed question page')}
+    else{ 
+      setKeyValidity('invalid');
+      window.location.reload()
+      checkKeyValidity()
+       }
   }
   function changeToBasicPage(): void {
-    setcurrentPage('basic question page');
+    if(isKeyValid === 'valid'){
+      setcurrentPage('basic question page')
+    }
+    else{
+      setKeyValidity('invalid');
+      window.location.reload()
+      checkKeyValidity()
+       }
   }
+
+ async function checkKeyValidity(): Promise<void>{
+  if(keyData===""){
+    setKeyValidity('empty')
+  }
+  else{
+  
+  const currentTest = await TestResponse(keyData)
+    if(currentTest){
+    setKeyValidity('valid')
+  }
+  else{
+    setKeyValidity('invalid')
+  }
+  }
+  }
+  
+
+
 
   function changetoHomePage(): void {//switch to the home page
     setcurrentPage('home');
   }
+
   
   //sets the local storage item to the api key the user inputed
   function handleSubmit() {
+    
     localStorage.setItem(saveKeyData, JSON.stringify(key));
+    
+
     window.location.reload(); //when making a mistake and changing the key again, I found that I have to reload the whole site before openai refreshes what it has stores for the local storage variable
+    checkKeyValidity()
   }
   //whenever there's a change it'll store the api key in a local state called key but it won't be set in the local storage until the user clicks the submit button
   function changeKey(event: React.ChangeEvent<HTMLInputElement>) {
@@ -44,8 +93,11 @@ function App() {
   }
 
   return (
-    <div className={`App ${currentPage === 'home' ? 'homepage-background' : ''}`}>
-    <div className="App">
+    <div onLoad={checkKeyValidity} className="App">
+      <header hidden={isKeyValid === ('empty') || isKeyValid === ('valid')} className='warning-header'>
+        Please enter a valid API key. We won't be able to provide results without it.
+      
+      </header>
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
@@ -78,8 +130,9 @@ function App() {
       </div>
       <div className='container'>
       <div hidden={currentPage !== 'home'}>
-        <p className='detailed-description'> <p>Detailed Career Quiz</p>
-        The Career Helpi's Detailed Career Assessment allows users to fill out 
+        <p className='detailed-description'>
+         
+          The Career Helpi's Detailed Career Assessment allows users to fill out 
         a more personal quiz that reflects their specific interest and goals. Here, users' results will be more personalized 
         to who you are. Providing extra detail allows the Career Helpi to better match a potential career.</p>
         <Button className='detailedbutton2' onClick={changetoDetailedPage}>Detailed Career Assessment</Button>
@@ -107,13 +160,13 @@ function App() {
         </Container>
       </Form>
       <div>
-    <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
+    {/* <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
       <img className='gitHub' src={githubLogo} alt="GitHub"></img> 
-    </a>
+    </a> */}
   </div>
       </footer>
     </div>
-    </div>
+    //  </div>
   );
 }
 
