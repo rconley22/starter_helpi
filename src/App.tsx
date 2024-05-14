@@ -50,6 +50,11 @@ function App() {
   }
 
  async function checkKeyValidity(): Promise<void>{
+  if(keyData===""){
+    setKeyValidity('empty')
+  }
+  else{
+  
   const currentTest = await TestResponse(keyData)
     if(currentTest){
     setKeyValidity('valid')
@@ -57,7 +62,7 @@ function App() {
   else{
     setKeyValidity('invalid')
   }
-
+  }
   }
   
 
