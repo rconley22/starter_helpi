@@ -94,9 +94,10 @@ function App() {
   return (
     <div onLoad={checkKeyValidity} className="App">
       <header hidden={isKeyValid === ('empty') || isKeyValid === ('valid')} className='warning-header'>
-        Please enter a valid API key. We won't be able to provide results without it.
-      
+        <p>Please enter a valid <a href='https://platform.openai.com/docs/quickstart' target='_blank'>Open AI API key</a>. We won't be able to provide results without it.</p>
+  
       </header>
+      <div className={`App ${currentPage === 'home' ? 'homepage-background' : ''}`}>
       <header className="App-header">
         <div><h1 className='headerTitle'>The Career Helpi</h1></div>
         <div className="wrapper">
