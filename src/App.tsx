@@ -11,7 +11,6 @@ import OpenAI from 'openai';
 import { setQuery } from './ai_query';
 import { error } from 'console';
 import { ifError } from 'assert';
-import logo from './logo.jpg'
 import { TestResponse } from './AI';
 //import  img from './peopleInMeeting.jpg';
 //import vid from './PersonCoding.mp4';
