@@ -218,3 +218,19 @@ margin-bottom: 12px;
 transition: background-color 1s ease;
 
 }
+.results-page{
+  background-image: url('pexels-tiana-18128-234272.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1100px;
+  margin: 0;
+}
+
+.CareerMatchText{
+  background-image: url('pexels-enrique-2887497.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 1100px;
+  padding: 0;
+  margin: 0;
+}

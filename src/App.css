@@ -53,17 +53,17 @@
 .mylogo {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 140px;
-  width: 140px;
+  top: 10;
+  height: 120px;
+  width: 120px;
 }
 
 .mylogo2 {
   position:fixed;
   left: 0;
   bottom: 0;
-  height: 50px;
-  width: 50px;
+  height: 58px;
+  width: 70px;
 
 }
 

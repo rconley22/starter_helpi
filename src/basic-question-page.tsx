@@ -353,7 +353,7 @@ setCurrentQuestion(newQuest)
             </div>
             
 
-              <div hidden={currentQuestion !== 'Results'}>
+              <div className="results-image" hidden={currentQuestion !== 'Results'}>
                 <h1>Results Page</h1>
                 <h3>Your Answers Are:</h3>
                 <p><b>I prefer working in a group rather than alone:</b> {lastPress1}</p>
@@ -363,7 +363,7 @@ setCurrentQuestion(newQuest)
                 <p><b>I'm crafty and good with my hands:</b> {lastPress5}</p>
                 <p><b>I like working through decisions instead of going with my gut:</b> {lastPress6}</p>
                 <p><b>I get inspired by beauty in art and nature:</b> {lastPress7}</p>
-                <button className="submitAns" onClick={() => lastQuestion("Q7")}>Go Back To Questions </button>
+                <button className="submitAns" onClick={() => lastQuestion("Q1")}>Go Back To Questions </button>
                 <button className="submitAns" hidden={progress<7} onClick={() => nextQuestion('Results')}>Get Your Personalized Career Match</button>
               </div>
 

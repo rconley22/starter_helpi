@@ -13,6 +13,11 @@ import { error } from 'console';
 import { ifError } from 'assert';
 import logo from './logo.jpg'
 import { TestResponse } from './AI';
+//import  img from './peopleInMeeting.jpg';
+//import vid from './PersonCoding.mp4';
+import logo from './logo-removebg-preview.png'
+import githubLogo from './GithubLogo.png'
+
 
 //local storage and API Key: key should be entered in by the user and will be stored in local storage (NOT session storage)
 let keyData = "";

@@ -161,10 +161,6 @@
   margin: 0 auto; 
 }
 
-.CareerMatchText {
-  margin-bottom: 15vh;
-  margin-top: 2vh;
-}
 
 .basicPageDescription {
   margin-inline: 40vh;
@@ -197,6 +193,11 @@
   background-image: url('pexels-emrecan-2189696.jpg');
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 800px;
 }
-
+.results-image{
+  background-image: url('pexels-lastly-772803.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
