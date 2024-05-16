@@ -11,7 +11,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -51,7 +51,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -90,7 +90,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -130,7 +130,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -170,7 +170,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -209,7 +209,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -248,7 +248,7 @@
         at p
         at div
         at div
-        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:22:33)
+        at App (/home/runner/work/starter_helpi/starter_helpi/src/App.tsx:32:33)
 
       4 |
       5 | test('renders learn react link', () => {
@@ -280,7 +280,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (230 ms)
+  ✕ renders learn react link (245 ms)
 
   ● renders learn react link
 
@@ -290,10 +290,26 @@ FAIL src/App.test.tsx
     [36m<body>[39m
       [36m<div>[39m
         [36m<div[39m
-          [33mclass[39m=[32m"App homepage-background"[39m
+          [33mclass[39m=[32m"App"[39m
         [36m>[39m
+          [36m<header[39m
+            [33mclass[39m=[32m"warning-header"[39m
+            [33mhidden[39m=[32m""[39m
+          [36m>[39m
+            [36m<p>[39m
+              [0mPlease enter a valid [0m
+              [36m<a[39m
+                [33mhref[39m=[32m"https://platform.openai.com/docs/quickstart"[39m
+                [33mrel[39m=[32m"noreferrer"[39m
+                [33mtarget[39m=[32m"_blank"[39m
+              [36m>[39m
+                [0mOpen AI API key[0m
+              [36m</a>[39m
+              [0m. We won't be able to provide results without it.[0m
+            [36m</p>[39m
+          [36m</header>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"App"[39m
+            [33mclass[39m=[32m"App homepage-background"[39m
           [36m>[39m
             [36m<header[39m
               [33mclass[39m=[32m"App-header"[39m
@@ -449,23 +465,7 @@ FAIL src/App.test.tsx
                   [36m</div>[39m
                 [36m</div>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"ques1"[39m
-                  [33mhidden[39m=[32m""[39m
-                [36m>[39m
-                  [36m<h4[39m
-                    [33mclass[39m=[32m"bodyText"[39m
-                  [36m>[39m
-                    [0mWhat do you want your work environment to look like?[0m
-                  [36m</h4>[39m
-                  [36m<div>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"form-label"[39m
-                    [36m>[39m
-                      [0mAnswer:[0m
-                    [36m</label>[39m
-                    [36m<div />[39m
-                    [36m<textarea[39m
-    ...
+                  [33mcl...
 
        5 | test('renders learn react link', () => {
        6 |   render(<App />);
@@ -500,13 +500,13 @@ go away.[0m
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
 File                        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                       
 ----------------------------|---------|----------|---------|---------|-------------------------------------------------------------------------
-All files                   |   18.28 |    47.96 |    4.16 |   19.29 |                                                                         
- AI.tsx                     |   64.28 |       50 |      50 |   64.28 | 16-23                                                                   
- App.tsx                    |      50 |       50 |   16.66 |      50 | 17,26-43                                                                
+All files                   |   17.77 |    46.92 |    4.13 |   18.71 |                                                                         
+ AI.tsx                     |      40 |    41.66 |      25 |      40 | 16-23,27-29,100-113                                                     
+ App.tsx                    |   26.66 |    21.42 |   14.28 |   26.66 | 26,37-91                                                                
  Loader.tsx                 |       0 |      100 |       0 |       0 | 5                                                                       
  ai_query.tsx               |     100 |      100 |     100 |     100 |                                                                         
  basic-question-page.tsx    |   12.84 |    46.49 |    1.66 |   13.77 | 33-38,42-46,50-54,58-62,66-70,75-79,84-88,91-99,133-134,139-140,170-367 
- detailed-question-page.tsx |   17.26 |     50.5 |    2.83 |   18.18 | 17-24,71-72,77-78,84,97,100,106-115,133-406                             
+ detailed-question-page.tsx |   17.96 |     50.5 |    2.85 |      19 | 17-24,71-72,77-78,84,97,100,133-406                                     
  home-page.tsx              |     100 |      100 |     100 |     100 |                                                                         
  index.tsx                  |       0 |      100 |     100 |       0 | 7-19                                                                    
  reportWebVitals.ts         |       0 |        0 |       0 |       0 | 3-10                                                                    
@@ -514,5 +514,5 @@ All files                   |   18.28 |    47.96 |    4.16 |   19.29 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.252 s
+Time:        4.42 s
 Ran all test suites.
