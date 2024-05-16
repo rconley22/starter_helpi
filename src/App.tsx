@@ -5,12 +5,12 @@ import { DetailedQuestionPage } from "./detailed-question-page";
 import { BasicQuestionPage } from './basic-question-page';
 import { HomePage } from './home-page';
 import './AI';
-import img from './person_thinking.jpg';
-import { ChatGPT } from './AI';
-import OpenAI from 'openai';
-import { setQuery } from './ai_query';
-import { error } from 'console';
-import { ifError } from 'assert';
+// import img from './person_thinking.jpg';
+// import { ChatGPT } from './AI';
+// import OpenAI from 'openai';
+// import { setQuery } from './ai_query';
+// import { error } from 'console';
+// import { ifError } from 'assert';
 import { TestResponse } from './AI';
 //import  img from './peopleInMeeting.jpg';
 //import vid from './PersonCoding.mp4';
@@ -93,7 +93,7 @@ function App() {
   return (
     <div onLoad={checkKeyValidity} className="App">
       <header hidden={isKeyValid === ('empty') || isKeyValid === ('valid')} className='warning-header'>
-        <p>Please enter a valid <a href='https://platform.openai.com/docs/quickstart' target='_blank'>Open AI API key</a>. We won't be able to provide results without it.</p>
+        <p>Please enter a valid <a href='https://platform.openai.com/docs/quickstart' target='_blank' rel="noreferrer">Open AI API key</a>. We won't be able to provide results without it.</p>
   
       </header>
       <div className={`App ${currentPage === 'home' ? 'homepage-background' : ''}`}>
@@ -159,13 +159,13 @@ function App() {
         </Container>
       </Form>
       <div>
-    {/* <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
+     <a href="https://github.com/rconley22/starter_helpi" target="_blank" rel="noopener noreferrer">
       <img className='gitHub' src={githubLogo} alt="GitHub"></img> 
-    </a> */}
+    </a> 
   </div>
       </footer>
     </div>
-    //  </div>
+    </div>
   );
 }
 
