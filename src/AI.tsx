@@ -26,7 +26,7 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
 const resetResponse = () => {
   setResponse(null);
   setButtonclicked(false);
-  window.location.href = '/App.tsx';
+  window.location.href = 'src/App.tsx';
 };
 
   let newText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
