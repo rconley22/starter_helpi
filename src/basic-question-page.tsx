@@ -372,7 +372,7 @@ setCurrentQuestion(newQuest)
                 <hr></hr>
                 <ChatGPT userKey={userKey} content={setQuery(getResponses())}></ChatGPT>
                 <hr></hr>
-                <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
+                
               </div>
         </div>
         <div className="progress-container">

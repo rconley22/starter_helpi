@@ -411,7 +411,7 @@ export function DetailedQuestionPage({userKey}: {userKey: string}): JSX.Element 
                 <hr></hr>
                 <ChatGPT userKey={userKey} content={generateDetailedAnswers(getResponses())}></ChatGPT>
                 <hr></hr>
-                <Button onClick={resetProgress} className="submitAns">Take The Quiz Again</Button>
+                
             </div>
             </>
     );
