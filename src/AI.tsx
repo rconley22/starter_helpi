@@ -22,6 +22,13 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
     setResponse(res.choices[0]?.message?.content);
     setLoading(false);
 }
+
+const resetResponse = () => {
+  setResponse(null);
+  setButtonclicked(false);
+  window.location.href = '/basic-questions';
+};
+
   let newText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
   if (response !== null) {
   // newText= response.split(/[0-16]\./);
@@ -30,6 +37,9 @@ export function ChatGPT({userKey, content}: {userKey: string; content: string}):
  return (
   <div>
     <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
+    <Button className='submitAns' onClick={resetResponse} hidden={!buttonclicked || loading}>
+                Take The Quiz Again! 
+            </Button>
     <div hidden={!buttonclicked || loading}>
     <div className='response-text'>
     <Container>
