@@ -29,24 +29,21 @@ const resetResponse = () => {
   window.location.href = 'src/App.tsx';
 };
 
-  let newText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+  let newText = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
   if (response !== null) {
   // newText= response.split(/[0-16]\./);
-  newText= response.split(":", 16);
+  newText= response.split(":", 21);
   }
  return (
   <div>
     <Button className="submitAns" onClick={getOpenAIResponse} hidden={buttonclicked}>Click to Reveal!</Button>
-    <Button className='submitAns' onClick={resetResponse} hidden={!buttonclicked || loading}>
-                Take The Quiz Again! 
-            </Button>
     <div hidden={!buttonclicked || loading}>
     <div className='response-text'>
     <Container>
       <Row>
         <Col>
-          <h2>Your Top 5 Career Choices:</h2>
           <div className='box'>
+          <h2>Your Career Matches</h2>
           <p>1. {newText[0]}</p>
           <p>2. {newText[1]}</p>
           <p>3. {newText[2]}</p>
@@ -55,8 +52,8 @@ const resetResponse = () => {
           </div>
         </Col>
         <Col>
-          <h2>Your Top Industry Matches:</h2>
           <div className='box'>
+          <h2>Your Industry Matches</h2>
           <p>1. {newText[5]}</p>
           <p>2. {newText[6]}</p>
           <p>3. {newText[7]}</p>
@@ -64,28 +61,37 @@ const resetResponse = () => {
           <p>5. {newText[9]}</p>
           </div>
       </Col>
+      </Row>
+      <Row>
         <Col>
-          <h2>Your Top Job Suggestions:</h2>
+            <div className='box'>
+            <h2>Your Job Matches</h2>
+            <p>1. {newText[10]}</p>
+            <p>2. {newText[11]}</p>
+            <p>3. {newText[12]}</p>
+            <p>4. {newText[13]}</p>
+            <p>5. {newText[14]}</p>
+            </div>
+        </Col>
+        <Col>
           <div className='box'>
-          <p>1. {newText[10]}</p>
-          <p>2. {newText[11]}</p>
-          <p>3. {newText[12]}</p>
-          <p>4. {newText[13]}</p>
-          <p>5. {newText[14]}</p>
+          <h2>Your Degree Matches</h2>
+          <p>1. {newText[15]}</p>
+          <p>2. {newText[16]}</p>
+          <p>3. {newText[17]}</p>
+          <p>4. {newText[18]}</p>
+          <p>5. {newText[19]}</p>
           </div>
         </Col>
       </Row>
-      {/* <Row>      
-        <h2>Report Summary:</h2>
-        <p className='box'>{newText[15]}</p>
-      </Row> */}
     </Container>
     <Container>
     <Row>      
-        <h2>Report Summary:</h2>
-        <p className='box2'>{newText[15]}</p>
+        <h2>Report Summary</h2>
+        <p className='box2'>{newText[20]}</p>
       </Row>
     </Container>
+    <Button className='submitAns' onClick={resetResponse} hidden={!buttonclicked || loading}>Take The Quiz Again!</Button>
     </div>
     {/* {!loading && response} */}
     </div>

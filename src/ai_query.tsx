@@ -86,11 +86,12 @@ type multAnswers = 'Strongly Disagree' | 'Disagree' | 'Neutral' | 'Agree' | 'Str
 
 export function setQuery(presses: multAnswers[]): string {
     return `
-    I asked someone a few questions. Please consider their answers and generate a list of 16 items (seperated by a colon":"). Do not number the list.
+    I asked someone a few questions. Please consider their answers and generate a list of 18 items (seperated by a colon":"). Do not number the list.
     1 - 5: A list of 5 distinct careers for them. These should be specific careers rather than vague.
     6 - 10: A list of 5 distinct Industry Matches for them.
     10 - 15: A list of 5 distinct Job Suggestions for them.
-    16: A one paragraph summary with suggestions for them. Write the summary as if you were responding to them directly.
+    16 - 20: A list of 5 college degree pathway Suggestions for them.
+    21: A one paragraph summary with suggestions for them. Write the summary as if you were responding to them directly.
     
     Question: I prefer working in a group rather than alone.
     Answer: ${presses[0]}

@@ -18,9 +18,11 @@
     border: 2px solid rgb(11, 10, 16);
     background-color: rgb(186, 182, 182);
     padding: 10px;
-    margin: 10px;
+    margin: auto;
     width: 40vh;
-    height: 40vh;
+    height: 30vh;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .box2 {
