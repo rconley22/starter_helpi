@@ -118,7 +118,8 @@ export function generateDetailedAnswers(answers: string[]): string{
     1 - 5: A list of 5 distinct careers for them. These should be specific careers rather than vague.
     6 - 10: A list of 5 distinct Industry Matches for them.
     10 - 15: A list of 5 distinct Job Suggestions for them.
-    16: A one paragraph summary with suggestions for them. Write the summary as if you were responding to them directly.
+    16 - 20: A list of 5 college degree pathway Suggestions for them.
+    21: A one paragraph summary with suggestions for them. Write the summary as if you were responding to them directly.
     
     If the responses to the questions do not make sense, do the following:
     Generate a generic field for each of the first fifteen categories.

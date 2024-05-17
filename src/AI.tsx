@@ -86,9 +86,11 @@ const resetResponse = () => {
       </Row>
     </Container>
     <Container>
-    <Row>      
-        <h2>Report Summary</h2>
-        <p className='box2'>{newText[20]}</p>
+    <Row>   
+        <div className='box2'>
+          <h2>Report Summary</h2>
+          <p>{newText[20]}</p>
+        </div>   
       </Row>
     </Container>
     <Button className='submitAns' onClick={resetResponse} hidden={!buttonclicked || loading}>Take The Quiz Again!</Button>
