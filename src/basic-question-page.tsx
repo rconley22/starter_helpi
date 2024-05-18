@@ -307,7 +307,7 @@ setCurrentQuestion(newQuest)
             </div>
 
             <div className="one" hidden={currentQuestion!=='Q7'}>
-            <h4 className="questions2">I enjoy keeping up with current events.</h4>
+            <h4 className="questions2">I get inspired by beauty in art and nature.</h4>
             <button className={lastPress7 !== 'Strongly Disagree' ? "strong_disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Strongly Disagree')} disabled={'Strongly Disagree' === lastPress7}>Strongly Disagree</button>
             <button className={lastPress7 !== 'Disagree' ? "disagree" : "current_answer"} onClick={() => handleAnswerQuestion7('Disagree')} disabled={'Disagree' === lastPress7}>Disagree</button>
             <button className={lastPress7 !== 'Neutral' ? "neutral" : "current_answer"} onClick={() => handleAnswerQuestion7('Neutral')} disabled={'Neutral' === lastPress7}>Neutral</button>
